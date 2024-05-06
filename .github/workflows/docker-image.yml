@@ -38,7 +38,7 @@ jobs:
         NEW_VERSION="${VERSION[0]}.${VERSION[1]}.$PATCH"
         echo "New VERSION: $NEW_VERSION"
         echo "$NEW_VERSION" > VERSION
-        echo "::set-output name=new_version::$NEW_VERSION"
+        echo "new_version=$NEW_VERSION" >> $GITHUB_ENV
 
     - name: Extract repository name
       id: repo_name
