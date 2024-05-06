@@ -31,10 +31,13 @@ jobs:
           echo "VERSION file does not exist. Setting initial version..."
           VERSION="0.0.0"
         fi
+        echo $VERSION
 
         IFS='.' read -ra VERSION_PARTS <<< "$VERSION"
         PATCH=${VERSION_PARTS[2]}
+        echo "patch $PATCH"
         let PATCH++
+        echo "new patch $PATCH"
         NEW_VERSION="${VERSION_PARTS[0]}.${VERSION_PARTS[1]}.$PATCH"
         echo "New VERSION: $NEW_VERSION"
         echo "$NEW_VERSION" > VERSION
