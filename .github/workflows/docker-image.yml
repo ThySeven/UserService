@@ -27,13 +27,16 @@ jobs:
         VERSION=$(cat VERSION)
         echo "::set-output name=version::$VERSION"
         
-    - name: Increment Patch Version
-      id: inc_patch
+    - name: Increment Version and Set Output
+      id: versioning
       run: |
-        IFS='.' read -ra VERSION <<< "${{ steps.read_version.outputs.version }}"
+        IFS='.' read -ra VERSION <<< "0.0.0"
+        echo "Read VERSION array: ${VERSION[*]}"
         PATCH=${VERSION[2]}
         let PATCH++
+        echo "Incremented PATCH: $PATCH"
         NEW_VERSION="${VERSION[0]}.${VERSION[1]}.$PATCH"
+        echo "New VERSION: $NEW_VERSION"
         echo "$NEW_VERSION" > VERSION
         echo "::set-output name=new_version::$NEW_VERSION"
 
