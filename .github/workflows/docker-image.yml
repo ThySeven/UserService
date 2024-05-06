@@ -36,7 +36,7 @@ jobs:
         IFS='.' read -ra VERSION_PARTS <<< "$VERSION"
         PATCH=${VERSION_PARTS[2]}
         echo "patch $PATCH"
-        let PATCH++
+        PATCH = $PATCH++
         echo "new patch $PATCH"
         NEW_VERSION="${VERSION_PARTS[0]}.${VERSION_PARTS[1]}.$PATCH"
         echo "New VERSION: $NEW_VERSION"
