@@ -11,6 +11,8 @@ jobs:
     steps:
     - name: Check out the repository
       uses: actions/checkout@v2
+      with:
+        fetch-depth: 0 # Important for commit history analysis
 
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v1
@@ -31,13 +33,9 @@ jobs:
           echo "VERSION file does not exist. Setting initial version..."
           VERSION="0.0.0"
         fi
-        echo $VERSION
-
         IFS='.' read -ra VERSION_PARTS <<< "$VERSION"
         PATCH=${VERSION_PARTS[2]}
-        echo "patch $PATCH"
-        PATCH=$((PATCH + 1)) # Alternative way to increment
-        echo "new patch $PATCH"
+        PATCH=$((PATCH + 1)) # Increment patch version
         NEW_VERSION="${VERSION_PARTS[0]}.${VERSION_PARTS[1]}.$PATCH"
         echo "New VERSION: $NEW_VERSION"
         echo "$NEW_VERSION" > VERSION
@@ -66,11 +64,14 @@ jobs:
         push: true
         tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ steps.repo_name.outputs.name }}:latest
 
-
-    - name: Update VERSION file (Optional)
+    - name: Commit VERSION file change
       run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Actions"
-        git add VERSION
-        git commit -m "Update version to ${{ steps.inc_patch.outputs.new_version }}"
-        git push
+        if git diff --exit-code --quiet VERSION; then
+          echo "VERSION file has not changed. Skipping commit."
+        else
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Actions"
+          git add VERSION
+          git commit -m "Update version to ${{ steps.versioning.outputs.new_version }}"
+          git push
+        fi
