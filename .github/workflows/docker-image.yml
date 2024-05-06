@@ -21,23 +21,24 @@ jobs:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-    - name: Read current Version
-      id: read_version
-      run: |
-        VERSION=$(cat VERSION)
-        echo "::set-output name=version::$VERSION"
-        
-    - name: Increment Version and Set Output
+    - name: Determine and increment version
       id: versioning
       run: |
-        IFS='.' read -ra VERSION <<< "0.0.0"
-        echo "Read VERSION array: ${VERSION[*]}"
-        PATCH=${VERSION[2]}
+        if [ -f VERSION ]; then
+          echo "VERSION file exists. Reading current version..."
+          VERSION=$(cat VERSION)
+        else
+          echo "VERSION file does not exist. Setting initial version..."
+          VERSION="0.0.0"
+        fi
+
+        IFS='.' read -ra VERSION_PARTS <<< "$VERSION"
+        PATCH=${VERSION_PARTS[2]}
         let PATCH++
-        echo "Incremented PATCH: $PATCH"
-        NEW_VERSION="${VERSION[0]}.${VERSION[1]}.$PATCH"
+        NEW_VERSION="${VERSION_PARTS[0]}.${VERSION_PARTS[1]}.$PATCH"
         echo "New VERSION: $NEW_VERSION"
         echo "$NEW_VERSION" > VERSION
+        echo "::set-output name=new_version::$NEW_VERSION"
         echo "new_version=$NEW_VERSION" >> $GITHUB_ENV
 
     - name: Extract repository name
@@ -52,7 +53,7 @@ jobs:
         context: .
         file: Dockerfile
         push: true
-        tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ steps.repo_name.outputs.name }}:${{ steps.inc_patch.outputs.new_version }}
+        tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ steps.repo_name.outputs.name }}:${{ steps.versioning.outputs.new_version }}
 
     - name: Build and push the Docker image latest
       uses: docker/build-push-action@v2
