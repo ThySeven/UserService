@@ -4,7 +4,10 @@ on:
   push:
     branches:
       - main  # Adjust this to match the branch you want to trigger the build.
-
+      
+permissions:
+  contents: write
+  
 jobs:
   build_and_push:
     runs-on: ubuntu-latest
