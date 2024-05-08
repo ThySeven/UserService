@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\JeffS\\Dropbox\\EAAA\\4.Semester\\Projekt\\UserService\\MicroservicesWEBAPITemplate\\UserService.csproj": {}
+    "C:\\Users\\Bruger\\source\\repos\\UserService\\UserService\\UserService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\JeffS\\Dropbox\\EAAA\\4.Semester\\Projekt\\UserService\\MicroservicesWEBAPITemplate\\UserService.csproj": {
+    "C:\\Users\\Bruger\\source\\repos\\UserService\\UserService\\UserService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JeffS\\Dropbox\\EAAA\\4.Semester\\Projekt\\UserService\\MicroservicesWEBAPITemplate\\UserService.csproj",
+        "projectUniqueName": "C:\\Users\\Bruger\\source\\repos\\UserService\\UserService\\UserService.csproj",
         "projectName": "UserService",
-        "projectPath": "C:\\Users\\JeffS\\Dropbox\\EAAA\\4.Semester\\Projekt\\UserService\\MicroservicesWEBAPITemplate\\UserService.csproj",
-        "packagesPath": "C:\\Users\\JeffS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JeffS\\Dropbox\\EAAA\\4.Semester\\Projekt\\UserService\\MicroservicesWEBAPITemplate\\obj\\",
+        "projectPath": "C:\\Users\\Bruger\\source\\repos\\UserService\\UserService\\UserService.csproj",
+        "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Bruger\\source\\repos\\UserService\\UserService\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\JeffS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -36,7 +41,9 @@
           ]
         },
         "restoreAuditProperties": {
-          "enableAudit": "default"
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -91,7 +98,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
