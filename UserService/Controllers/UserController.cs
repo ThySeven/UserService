@@ -24,7 +24,7 @@ namespace UserService.Controllers
         }
 
         [HttpPost("create")]
-        public IActionResult CreateUser(ÚserModel user)
+        public IActionResult CreateUser(UserModel user)
         {
             try
             {

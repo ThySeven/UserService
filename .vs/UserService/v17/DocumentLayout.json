@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Bruger\\source\\repos\\UserService\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3F2FE4DC-D04E-439E-A121-2BC6BB274896}|UserService\\UserService.csproj|c:\\users\\bruger\\source\\repos\\userservice\\userservice\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F2FE4DC-D04E-439E-A121-2BC6BB274896}|UserService\\UserService.csproj|solutionrelative:userservice\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F2FE4DC-D04E-439E-A121-2BC6BB274896}|UserService\\UserService.csproj|c:\\users\\bruger\\source\\repos\\userservice\\userservice\\repositorys\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F2FE4DC-D04E-439E-A121-2BC6BB274896}|UserService\\UserService.csproj|solutionrelative:userservice\\repositorys\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3F2FE4DC-D04E-439E-A121-2BC6BB274896}|UserService\\UserService.csproj|c:\\users\\bruger\\source\\repos\\userservice\\userservice\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F2FE4DC-D04E-439E-A121-2BC6BB274896}|UserService\\UserService.csproj|solutionrelative:userservice\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3F2FE4DC-D04E-439E-A121-2BC6BB274896}|UserService\\UserService.csproj|c:\\users\\bruger\\source\\repos\\userservice\\userservice\\repositorys\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F2FE4DC-D04E-439E-A121-2BC6BB274896}|UserService\\UserService.csproj|solutionrelative:userservice\\repositorys\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F2FE4DC-D04E-439E-A121-2BC6BB274896}|UserService\\UserService.csproj|c:\\users\\bruger\\source\\repos\\userservice\\userservice\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F2FE4DC-D04E-439E-A121-2BC6BB274896}|UserService\\UserService.csproj|solutionrelative:userservice\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3F2FE4DC-D04E-439E-A121-2BC6BB274896}|UserService\\UserService.csproj|c:\\users\\bruger\\source\\repos\\userservice\\userservice\\repositorys\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F2FE4DC-D04E-439E-A121-2BC6BB274896}|UserService\\UserService.csproj|solutionrelative:userservice\\repositorys\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3F2FE4DC-D04E-439E-A121-2BC6BB274896}|UserService\\UserService.csproj|c:\\users\\bruger\\source\\repos\\userservice\\userservice\\models\\\u00FAsermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F2FE4DC-D04E-439E-A121-2BC6BB274896}|UserService\\UserService.csproj|solutionrelative:userservice\\models\\\u00FAsermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F2FE4DC-D04E-439E-A121-2BC6BB274896}|UserService\\UserService.csproj|c:\\users\\bruger\\source\\repos\\userservice\\userservice\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F2FE4DC-D04E-439E-A121-2BC6BB274896}|UserService\\UserService.csproj|solutionrelative:userservice\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F2FE4DC-D04E-439E-A121-2BC6BB274896}|UserService\\UserService.csproj|c:\\users\\bruger\\source\\repos\\userservice\\userservice\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F2FE4DC-D04E-439E-A121-2BC6BB274896}|UserService\\UserService.csproj|solutionrelative:userservice\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,6 +43,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Bruger\\source\\repos\\UserService\\UserService\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "UserService\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Bruger\\source\\repos\\UserService\\UserService\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "UserService\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T10:42:22.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Bruger\\source\\repos\\UserService\\UserService\\Repositorys\\UserRepository.cs",
+              "RelativeDocumentMoniker": "UserService\\Repositorys\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\Bruger\\source\\repos\\UserService\\UserService\\Repositorys\\UserRepository.cs",
+              "RelativeToolTip": "UserService\\Repositorys\\UserRepository.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAAAD0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T09:27:53.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\Bruger\\source\\repos\\UserService\\UserService\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "UserService\\Controllers\\UserController.cs",
@@ -51,20 +81,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Bruger\\source\\repos\\UserService\\UserService\\Repositorys\\UserRepository.cs",
-              "RelativeDocumentMoniker": "UserService\\Repositorys\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\Bruger\\source\\repos\\UserService\\UserService\\Repositorys\\UserRepository.cs",
-              "RelativeToolTip": "UserService\\Repositorys\\UserRepository.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAywB8AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T09:27:53.042Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "LoginModel.cs",
               "DocumentMoniker": "C:\\Users\\Bruger\\source\\repos\\UserService\\UserService\\Models\\LoginModel.cs",
               "RelativeDocumentMoniker": "UserService\\Models\\LoginModel.cs",
@@ -77,26 +94,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "\u00DAserModel.cs",
               "DocumentMoniker": "C:\\Users\\Bruger\\source\\repos\\UserService\\UserService\\Models\\\u00DAserModel.cs",
               "RelativeDocumentMoniker": "UserService\\Models\\\u00DAserModel.cs",
               "ToolTip": "C:\\Users\\Bruger\\source\\repos\\UserService\\UserService\\Models\\\u00DAserModel.cs",
               "RelativeToolTip": "UserService\\Models\\\u00DAserModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAsAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-08T09:18:09.759Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "C:\\Users\\Bruger\\source\\repos\\UserService\\UserService\\Repositorys\\IUserRepository.cs",
               "RelativeDocumentMoniker": "UserService\\Repositorys\\IUserRepository.cs",
               "ToolTip": "C:\\Users\\Bruger\\source\\repos\\UserService\\UserService\\Repositorys\\IUserRepository.cs",
               "RelativeToolTip": "UserService\\Repositorys\\IUserRepository.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAxwAsAAAAAAAAA",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAxwA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-08T09:16:30.899Z",
               "EditorCaption": ""

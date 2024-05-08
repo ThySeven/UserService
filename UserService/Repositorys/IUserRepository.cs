@@ -4,15 +4,15 @@ namespace UserService.Repositorys
 {
     public interface IUserRepository
     {
-        IEnumerable<ÚserModel> GetAll();
+        IEnumerable<UserModel> GetAll();
 
-        ÚserModel GetById(int id);
+        UserModel GetById(int id);
 
-        void CreateUser(ÚserModel úser);
+        void CreateUser(UserModel user);
 
         void DeleteUser(string id);
 
-        void UpdateUser(ÚserModel úser);
+        UserModel UpdateUser(UserModel user);
 
         void ValidateUser(string userName, string password);
     }

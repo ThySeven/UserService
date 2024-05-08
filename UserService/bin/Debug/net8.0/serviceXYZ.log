@@ -918,3 +918,4 @@
 2024-05-06 16:18:25.4680|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
 2024-05-06 16:18:25.4680|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated.
 2024-05-06 16:18:25.5249|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7241/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 56.8238ms
+2024-05-08 12:40:31.0313|DEBUG|UserService.Program|init main
