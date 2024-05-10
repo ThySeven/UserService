@@ -1,18 +1,20 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using UserService.Models;
-namespace UserService.Repositorys
+namespace UserService.Repositories
 {
     public interface IUserRepository
     {
         IEnumerable<UserModel> GetAll();
 
-        UserModel GetById(int id);
+        UserModel GetById(string id);
 
         void CreateUser(UserModel user);
 
         void DeleteUser(string id);
 
-        UserModel UpdateUser(UserModel user);
+        void VerifyUser(string id);
+
+        UserModel UpdateUser(UserModel newUserData);
 
         void ValidateUser(string userName, string password);
     }

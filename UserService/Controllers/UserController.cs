@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using UserService.Repositorys;
+using UserService.Repositories;
 using UserService.Models;
 namespace UserService.Controllers
 {
@@ -29,7 +29,7 @@ namespace UserService.Controllers
             try
             {
                 _userRepository.CreateUser(user);
-                _logger.LogInformation($"user validated: {user}");
+                _logger.LogInformation($"user created: {user}");
                 return Ok();
             }
 
@@ -39,7 +39,7 @@ namespace UserService.Controllers
                 return BadRequest("Bad request");
             }
         }
-        [HttpDelete("delete")]
+        [HttpDelete("delete/{id}")]
         public IActionResult DeleteUser(string id)
         {
             try
@@ -53,8 +53,8 @@ namespace UserService.Controllers
                 return BadRequest("Bad request");
             }
         }
-        [HttpGet("valiadate")]
-        public IActionResult ValiadateUser(string userName,string password)
+        [HttpGet("validate")]
+        public IActionResult Login(string userName,string password)
         {
             try
             {
@@ -63,9 +63,23 @@ namespace UserService.Controllers
             }
             catch(Exception ex) 
             {
-                _logger.LogCritical($"Failed to validate user: {ex}");
+                _logger.LogCritical($"Failed to validate credentials: {ex}");
                 return BadRequest("Bad request");
             }   
+        }
+        [HttpGet("verify/{id}")]
+        public IActionResult VerifyUser(string id)
+        {
+            try
+            {
+                _userRepository.VerifyUser(id);
+                return Ok("Skal redirect til login side");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogCritical($"Failed to validate user with id: {id}: {ex}");
+                return BadRequest("Bad request");
+            }
         }
     }
 }
