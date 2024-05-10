@@ -5,6 +5,9 @@ using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using RabbitMQ.Client;
+using System.Text.Json;
+using System.Text;
 namespace UserService.Repositories
 {
     public class UserRepository : IUserRepository
@@ -26,6 +29,37 @@ namespace UserService.Repositories
         public void CreateUser(UserModel user)
         {
             _users.InsertOne(user);
+
+            var mail = new MailModel { ReceiverMail = user.email, Header = "E-mail Verifikation", Content = $"Klik på dette link for at verificere din email <ahref>http://localhost:5145/user/verify/{user.id}</ahref>" };
+
+            try
+            {
+                var factory = new ConnectionFactory { HostName = Environment.GetEnvironmentVariable("RabbitMQHostName") };
+
+                using var connection = factory.CreateConnection();
+                using var channel = connection.CreateModel();
+
+                // Serialize the received email data
+                var serializedEmail = JsonSerializer.Serialize(mail);
+
+                // Publish the serialized email data to RabbitMQ
+                channel.QueueDeclare(queue: "MailQueue",
+                                              durable: false,
+                                              exclusive: false,
+                                              autoDelete: false,
+                                              arguments: null);
+
+                channel.BasicPublish(exchange: "",
+                                              routingKey: "MailQueue",
+                                              basicProperties: null,
+                                              body: Encoding.UTF8.GetBytes(serializedEmail));
+
+                Console.WriteLine("Sent email to RabbitMQ: " + serializedEmail);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error sending email to RabbitMQ: {ex.Message}");
+            }
         }
 
         public void DeleteUser(string id)

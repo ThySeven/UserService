@@ -67,13 +67,13 @@ namespace UserService.Controllers
                 return BadRequest("Bad request");
             }   
         }
-        [HttpPut("verify/{id}")]
+        [HttpGet("verify/{id}")]
         public IActionResult VerifyUser(string id)
         {
             try
             {
                 _userRepository.VerifyUser(id);
-                return Ok();
+                return Ok("Skal redirect til login side");
             }
             catch (Exception ex)
             {

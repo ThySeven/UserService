@@ -2031,3 +2031,650 @@
 2024-05-09 22:49:44.3721|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GD5EPR7JF" stopped.
 2024-05-09 22:49:44.3721|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3GD5EPR7JF" sending FIN because: "The Socket transport's send loop completed gracefully."
 2024-05-09 22:49:44.3774|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped
+2024-05-09 22:51:38.8185|DEBUG|UserService.Program|init main
+2024-05-09 22:51:38.9789|INFO|UserService|Starting service
+2024-05-09 22:51:38.9946|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2024-05-09 22:51:39.0115|INFO|UserService|Controllers mapped
+2024-05-09 22:51:39.0115|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2024-05-09 22:51:39.0115|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\nicol\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-09 22:51:39.0219|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\nicol\AppData\Local\ASP.NET\DataProtection-Keys\key-62deea1d-8d11-441c-be40-2261222ab494.xml'.
+2024-05-09 22:51:39.0219|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\nicol\AppData\Local\ASP.NET\DataProtection-Keys\key-eaa35d66-8457-471f-9191-ec96edb4d1af.xml'.
+2024-05-09 22:51:39.0219|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {62deea1d-8d11-441c-be40-2261222ab494}.
+2024-05-09 22:51:39.0219|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {eaa35d66-8457-471f-9191-ec96edb4d1af}.
+2024-05-09 22:51:39.0219|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {62deea1d-8d11-441c-be40-2261222ab494} with expiration date 2024-07-21 13:26:32Z as default key.
+2024-05-09 22:51:39.0219|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-09 22:51:39.0219|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI.
+2024-05-09 22:51:39.0219|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-09 22:51:39.0219|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2024-05-09 22:51:39.0219|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2024-05-09 22:51:39.0219|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {62deea1d-8d11-441c-be40-2261222ab494} as the default key.
+2024-05-09 22:51:39.0219|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {62deea1d-8d11-441c-be40-2261222ab494} was loaded during application startup.
+2024-05-09 22:51:39.0511|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5143
+2024-05-09 22:51:39.0511|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly UserService
+2024-05-09 22:51:39.0511|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-09 22:51:39.0511|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-09 22:51:39.0511|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService
+2024-05-09 22:51:39.0511|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2024-05-09 22:51:46.5947|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3GD7BKUMA6" received FIN.
+2024-05-09 22:51:46.5969|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GD7BKUMA6" accepted.
+2024-05-09 22:51:46.5969|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GD7BKUMA6" started.
+2024-05-09 22:51:46.5969|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GD7BKUMA7" accepted.
+2024-05-09 22:51:46.5969|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GD7BKUMA7" started.
+2024-05-09 22:51:46.5969|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3GD7BKUMA6" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-09 22:51:46.5969|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GD7BKUMA6" disconnecting.
+2024-05-09 22:51:46.5969|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GD7BKUMA6" stopped.
+2024-05-09 22:51:46.5969|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 DELETE http://localhost:5143/user/delete/123456789 - application/json 219
+2024-05-09 22:51:46.5969|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2024-05-09 22:51:46.6198|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/user/delete/123456789'
+2024-05-09 22:51:46.6198|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'UserService.Controllers.UserController.DeleteUser (UserService)' with route pattern 'User/delete/{id}' is valid for the request path '/user/delete/123456789'
+2024-05-09 22:51:46.6198|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'UserService.Controllers.UserController.DeleteUser (UserService)'
+2024-05-09 22:51:46.6310|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated.
+2024-05-09 22:51:46.6310|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-05-09 22:51:46.6310|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect.
+2024-05-09 22:51:46.6310|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'UserService.Controllers.UserController.DeleteUser (UserService)'
+2024-05-09 22:51:46.6455|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "DeleteUser", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteUser(System.String) on controller UserService.Controllers.UserController (UserService).
+2024-05-09 22:51:46.6455|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2024-05-09 22:51:46.6455|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2024-05-09 22:51:46.6455|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-05-09 22:51:46.6455|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2024-05-09 22:51:46.6455|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-05-09 22:51:46.6455|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-09 22:51:46.7267|DEBUG|UserService.Repositories.IUserRepository|XYZ Service responding from 45.236.95.66
+2024-05-09 22:51:46.7267|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-09 22:51:46.7267|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'id' of type 'System.String' ...
+2024-05-09 22:51:46.7267|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'id' of type 'System.String' using the name 'id' in request data ...
+2024-05-09 22:51:46.7267|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'id' of type 'System.String'.
+2024-05-09 22:51:46.7267|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'id' of type 'System.String'.
+2024-05-09 22:51:46.7267|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'id' of type 'System.String' ...
+2024-05-09 22:51:46.7267|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'id' of type 'System.String'.
+2024-05-09 22:51:46.7829|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing StatusCodeResult, setting HTTP status code 200
+2024-05-09 22:51:46.7864|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action UserService.Controllers.UserController.DeleteUser (UserService) in 136.5715ms
+2024-05-09 22:51:46.7864|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'UserService.Controllers.UserController.DeleteUser (UserService)'
+2024-05-09 22:51:46.7864|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GD7BKUMA7" completed keep alive response.
+2024-05-09 22:51:46.7864|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 DELETE http://localhost:5143/user/delete/123456789 - 200 0 - 177.7220ms
+2024-05-09 22:51:46.7864|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HN3GD7BKUMA7", Request id "0HN3GD7BKUMA7:00000001": started reading request body.
+2024-05-09 22:51:46.7864|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HN3GD7BKUMA7", Request id "0HN3GD7BKUMA7:00000001": done reading request body.
+2024-05-09 22:52:00.9572|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2024-05-09 22:52:00.9572|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping
+2024-05-09 22:52:00.9572|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GD7BKUMA7" disconnecting.
+2024-05-09 22:52:00.9572|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GD7BKUMA7" stopped.
+2024-05-09 22:52:00.9572|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3GD7BKUMA7" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-09 22:52:00.9572|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped
+2024-05-10 10:35:07.2554|DEBUG|UserService.Program|init main
+2024-05-10 10:35:07.4845|INFO|UserService|Starting service
+2024-05-10 10:35:07.5010|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2024-05-10 10:35:07.5198|INFO|UserService|Controllers mapped
+2024-05-10 10:35:07.5198|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2024-05-10 10:35:07.5198|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\nicol\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-10 10:35:07.5198|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\nicol\AppData\Local\ASP.NET\DataProtection-Keys\key-62deea1d-8d11-441c-be40-2261222ab494.xml'.
+2024-05-10 10:35:07.5198|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\nicol\AppData\Local\ASP.NET\DataProtection-Keys\key-eaa35d66-8457-471f-9191-ec96edb4d1af.xml'.
+2024-05-10 10:35:07.5198|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {62deea1d-8d11-441c-be40-2261222ab494}.
+2024-05-10 10:35:07.5343|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {eaa35d66-8457-471f-9191-ec96edb4d1af}.
+2024-05-10 10:35:07.5343|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {62deea1d-8d11-441c-be40-2261222ab494} with expiration date 2024-07-21 13:26:32Z as default key.
+2024-05-10 10:35:07.5343|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 10:35:07.5343|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI.
+2024-05-10 10:35:07.5343|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 10:35:07.5343|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2024-05-10 10:35:07.5343|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2024-05-10 10:35:07.5343|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {62deea1d-8d11-441c-be40-2261222ab494} as the default key.
+2024-05-10 10:35:07.5343|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {62deea1d-8d11-441c-be40-2261222ab494} was loaded during application startup.
+2024-05-10 10:35:07.5646|ERROR|Microsoft.Extensions.Hosting.Internal.Host|Hosting failed to start|System.IO.IOException: Failed to bind to address http://127.0.0.1:5143: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ ---> System.Net.Sockets.SocketException (10048): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2024-05-10 10:35:54.4105|DEBUG|UserService.Program|init main
+2024-05-10 10:35:54.6798|INFO|UserService|Starting service
+2024-05-10 10:35:54.6955|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2024-05-10 10:35:54.7123|INFO|UserService|Controllers mapped
+2024-05-10 10:35:54.7123|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2024-05-10 10:35:54.7123|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\nicol\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-10 10:35:54.7224|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\nicol\AppData\Local\ASP.NET\DataProtection-Keys\key-62deea1d-8d11-441c-be40-2261222ab494.xml'.
+2024-05-10 10:35:54.7224|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\nicol\AppData\Local\ASP.NET\DataProtection-Keys\key-eaa35d66-8457-471f-9191-ec96edb4d1af.xml'.
+2024-05-10 10:35:54.7224|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {62deea1d-8d11-441c-be40-2261222ab494}.
+2024-05-10 10:35:54.7224|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {eaa35d66-8457-471f-9191-ec96edb4d1af}.
+2024-05-10 10:35:54.7224|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {62deea1d-8d11-441c-be40-2261222ab494} with expiration date 2024-07-21 13:26:32Z as default key.
+2024-05-10 10:35:54.7224|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 10:35:54.7224|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI.
+2024-05-10 10:35:54.7224|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 10:35:54.7224|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2024-05-10 10:35:54.7224|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2024-05-10 10:35:54.7224|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {62deea1d-8d11-441c-be40-2261222ab494} as the default key.
+2024-05-10 10:35:54.7224|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {62deea1d-8d11-441c-be40-2261222ab494} was loaded during application startup.
+2024-05-10 10:35:54.7526|ERROR|Microsoft.Extensions.Hosting.Internal.Host|Hosting failed to start|System.IO.IOException: Failed to bind to address http://127.0.0.1:5143: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ ---> System.Net.Sockets.SocketException (10048): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2024-05-10 10:37:51.4619|DEBUG|UserService.Program|init main
+2024-05-10 10:37:51.6186|INFO|UserService|Starting service
+2024-05-10 10:37:51.6347|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2024-05-10 10:37:51.6522|INFO|UserService|Controllers mapped
+2024-05-10 10:37:51.6522|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2024-05-10 10:37:51.6590|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\nicol\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-10 10:37:51.6590|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\nicol\AppData\Local\ASP.NET\DataProtection-Keys\key-62deea1d-8d11-441c-be40-2261222ab494.xml'.
+2024-05-10 10:37:51.6590|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\nicol\AppData\Local\ASP.NET\DataProtection-Keys\key-eaa35d66-8457-471f-9191-ec96edb4d1af.xml'.
+2024-05-10 10:37:51.6590|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {62deea1d-8d11-441c-be40-2261222ab494}.
+2024-05-10 10:37:51.6590|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {eaa35d66-8457-471f-9191-ec96edb4d1af}.
+2024-05-10 10:37:51.6590|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {62deea1d-8d11-441c-be40-2261222ab494} with expiration date 2024-07-21 13:26:32Z as default key.
+2024-05-10 10:37:51.6590|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 10:37:51.6590|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI.
+2024-05-10 10:37:51.6590|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 10:37:51.6743|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2024-05-10 10:37:51.6743|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2024-05-10 10:37:51.6743|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {62deea1d-8d11-441c-be40-2261222ab494} as the default key.
+2024-05-10 10:37:51.6743|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {62deea1d-8d11-441c-be40-2261222ab494} was loaded during application startup.
+2024-05-10 10:37:51.6945|ERROR|Microsoft.Extensions.Hosting.Internal.Host|Hosting failed to start|System.IO.IOException: Failed to bind to address http://127.0.0.1:5143: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ ---> System.Net.Sockets.SocketException (10048): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2024-05-10 10:39:06.1131|DEBUG|UserService.Program|init main
+2024-05-10 10:39:06.2786|INFO|UserService|Starting service
+2024-05-10 10:39:06.2941|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2024-05-10 10:39:06.3107|INFO|UserService|Controllers mapped
+2024-05-10 10:39:06.3107|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2024-05-10 10:39:06.3173|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\nicol\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-10 10:39:06.3173|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\nicol\AppData\Local\ASP.NET\DataProtection-Keys\key-62deea1d-8d11-441c-be40-2261222ab494.xml'.
+2024-05-10 10:39:06.3173|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\nicol\AppData\Local\ASP.NET\DataProtection-Keys\key-eaa35d66-8457-471f-9191-ec96edb4d1af.xml'.
+2024-05-10 10:39:06.3173|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {62deea1d-8d11-441c-be40-2261222ab494}.
+2024-05-10 10:39:06.3173|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {eaa35d66-8457-471f-9191-ec96edb4d1af}.
+2024-05-10 10:39:06.3173|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {62deea1d-8d11-441c-be40-2261222ab494} with expiration date 2024-07-21 13:26:32Z as default key.
+2024-05-10 10:39:06.3173|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 10:39:06.3173|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI.
+2024-05-10 10:39:06.3307|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 10:39:06.3307|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2024-05-10 10:39:06.3307|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2024-05-10 10:39:06.3307|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {62deea1d-8d11-441c-be40-2261222ab494} as the default key.
+2024-05-10 10:39:06.3307|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {62deea1d-8d11-441c-be40-2261222ab494} was loaded during application startup.
+2024-05-10 10:39:06.3487|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5145
+2024-05-10 10:39:06.3487|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly UserService
+2024-05-10 10:39:06.3487|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-10 10:39:06.3487|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-10 10:39:06.3487|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService
+2024-05-10 10:39:06.3487|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2024-05-10 10:39:10.2752|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2024-05-10 10:39:10.2752|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping
+2024-05-10 10:39:10.2752|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped
+2024-05-10 10:39:15.7554|DEBUG|UserService.Program|init main
+2024-05-10 10:39:15.9043|INFO|UserService|Starting service
+2024-05-10 10:39:15.9197|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2024-05-10 10:39:15.9363|INFO|UserService|Controllers mapped
+2024-05-10 10:39:15.9363|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2024-05-10 10:39:15.9431|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\nicol\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-10 10:39:15.9431|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\nicol\AppData\Local\ASP.NET\DataProtection-Keys\key-62deea1d-8d11-441c-be40-2261222ab494.xml'.
+2024-05-10 10:39:15.9431|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\nicol\AppData\Local\ASP.NET\DataProtection-Keys\key-eaa35d66-8457-471f-9191-ec96edb4d1af.xml'.
+2024-05-10 10:39:15.9431|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {62deea1d-8d11-441c-be40-2261222ab494}.
+2024-05-10 10:39:15.9431|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {eaa35d66-8457-471f-9191-ec96edb4d1af}.
+2024-05-10 10:39:15.9560|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {62deea1d-8d11-441c-be40-2261222ab494} with expiration date 2024-07-21 13:26:32Z as default key.
+2024-05-10 10:39:15.9560|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 10:39:15.9560|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI.
+2024-05-10 10:39:15.9560|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 10:39:15.9560|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2024-05-10 10:39:15.9560|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2024-05-10 10:39:15.9560|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {62deea1d-8d11-441c-be40-2261222ab494} as the default key.
+2024-05-10 10:39:15.9560|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {62deea1d-8d11-441c-be40-2261222ab494} was loaded during application startup.
+2024-05-10 10:39:15.9767|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5145
+2024-05-10 10:39:15.9767|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly UserService
+2024-05-10 10:39:15.9767|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-10 10:39:15.9767|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-10 10:39:15.9767|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService
+2024-05-10 10:39:15.9767|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2024-05-10 10:39:55.7383|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3GPJ2D08UU" received FIN.
+2024-05-10 10:39:55.7383|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJ2D08UU" accepted.
+2024-05-10 10:39:55.7383|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJ2D08UU" started.
+2024-05-10 10:39:55.7383|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJ2D08UV" accepted.
+2024-05-10 10:39:55.7383|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJ2D08UV" started.
+2024-05-10 10:39:55.7383|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3GPJ2D08UU" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 10:39:55.7383|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJ2D08UU" disconnecting.
+2024-05-10 10:39:55.7383|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJ2D08UU" stopped.
+2024-05-10 10:39:55.7830|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5145/user/create - application/json 227
+2024-05-10 10:39:55.7830|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2024-05-10 10:39:55.7950|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/user/create'
+2024-05-10 10:39:55.7950|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'UserService.Controllers.UserController.CreateUser (UserService)' with route pattern 'User/create' is valid for the request path '/user/create'
+2024-05-10 10:39:55.7950|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'UserService.Controllers.UserController.CreateUser (UserService)'
+2024-05-10 10:39:55.8218|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated.
+2024-05-10 10:39:55.8551|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-05-10 10:39:55.8551|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect.
+2024-05-10 10:39:55.8551|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'UserService.Controllers.UserController.CreateUser (UserService)'
+2024-05-10 10:39:55.8691|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "CreateUser", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateUser(UserService.Models.UserModel) on controller UserService.Controllers.UserController (UserService).
+2024-05-10 10:39:55.8691|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2024-05-10 10:39:55.8691|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2024-05-10 10:39:55.8691|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-05-10 10:39:55.8691|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2024-05-10 10:39:55.8691|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-05-10 10:39:55.8691|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-10 10:39:56.2312|DEBUG|UserService.Repositories.IUserRepository|XYZ Service responding from 45.236.95.66
+2024-05-10 10:39:56.2312|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-10 10:39:56.2573|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'user' of type 'UserService.Models.UserModel' ...
+2024-05-10 10:39:56.2573|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'user' of type 'UserService.Models.UserModel' using the name '' in request data ...
+2024-05-10 10:39:56.2573|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-05-10 10:39:56.2573|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HN3GPJ2D08UV", Request id "0HN3GPJ2D08UV:00000001": started reading request body.
+2024-05-10 10:39:56.2573|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HN3GPJ2D08UV", Request id "0HN3GPJ2D08UV:00000001": done reading request body.
+2024-05-10 10:39:56.2573|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'UserService.Models.UserModel'
+2024-05-10 10:39:56.2573|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'user' of type 'UserService.Models.UserModel'.
+2024-05-10 10:39:56.2573|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'user' of type 'UserService.Models.UserModel'.
+2024-05-10 10:39:56.2573|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'user' of type 'UserService.Models.UserModel' ...
+2024-05-10 10:39:56.2573|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'user' of type 'UserService.Models.UserModel'.
+2024-05-10 10:39:56.5097|INFO|UserService.Repositories.IUserRepository|user created: UserService.Models.UserModel
+2024-05-10 10:39:56.5097|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing StatusCodeResult, setting HTTP status code 200
+2024-05-10 10:39:56.5097|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action UserService.Controllers.UserController.CreateUser (UserService) in 641.9101ms
+2024-05-10 10:39:56.5097|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'UserService.Controllers.UserController.CreateUser (UserService)'
+2024-05-10 10:39:56.5097|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJ2D08UV" completed keep alive response.
+2024-05-10 10:39:56.5185|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5145/user/create - 200 0 - 736.0093ms
+2024-05-10 10:42:07.6529|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJ2D08UV" disconnecting.
+2024-05-10 10:42:07.6529|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJ2D08UV" stopped.
+2024-05-10 10:42:07.6529|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3GPJ2D08UV" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 10:42:18.9113|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJ2D08V0" accepted.
+2024-05-10 10:42:18.9113|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJ2D08V0" started.
+2024-05-10 10:43:18.8286|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJ2D08V1" accepted.
+2024-05-10 10:43:18.8286|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJ2D08V1" started.
+2024-05-10 10:43:18.8286|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5145/user/verify/123456789 - - -
+2024-05-10 10:43:18.8286|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/user/verify/123456789'
+2024-05-10 10:43:18.8308|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint '405 HTTP Method Not Supported'
+2024-05-10 10:43:18.8308|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated.
+2024-05-10 10:43:18.8308|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-05-10 10:43:18.8308|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint '405 HTTP Method Not Supported'
+2024-05-10 10:43:18.8308|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint '405 HTTP Method Not Supported'
+2024-05-10 10:43:18.8308|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJ2D08V0" completed keep alive response.
+2024-05-10 10:43:18.8308|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5145/user/verify/123456789 - 405 0 - 3.8309ms
+2024-05-10 10:44:21.2059|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3GPJ2D08V1" received FIN.
+2024-05-10 10:44:21.2059|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3GPJ2D08V1" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 10:44:21.2059|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJ2D08V1" disconnecting.
+2024-05-10 10:44:21.2059|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJ2D08V1" stopped.
+2024-05-10 10:44:44.3985|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJ2D08V2" accepted.
+2024-05-10 10:44:44.3985|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJ2D08V2" started.
+2024-05-10 10:44:44.3985|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJ2D08V3" accepted.
+2024-05-10 10:44:44.3985|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJ2D08V3" started.
+2024-05-10 10:44:44.3985|DEBUG|Microsoft.AspNetCore.Server.Kestrel.BadRequests|Connection id "0HN3GPJ2D08V3" bad request data: "Detected a TLS handshake to an endpoint that does not have TLS enabled."|Microsoft.AspNetCore.Server.Kestrel.Core.BadHttpRequestException: Detected a TLS handshake to an endpoint that does not have TLS enabled.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.GetUnknownMethodLength(ReadOnlySpan`1 span)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.ParseRequestLine(TRequestHandler handler, ReadOnlySpan`1 requestLine)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.ParseRequestLine(TRequestHandler handler, SequenceReader`1& reader)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.TakeStartLine(SequenceReader`1& reader)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.ParseRequest(SequenceReader`1& reader)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.TryParseRequest(ReadResult result, Boolean& endConnection)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2024-05-10 10:44:44.3985|DEBUG|Microsoft.AspNetCore.Server.Kestrel.BadRequests|Connection id "0HN3GPJ2D08V2" bad request data: "Detected a TLS handshake to an endpoint that does not have TLS enabled."|Microsoft.AspNetCore.Server.Kestrel.Core.BadHttpRequestException: Detected a TLS handshake to an endpoint that does not have TLS enabled.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.GetUnknownMethodLength(ReadOnlySpan`1 span)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.ParseRequestLine(TRequestHandler handler, ReadOnlySpan`1 requestLine)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.ParseRequestLine(TRequestHandler handler, SequenceReader`1& reader)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.TakeStartLine(SequenceReader`1& reader)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.ParseRequest(SequenceReader`1& reader)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.TryParseRequest(ReadResult result, Boolean& endConnection)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2024-05-10 10:44:44.3985|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJ2D08V3" disconnecting.
+2024-05-10 10:44:44.3985|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJ2D08V2" disconnecting.
+2024-05-10 10:44:44.3985|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJ2D08V3" stopped.
+2024-05-10 10:44:44.3985|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJ2D08V2" stopped.
+2024-05-10 10:44:44.3985|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3GPJ2D08V3" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 10:44:44.3985|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3GPJ2D08V2" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 10:44:44.3985|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJ2D08V4" accepted.
+2024-05-10 10:44:44.3985|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJ2D08V4" started.
+2024-05-10 10:44:44.3985|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJ2D08V5" accepted.
+2024-05-10 10:44:44.3985|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJ2D08V5" started.
+2024-05-10 10:44:44.3985|DEBUG|Microsoft.AspNetCore.Server.Kestrel.BadRequests|Connection id "0HN3GPJ2D08V4" bad request data: "Detected a TLS handshake to an endpoint that does not have TLS enabled."|Microsoft.AspNetCore.Server.Kestrel.Core.BadHttpRequestException: Detected a TLS handshake to an endpoint that does not have TLS enabled.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.GetUnknownMethodLength(ReadOnlySpan`1 span)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.ParseRequestLine(TRequestHandler handler, ReadOnlySpan`1 requestLine)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.ParseRequestLine(TRequestHandler handler, SequenceReader`1& reader)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.TakeStartLine(SequenceReader`1& reader)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.ParseRequest(SequenceReader`1& reader)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.TryParseRequest(ReadResult result, Boolean& endConnection)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2024-05-10 10:44:44.3985|DEBUG|Microsoft.AspNetCore.Server.Kestrel.BadRequests|Connection id "0HN3GPJ2D08V5" bad request data: "Detected a TLS handshake to an endpoint that does not have TLS enabled."|Microsoft.AspNetCore.Server.Kestrel.Core.BadHttpRequestException: Detected a TLS handshake to an endpoint that does not have TLS enabled.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.GetUnknownMethodLength(ReadOnlySpan`1 span)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.ParseRequestLine(TRequestHandler handler, ReadOnlySpan`1 requestLine)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.ParseRequestLine(TRequestHandler handler, SequenceReader`1& reader)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.TakeStartLine(SequenceReader`1& reader)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.ParseRequest(SequenceReader`1& reader)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.TryParseRequest(ReadResult result, Boolean& endConnection)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2024-05-10 10:44:44.3985|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJ2D08V4" disconnecting.
+2024-05-10 10:44:44.3985|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3GPJ2D08V4" received FIN.
+2024-05-10 10:44:44.3985|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJ2D08V4" stopped.
+2024-05-10 10:44:44.3985|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJ2D08V5" disconnecting.
+2024-05-10 10:44:44.3985|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3GPJ2D08V4" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 10:44:44.3985|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJ2D08V5" stopped.
+2024-05-10 10:44:44.3985|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3GPJ2D08V5" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 10:45:29.4855|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJ2D08V0" disconnecting.
+2024-05-10 10:45:29.4855|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJ2D08V0" stopped.
+2024-05-10 10:45:29.4855|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3GPJ2D08V0" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 10:46:19.4653|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2024-05-10 10:46:19.4653|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping
+2024-05-10 10:46:19.4653|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped
+2024-05-10 10:46:22.7705|DEBUG|UserService.Program|init main
+2024-05-10 10:46:22.9230|INFO|UserService|Starting service
+2024-05-10 10:46:22.9388|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2024-05-10 10:46:22.9561|INFO|UserService|Controllers mapped
+2024-05-10 10:46:22.9561|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2024-05-10 10:46:22.9561|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\nicol\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-10 10:46:22.9561|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\nicol\AppData\Local\ASP.NET\DataProtection-Keys\key-62deea1d-8d11-441c-be40-2261222ab494.xml'.
+2024-05-10 10:46:22.9561|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\nicol\AppData\Local\ASP.NET\DataProtection-Keys\key-eaa35d66-8457-471f-9191-ec96edb4d1af.xml'.
+2024-05-10 10:46:22.9561|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {62deea1d-8d11-441c-be40-2261222ab494}.
+2024-05-10 10:46:22.9716|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {eaa35d66-8457-471f-9191-ec96edb4d1af}.
+2024-05-10 10:46:22.9716|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {62deea1d-8d11-441c-be40-2261222ab494} with expiration date 2024-07-21 13:26:32Z as default key.
+2024-05-10 10:46:22.9716|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 10:46:22.9716|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI.
+2024-05-10 10:46:22.9716|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 10:46:22.9716|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2024-05-10 10:46:22.9716|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2024-05-10 10:46:22.9716|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {62deea1d-8d11-441c-be40-2261222ab494} as the default key.
+2024-05-10 10:46:22.9716|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {62deea1d-8d11-441c-be40-2261222ab494} was loaded during application startup.
+2024-05-10 10:46:22.9970|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5145
+2024-05-10 10:46:22.9970|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly UserService
+2024-05-10 10:46:22.9970|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-10 10:46:22.9970|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-10 10:46:22.9970|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService
+2024-05-10 10:46:22.9970|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2024-05-10 10:46:47.0966|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3GPMT00S19" received FIN.
+2024-05-10 10:46:47.0966|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPMT00S19" accepted.
+2024-05-10 10:46:47.0966|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPMT00S19" started.
+2024-05-10 10:46:47.0966|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPMT00S1A" accepted.
+2024-05-10 10:46:47.0966|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPMT00S1A" started.
+2024-05-10 10:46:47.0966|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3GPMT00S19" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 10:46:47.0966|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPMT00S19" disconnecting.
+2024-05-10 10:46:47.0966|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPMT00S19" stopped.
+2024-05-10 10:46:47.1144|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5145/user/create - application/json 227
+2024-05-10 10:46:47.1144|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2024-05-10 10:46:47.1280|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/user/create'
+2024-05-10 10:46:47.1280|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'UserService.Controllers.UserController.CreateUser (UserService)' with route pattern 'User/create' is valid for the request path '/user/create'
+2024-05-10 10:46:47.1280|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'UserService.Controllers.UserController.CreateUser (UserService)'
+2024-05-10 10:46:47.1280|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated.
+2024-05-10 10:46:47.1491|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-05-10 10:46:47.1491|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect.
+2024-05-10 10:46:47.1491|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'UserService.Controllers.UserController.CreateUser (UserService)'
+2024-05-10 10:46:47.1596|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "CreateUser", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateUser(UserService.Models.UserModel) on controller UserService.Controllers.UserController (UserService).
+2024-05-10 10:46:47.1596|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2024-05-10 10:46:47.1596|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2024-05-10 10:46:47.1596|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-05-10 10:46:47.1596|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2024-05-10 10:46:47.1596|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-05-10 10:46:47.1596|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-10 10:46:47.2561|DEBUG|UserService.Repositories.IUserRepository|XYZ Service responding from 45.236.95.66
+2024-05-10 10:46:47.2561|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-10 10:46:47.2561|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'user' of type 'UserService.Models.UserModel' ...
+2024-05-10 10:46:47.2561|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'user' of type 'UserService.Models.UserModel' using the name '' in request data ...
+2024-05-10 10:46:47.2561|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-05-10 10:46:47.2561|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HN3GPMT00S1A", Request id "0HN3GPMT00S1A:00000001": started reading request body.
+2024-05-10 10:46:47.2561|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HN3GPMT00S1A", Request id "0HN3GPMT00S1A:00000001": done reading request body.
+2024-05-10 10:46:47.2561|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'UserService.Models.UserModel'
+2024-05-10 10:46:47.2561|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'user' of type 'UserService.Models.UserModel'.
+2024-05-10 10:46:47.2561|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'user' of type 'UserService.Models.UserModel'.
+2024-05-10 10:46:47.2561|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'user' of type 'UserService.Models.UserModel' ...
+2024-05-10 10:46:47.2684|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'user' of type 'UserService.Models.UserModel'.
+2024-05-10 10:46:47.4395|INFO|UserService.Repositories.IUserRepository|user created: UserService.Models.UserModel
+2024-05-10 10:46:47.4415|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing StatusCodeResult, setting HTTP status code 200
+2024-05-10 10:46:47.4415|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action UserService.Controllers.UserController.CreateUser (UserService) in 280.4419ms
+2024-05-10 10:46:47.4415|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'UserService.Controllers.UserController.CreateUser (UserService)'
+2024-05-10 10:46:47.4415|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPMT00S1A" completed keep alive response.
+2024-05-10 10:46:47.4415|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5145/user/create - 200 0 - 332.4364ms
+2024-05-10 10:47:51.6269|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPMT00S1B" accepted.
+2024-05-10 10:47:51.6269|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPMT00S1B" started.
+2024-05-10 10:47:51.6283|DEBUG|Microsoft.AspNetCore.Server.Kestrel.BadRequests|Connection id "0HN3GPMT00S1B" bad request data: "Detected a TLS handshake to an endpoint that does not have TLS enabled."|Microsoft.AspNetCore.Server.Kestrel.Core.BadHttpRequestException: Detected a TLS handshake to an endpoint that does not have TLS enabled.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.GetUnknownMethodLength(ReadOnlySpan`1 span)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.ParseRequestLine(TRequestHandler handler, ReadOnlySpan`1 requestLine)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.ParseRequestLine(TRequestHandler handler, SequenceReader`1& reader)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.TakeStartLine(SequenceReader`1& reader)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.ParseRequest(SequenceReader`1& reader)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.TryParseRequest(ReadResult result, Boolean& endConnection)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2024-05-10 10:47:51.6283|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPMT00S1B" disconnecting.
+2024-05-10 10:47:51.6283|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPMT00S1B" stopped.
+2024-05-10 10:47:51.6283|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3GPMT00S1B" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 10:47:51.6283|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPMT00S1C" accepted.
+2024-05-10 10:47:51.6283|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPMT00S1C" started.
+2024-05-10 10:47:51.6283|DEBUG|Microsoft.AspNetCore.Server.Kestrel.BadRequests|Connection id "0HN3GPMT00S1C" bad request data: "Detected a TLS handshake to an endpoint that does not have TLS enabled."|Microsoft.AspNetCore.Server.Kestrel.Core.BadHttpRequestException: Detected a TLS handshake to an endpoint that does not have TLS enabled.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.GetUnknownMethodLength(ReadOnlySpan`1 span)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.ParseRequestLine(TRequestHandler handler, ReadOnlySpan`1 requestLine)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.ParseRequestLine(TRequestHandler handler, SequenceReader`1& reader)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.TakeStartLine(SequenceReader`1& reader)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.ParseRequest(SequenceReader`1& reader)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.TryParseRequest(ReadResult result, Boolean& endConnection)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2024-05-10 10:47:51.6283|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPMT00S1C" disconnecting.
+2024-05-10 10:47:51.6283|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3GPMT00S1C" received FIN.
+2024-05-10 10:47:51.6283|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3GPMT00S1C" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 10:47:51.6283|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPMT00S1C" stopped.
+2024-05-10 10:47:51.8594|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPMT00S1D" accepted.
+2024-05-10 10:47:51.8594|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPMT00S1D" started.
+2024-05-10 10:47:51.8594|DEBUG|Microsoft.AspNetCore.Server.Kestrel.BadRequests|Connection id "0HN3GPMT00S1D" bad request data: "Detected a TLS handshake to an endpoint that does not have TLS enabled."|Microsoft.AspNetCore.Server.Kestrel.Core.BadHttpRequestException: Detected a TLS handshake to an endpoint that does not have TLS enabled.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.GetUnknownMethodLength(ReadOnlySpan`1 span)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.ParseRequestLine(TRequestHandler handler, ReadOnlySpan`1 requestLine)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.ParseRequestLine(TRequestHandler handler, SequenceReader`1& reader)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.TakeStartLine(SequenceReader`1& reader)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.ParseRequest(SequenceReader`1& reader)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.TryParseRequest(ReadResult result, Boolean& endConnection)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2024-05-10 10:47:51.8594|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPMT00S1D" disconnecting.
+2024-05-10 10:47:51.8594|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPMT00S1D" stopped.
+2024-05-10 10:47:51.8594|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3GPMT00S1D" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 10:47:51.8594|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPMT00S1E" accepted.
+2024-05-10 10:47:51.8594|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPMT00S1E" started.
+2024-05-10 10:47:51.8594|DEBUG|Microsoft.AspNetCore.Server.Kestrel.BadRequests|Connection id "0HN3GPMT00S1E" bad request data: "Detected a TLS handshake to an endpoint that does not have TLS enabled."|Microsoft.AspNetCore.Server.Kestrel.Core.BadHttpRequestException: Detected a TLS handshake to an endpoint that does not have TLS enabled.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.GetUnknownMethodLength(ReadOnlySpan`1 span)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.ParseRequestLine(TRequestHandler handler, ReadOnlySpan`1 requestLine)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.ParseRequestLine(TRequestHandler handler, SequenceReader`1& reader)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.TakeStartLine(SequenceReader`1& reader)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.ParseRequest(SequenceReader`1& reader)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.TryParseRequest(ReadResult result, Boolean& endConnection)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2024-05-10 10:47:51.8594|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPMT00S1E" disconnecting.
+2024-05-10 10:47:51.8594|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPMT00S1E" stopped.
+2024-05-10 10:47:51.8594|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3GPMT00S1E" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 10:48:05.3532|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPMT00S1F" accepted.
+2024-05-10 10:48:05.3532|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPMT00S1F" started.
+2024-05-10 10:48:05.3532|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPMT00S1G" accepted.
+2024-05-10 10:48:05.3532|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPMT00S1G" started.
+2024-05-10 10:48:05.3532|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5145/user/verify/123456789 - - -
+2024-05-10 10:48:05.3532|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/user/verify/123456789'
+2024-05-10 10:48:05.3532|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'UserService.Controllers.UserController.VerifyUser (UserService)' with route pattern 'User/verify/{id}' is valid for the request path '/user/verify/123456789'
+2024-05-10 10:48:05.3532|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'UserService.Controllers.UserController.VerifyUser (UserService)'
+2024-05-10 10:48:05.3532|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated.
+2024-05-10 10:48:05.3532|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-05-10 10:48:05.3532|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'UserService.Controllers.UserController.VerifyUser (UserService)'
+2024-05-10 10:48:05.3532|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "VerifyUser", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult VerifyUser(System.String) on controller UserService.Controllers.UserController (UserService).
+2024-05-10 10:48:05.3532|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2024-05-10 10:48:05.3532|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2024-05-10 10:48:05.3532|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-05-10 10:48:05.3532|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2024-05-10 10:48:05.3532|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-05-10 10:48:05.3532|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-10 10:48:05.3532|DEBUG|UserService.Repositories.IUserRepository|XYZ Service responding from 45.236.95.66
+2024-05-10 10:48:05.3532|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-10 10:48:05.3532|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'id' of type 'System.String' ...
+2024-05-10 10:48:05.3532|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'id' of type 'System.String' using the name 'id' in request data ...
+2024-05-10 10:48:05.3532|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'id' of type 'System.String'.
+2024-05-10 10:48:05.3532|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'id' of type 'System.String'.
+2024-05-10 10:48:05.3532|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'id' of type 'System.String' ...
+2024-05-10 10:48:05.3532|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'id' of type 'System.String'.
+2024-05-10 10:48:05.3793|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing StatusCodeResult, setting HTTP status code 200
+2024-05-10 10:48:05.3793|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action UserService.Controllers.UserController.VerifyUser (UserService) in 19.8028ms
+2024-05-10 10:48:05.3793|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'UserService.Controllers.UserController.VerifyUser (UserService)'
+2024-05-10 10:48:05.3793|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPMT00S1F" completed keep alive response.
+2024-05-10 10:48:05.3793|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5145/user/verify/123456789 - 200 0 - 25.2101ms
+2024-05-10 10:48:05.4801|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5145/favicon.ico - - -
+2024-05-10 10:48:05.4801|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/favicon.ico'
+2024-05-10 10:48:05.4801|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2024-05-10 10:48:05.4801|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated.
+2024-05-10 10:48:05.4801|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter
+2024-05-10 10:48:05.4801|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPMT00S1F" completed keep alive response.
+2024-05-10 10:48:05.4801|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5145/favicon.ico - 404 0 - 2.2949ms
+2024-05-10 10:48:05.4801|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5145/favicon.ico, Response status code: 404
+2024-05-10 10:48:50.7625|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2024-05-10 10:48:50.7625|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping
+2024-05-10 10:48:50.7625|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPMT00S1A" disconnecting.
+2024-05-10 10:48:50.7625|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPMT00S1F" disconnecting.
+2024-05-10 10:48:50.7625|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPMT00S1A" stopped.
+2024-05-10 10:48:50.7625|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPMT00S1F" stopped.
+2024-05-10 10:48:50.7625|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3GPMT00S1A" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 10:48:50.7625|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3GPMT00S1F" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 10:48:50.7625|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPMT00S1G" disconnecting.
+2024-05-10 10:48:50.7625|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPMT00S1G" stopped.
+2024-05-10 10:48:50.7625|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3GPMT00S1G" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 10:48:50.7625|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped
+2024-05-10 10:50:19.8095|DEBUG|UserService.Program|init main
+2024-05-10 10:50:19.9656|INFO|UserService|Starting service
+2024-05-10 10:50:19.9829|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2024-05-10 10:50:20.0011|INFO|UserService|Controllers mapped
+2024-05-10 10:50:20.0011|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2024-05-10 10:50:20.0081|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\nicol\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-10 10:50:20.0081|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\nicol\AppData\Local\ASP.NET\DataProtection-Keys\key-62deea1d-8d11-441c-be40-2261222ab494.xml'.
+2024-05-10 10:50:20.0081|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\nicol\AppData\Local\ASP.NET\DataProtection-Keys\key-eaa35d66-8457-471f-9191-ec96edb4d1af.xml'.
+2024-05-10 10:50:20.0081|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {62deea1d-8d11-441c-be40-2261222ab494}.
+2024-05-10 10:50:20.0081|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {eaa35d66-8457-471f-9191-ec96edb4d1af}.
+2024-05-10 10:50:20.0203|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {62deea1d-8d11-441c-be40-2261222ab494} with expiration date 2024-07-21 13:26:32Z as default key.
+2024-05-10 10:50:20.0203|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 10:50:20.0203|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI.
+2024-05-10 10:50:20.0203|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 10:50:20.0203|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2024-05-10 10:50:20.0203|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2024-05-10 10:50:20.0203|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {62deea1d-8d11-441c-be40-2261222ab494} as the default key.
+2024-05-10 10:50:20.0203|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {62deea1d-8d11-441c-be40-2261222ab494} was loaded during application startup.
+2024-05-10 10:50:20.0412|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5145
+2024-05-10 10:50:20.0412|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly UserService
+2024-05-10 10:50:20.0412|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-10 10:50:20.0412|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-10 10:50:20.0412|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService
+2024-05-10 10:50:20.0412|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2024-05-10 10:50:37.5143|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPP1LENUM" accepted.
+2024-05-10 10:50:37.5143|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPP1LENUM" started.
+2024-05-10 10:50:37.5210|DEBUG|Microsoft.AspNetCore.Server.Kestrel.BadRequests|Connection id "0HN3GPP1LENUM" bad request data: "Detected a TLS handshake to an endpoint that does not have TLS enabled."|Microsoft.AspNetCore.Server.Kestrel.Core.BadHttpRequestException: Detected a TLS handshake to an endpoint that does not have TLS enabled.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.GetUnknownMethodLength(ReadOnlySpan`1 span)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.ParseRequestLine(TRequestHandler handler, ReadOnlySpan`1 requestLine)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.ParseRequestLine(TRequestHandler handler, SequenceReader`1& reader)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.TakeStartLine(SequenceReader`1& reader)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.ParseRequest(SequenceReader`1& reader)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.TryParseRequest(ReadResult result, Boolean& endConnection)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2024-05-10 10:50:37.5210|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPP1LENUM" disconnecting.
+2024-05-10 10:50:37.5210|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPP1LENUM" stopped.
+2024-05-10 10:50:37.5210|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3GPP1LENUM" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 10:50:37.5210|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPP1LENUN" accepted.
+2024-05-10 10:50:37.5210|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPP1LENUN" started.
+2024-05-10 10:50:37.5210|DEBUG|Microsoft.AspNetCore.Server.Kestrel.BadRequests|Connection id "0HN3GPP1LENUN" bad request data: "Detected a TLS handshake to an endpoint that does not have TLS enabled."|Microsoft.AspNetCore.Server.Kestrel.Core.BadHttpRequestException: Detected a TLS handshake to an endpoint that does not have TLS enabled.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.GetUnknownMethodLength(ReadOnlySpan`1 span)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.ParseRequestLine(TRequestHandler handler, ReadOnlySpan`1 requestLine)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.ParseRequestLine(TRequestHandler handler, SequenceReader`1& reader)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.TakeStartLine(SequenceReader`1& reader)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.ParseRequest(SequenceReader`1& reader)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.TryParseRequest(ReadResult result, Boolean& endConnection)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2024-05-10 10:50:37.5210|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPP1LENUN" disconnecting.
+2024-05-10 10:50:37.5210|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPP1LENUN" stopped.
+2024-05-10 10:50:37.5210|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3GPP1LENUN" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 10:50:42.0755|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPP1LENUO" accepted.
+2024-05-10 10:50:42.0755|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPP1LENUO" started.
+2024-05-10 10:50:42.0755|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPP1LENUP" accepted.
+2024-05-10 10:50:42.0755|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPP1LENUP" started.
+2024-05-10 10:50:42.0851|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5145/user/verify/123456789 - - -
+2024-05-10 10:50:42.0851|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2024-05-10 10:50:42.0851|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/user/verify/123456789'
+2024-05-10 10:50:42.0970|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'UserService.Controllers.UserController.VerifyUser (UserService)' with route pattern 'User/verify/{id}' is valid for the request path '/user/verify/123456789'
+2024-05-10 10:50:42.0970|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'UserService.Controllers.UserController.VerifyUser (UserService)'
+2024-05-10 10:50:42.0970|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated.
+2024-05-10 10:50:42.1157|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-05-10 10:50:42.1157|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect.
+2024-05-10 10:50:42.1157|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'UserService.Controllers.UserController.VerifyUser (UserService)'
+2024-05-10 10:50:42.1157|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "VerifyUser", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult VerifyUser(System.String) on controller UserService.Controllers.UserController (UserService).
+2024-05-10 10:50:42.1157|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2024-05-10 10:50:42.1157|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2024-05-10 10:50:42.1157|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-05-10 10:50:42.1157|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2024-05-10 10:50:42.1157|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-05-10 10:50:42.1157|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-10 10:50:42.2055|DEBUG|UserService.Repositories.IUserRepository|XYZ Service responding from 45.236.95.66
+2024-05-10 10:50:42.2055|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-10 10:50:42.2073|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'id' of type 'System.String' ...
+2024-05-10 10:50:42.2073|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'id' of type 'System.String' using the name 'id' in request data ...
+2024-05-10 10:50:42.2073|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'id' of type 'System.String'.
+2024-05-10 10:50:42.2073|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'id' of type 'System.String'.
+2024-05-10 10:50:42.2073|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'id' of type 'System.String' ...
+2024-05-10 10:50:42.2073|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'id' of type 'System.String'.
+2024-05-10 10:50:42.2691|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2024-05-10 10:50:42.2691|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2024-05-10 10:50:42.2691|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-05-10 10:50:42.2691|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result.
+2024-05-10 10:50:42.2691|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2024-05-10 10:50:42.2691|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.String'.
+2024-05-10 10:50:42.2691|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action UserService.Controllers.UserController.VerifyUser (UserService) in 148.8176ms
+2024-05-10 10:50:42.2691|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'UserService.Controllers.UserController.VerifyUser (UserService)'
+2024-05-10 10:50:42.2691|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPP1LENUO" completed keep alive response.
+2024-05-10 10:50:42.2691|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5145/user/verify/123456789 - 200 - text/plain;+charset=utf-8 194.5006ms
+2024-05-10 10:51:36.4184|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2024-05-10 10:51:36.4184|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping
+2024-05-10 10:51:36.4184|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPP1LENUP" disconnecting.
+2024-05-10 10:51:36.4184|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPP1LENUO" disconnecting.
+2024-05-10 10:51:36.4184|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPP1LENUP" stopped.
+2024-05-10 10:51:36.4184|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPP1LENUO" stopped.
+2024-05-10 10:51:36.4184|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3GPP1LENUP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 10:51:36.4184|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3GPP1LENUO" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 10:51:36.4184|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped
