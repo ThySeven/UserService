@@ -23,6 +23,35 @@ namespace UserService.Controllers
             _logger.LogDebug(1, $"XYZ Service responding from {_ipaddr}");
         }
 
+        [HttpGet("{id}")]
+        public IActionResult GetUser(string id)
+        {
+            try
+            {
+                return Ok(_userRepository.GetById(id));
+            }
+            catch (Exception ex)
+            {
+                _logger.LogCritical($"Failed to find user with id: {id}: {ex}");
+                return BadRequest("Bad request");
+            }
+        }
+
+        [HttpPut("update")]
+        public IActionResult UpdateUser(UserModel user)
+        {
+            try
+            {
+                _userRepository.UpdateUser(user);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogCritical($"Failed to find user with id: {user.id}: {ex}");
+                return BadRequest("Bad request");
+            }
+        }
+
         [HttpPost("create")]
         public IActionResult CreateUser(UserModel user)
         {

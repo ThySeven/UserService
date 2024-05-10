@@ -2678,3 +2678,727 @@
 2024-05-10 10:51:36.4184|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3GPP1LENUP" sending FIN because: "The Socket transport's send loop completed gracefully."
 2024-05-10 10:51:36.4184|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3GPP1LENUO" sending FIN because: "The Socket transport's send loop completed gracefully."
 2024-05-10 10:51:36.4184|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped
+2024-05-10 16:33:31.1280|DEBUG|UserService.Program|init main
+2024-05-10 16:38:57.6920|DEBUG|UserService.Program|init main
+2024-05-10 16:38:58.2015|INFO|UserService|Starting service
+2024-05-10 16:38:58.3399|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2024-05-10 16:38:58.3902|INFO|UserService|Controllers mapped
+2024-05-10 16:38:58.3902|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2024-05-10 16:38:58.4295|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\nicol\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-10 16:38:58.4295|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\nicol\AppData\Local\ASP.NET\DataProtection-Keys\key-62deea1d-8d11-441c-be40-2261222ab494.xml'.
+2024-05-10 16:38:58.4431|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\nicol\AppData\Local\ASP.NET\DataProtection-Keys\key-eaa35d66-8457-471f-9191-ec96edb4d1af.xml'.
+2024-05-10 16:38:58.4431|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {62deea1d-8d11-441c-be40-2261222ab494}.
+2024-05-10 16:38:58.4431|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {eaa35d66-8457-471f-9191-ec96edb4d1af}.
+2024-05-10 16:38:58.4567|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {62deea1d-8d11-441c-be40-2261222ab494} with expiration date 2024-07-21 13:26:32Z as default key.
+2024-05-10 16:38:58.4567|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 16:38:58.4567|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI.
+2024-05-10 16:38:58.4567|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 16:38:58.4567|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2024-05-10 16:38:58.4567|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2024-05-10 16:38:58.4567|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {62deea1d-8d11-441c-be40-2261222ab494} as the default key.
+2024-05-10 16:38:58.4567|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {62deea1d-8d11-441c-be40-2261222ab494} was loaded during application startup.
+2024-05-10 16:38:58.5508|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5145
+2024-05-10 16:38:58.5508|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly UserService
+2024-05-10 16:38:58.5508|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-10 16:38:58.5508|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-10 16:38:58.5508|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService
+2024-05-10 16:38:58.5508|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2024-05-10 16:39:46.8765|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3GVS524O9D" received FIN.
+2024-05-10 16:39:46.8796|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GVS524O9D" accepted.
+2024-05-10 16:39:46.8796|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GVS524O9D" started.
+2024-05-10 16:39:46.8796|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GVS524O9E" accepted.
+2024-05-10 16:39:46.8796|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GVS524O9E" started.
+2024-05-10 16:39:46.8796|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3GVS524O9D" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 16:39:46.8796|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GVS524O9D" disconnecting.
+2024-05-10 16:39:46.8796|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GVS524O9D" stopped.
+2024-05-10 16:39:46.9184|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 PUT http://localhost:5145/user/update - application/json 229
+2024-05-10 16:39:46.9184|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2024-05-10 16:39:46.9307|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/user/update'
+2024-05-10 16:39:46.9307|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'UserService.Controllers.UserController.UpdateUser (UserService)' with route pattern 'User/update' is valid for the request path '/user/update'
+2024-05-10 16:39:46.9307|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'UserService.Controllers.UserController.UpdateUser (UserService)'
+2024-05-10 16:39:46.9473|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated.
+2024-05-10 16:39:46.9799|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-05-10 16:39:46.9799|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect.
+2024-05-10 16:39:46.9799|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'UserService.Controllers.UserController.UpdateUser (UserService)'
+2024-05-10 16:39:46.9930|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "UpdateUser", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateUser(UserService.Models.UserModel) on controller UserService.Controllers.UserController (UserService).
+2024-05-10 16:39:46.9930|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2024-05-10 16:39:46.9930|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2024-05-10 16:39:46.9930|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-05-10 16:39:46.9930|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2024-05-10 16:39:46.9930|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-05-10 16:39:46.9930|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-10 16:39:47.3759|DEBUG|UserService.Repositories.IUserRepository|XYZ Service responding from 45.236.95.66
+2024-05-10 16:39:47.3759|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-10 16:39:47.4005|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'user' of type 'UserService.Models.UserModel' ...
+2024-05-10 16:39:47.4005|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'user' of type 'UserService.Models.UserModel' using the name '' in request data ...
+2024-05-10 16:39:47.4005|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-05-10 16:39:47.4005|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HN3GVS524O9E", Request id "0HN3GVS524O9E:00000001": started reading request body.
+2024-05-10 16:39:47.4005|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HN3GVS524O9E", Request id "0HN3GVS524O9E:00000001": done reading request body.
+2024-05-10 16:39:47.4005|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'UserService.Models.UserModel'
+2024-05-10 16:39:47.4005|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'user' of type 'UserService.Models.UserModel'.
+2024-05-10 16:39:47.4005|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'user' of type 'UserService.Models.UserModel'.
+2024-05-10 16:39:47.4005|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'user' of type 'UserService.Models.UserModel' ...
+2024-05-10 16:39:47.4111|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'user' of type 'UserService.Models.UserModel'.
+2024-05-10 16:39:47.4111|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter|The request has model state errors, returning an error response.
+2024-05-10 16:39:47.4111|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2024-05-10 16:39:47.4111|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2024-05-10 16:39:47.4111|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2024-05-10 16:39:47.4111|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types 'application/problem+json, application/problem+xml, application/problem+json, application/problem+xml'.
+2024-05-10 16:39:47.4111|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2024-05-10 16:39:47.4111|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-05-10 16:39:47.4276|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action UserService.Controllers.UserController.UpdateUser (UserService) in 430.0495ms
+2024-05-10 16:39:47.4276|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'UserService.Controllers.UserController.UpdateUser (UserService)'
+2024-05-10 16:39:47.4276|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GVS524O9E" completed keep alive response.
+2024-05-10 16:39:47.4276|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 PUT http://localhost:5145/user/update - 400 - application/problem+json;+charset=utf-8 510.8945ms
+2024-05-10 16:41:58.3325|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GVS524O9E" disconnecting.
+2024-05-10 16:41:58.3325|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GVS524O9E" stopped.
+2024-05-10 16:41:58.3325|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3GVS524O9E" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 16:42:44.4488|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GVS524O9F" accepted.
+2024-05-10 16:42:44.4488|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3GVS524O9F" received FIN.
+2024-05-10 16:42:44.4488|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GVS524O9F" started.
+2024-05-10 16:42:44.4488|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GVS524O9G" accepted.
+2024-05-10 16:42:44.4488|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3GVS524O9F" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 16:42:44.4488|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GVS524O9G" started.
+2024-05-10 16:42:44.4488|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GVS524O9F" disconnecting.
+2024-05-10 16:42:44.4488|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GVS524O9F" stopped.
+2024-05-10 16:42:44.4488|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 PUT http://localhost:5145/user/update - application/json 229
+2024-05-10 16:42:44.4488|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/user/update'
+2024-05-10 16:42:44.4488|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'UserService.Controllers.UserController.UpdateUser (UserService)' with route pattern 'User/update' is valid for the request path '/user/update'
+2024-05-10 16:42:44.4488|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'UserService.Controllers.UserController.UpdateUser (UserService)'
+2024-05-10 16:42:44.4488|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated.
+2024-05-10 16:42:44.4488|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-05-10 16:42:44.4488|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'UserService.Controllers.UserController.UpdateUser (UserService)'
+2024-05-10 16:42:44.4488|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "UpdateUser", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateUser(UserService.Models.UserModel) on controller UserService.Controllers.UserController (UserService).
+2024-05-10 16:42:44.4488|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2024-05-10 16:42:44.4488|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2024-05-10 16:42:44.4488|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-05-10 16:42:44.4488|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2024-05-10 16:42:44.4488|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-05-10 16:42:44.4488|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-10 16:42:44.4488|DEBUG|UserService.Repositories.IUserRepository|XYZ Service responding from 45.236.95.66
+2024-05-10 16:42:44.4488|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-10 16:42:44.4488|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'user' of type 'UserService.Models.UserModel' ...
+2024-05-10 16:42:44.4488|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'user' of type 'UserService.Models.UserModel' using the name '' in request data ...
+2024-05-10 16:42:44.4488|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-05-10 16:42:44.4488|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HN3GVS524O9G", Request id "0HN3GVS524O9G:00000001": started reading request body.
+2024-05-10 16:42:44.4488|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HN3GVS524O9G", Request id "0HN3GVS524O9G:00000001": done reading request body.
+2024-05-10 16:42:44.4554|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'UserService.Models.UserModel'
+2024-05-10 16:42:44.4554|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'user' of type 'UserService.Models.UserModel'.
+2024-05-10 16:42:44.4554|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'user' of type 'UserService.Models.UserModel'.
+2024-05-10 16:42:44.4554|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'user' of type 'UserService.Models.UserModel' ...
+2024-05-10 16:42:44.4554|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'user' of type 'UserService.Models.UserModel'.
+2024-05-10 16:42:44.4554|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter|The request has model state errors, returning an error response.
+2024-05-10 16:42:44.4554|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2024-05-10 16:42:44.4554|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2024-05-10 16:42:44.4554|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2024-05-10 16:42:44.4554|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types 'application/problem+json, application/problem+xml, application/problem+json, application/problem+xml'.
+2024-05-10 16:42:44.4554|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2024-05-10 16:42:44.4554|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-05-10 16:42:44.4554|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action UserService.Controllers.UserController.UpdateUser (UserService) in 1.9619ms
+2024-05-10 16:42:44.4554|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'UserService.Controllers.UserController.UpdateUser (UserService)'
+2024-05-10 16:42:44.4554|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GVS524O9G" completed keep alive response.
+2024-05-10 16:42:44.4554|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 PUT http://localhost:5145/user/update - 400 - application/problem+json;+charset=utf-8 5.7462ms
+2024-05-10 16:42:54.3703|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5145/user/123456789 - application/json 229
+2024-05-10 16:42:54.3703|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/user/123456789'
+2024-05-10 16:42:54.3703|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'UserService.Controllers.UserController.GetUser (UserService)' with route pattern 'User/{id}' is valid for the request path '/user/123456789'
+2024-05-10 16:42:54.3703|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'UserService.Controllers.UserController.GetUser (UserService)'
+2024-05-10 16:42:54.3703|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated.
+2024-05-10 16:42:54.3703|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-05-10 16:42:54.3703|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'UserService.Controllers.UserController.GetUser (UserService)'
+2024-05-10 16:42:54.3703|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetUser", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetUser(System.String) on controller UserService.Controllers.UserController (UserService).
+2024-05-10 16:42:54.3703|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2024-05-10 16:42:54.3703|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2024-05-10 16:42:54.3703|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-05-10 16:42:54.3703|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2024-05-10 16:42:54.3703|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-05-10 16:42:54.3703|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-10 16:42:54.3703|DEBUG|UserService.Repositories.IUserRepository|XYZ Service responding from 45.236.95.66
+2024-05-10 16:42:54.3703|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-10 16:42:54.3703|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'id' of type 'System.String' ...
+2024-05-10 16:42:54.3703|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'id' of type 'System.String' using the name 'id' in request data ...
+2024-05-10 16:42:54.3703|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'id' of type 'System.String'.
+2024-05-10 16:42:54.3703|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'id' of type 'System.String'.
+2024-05-10 16:42:54.3703|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'id' of type 'System.String' ...
+2024-05-10 16:42:54.3703|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'id' of type 'System.String'.
+2024-05-10 16:42:54.4467|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing StatusCodeResult, setting HTTP status code 200
+2024-05-10 16:42:54.4467|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action UserService.Controllers.UserController.GetUser (UserService) in 71.1739ms
+2024-05-10 16:42:54.4467|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'UserService.Controllers.UserController.GetUser (UserService)'
+2024-05-10 16:42:54.4467|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GVS524O9G" completed keep alive response.
+2024-05-10 16:42:54.4467|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5145/user/123456789 - 200 0 - 76.6373ms
+2024-05-10 16:42:54.4467|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HN3GVS524O9G", Request id "0HN3GVS524O9G:00000002": started reading request body.
+2024-05-10 16:42:54.4467|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HN3GVS524O9G", Request id "0HN3GVS524O9G:00000002": done reading request body.
+2024-05-10 16:43:45.9919|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5145/user/123456789 - application/json 229
+2024-05-10 16:43:45.9919|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/user/123456789'
+2024-05-10 16:43:45.9919|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'UserService.Controllers.UserController.GetUser (UserService)' with route pattern 'User/{id}' is valid for the request path '/user/123456789'
+2024-05-10 16:43:45.9919|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'UserService.Controllers.UserController.GetUser (UserService)'
+2024-05-10 16:43:45.9919|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated.
+2024-05-10 16:43:45.9919|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-05-10 16:43:45.9919|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'UserService.Controllers.UserController.GetUser (UserService)'
+2024-05-10 16:43:45.9919|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetUser", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetUser(System.String) on controller UserService.Controllers.UserController (UserService).
+2024-05-10 16:43:45.9919|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2024-05-10 16:43:45.9919|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2024-05-10 16:43:45.9919|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-05-10 16:43:45.9919|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2024-05-10 16:43:45.9919|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-05-10 16:43:45.9919|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-10 16:43:45.9919|DEBUG|UserService.Repositories.IUserRepository|XYZ Service responding from 45.236.95.66
+2024-05-10 16:43:45.9919|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-10 16:43:45.9919|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'id' of type 'System.String' ...
+2024-05-10 16:43:45.9919|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'id' of type 'System.String' using the name 'id' in request data ...
+2024-05-10 16:43:45.9919|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'id' of type 'System.String'.
+2024-05-10 16:43:45.9919|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'id' of type 'System.String'.
+2024-05-10 16:43:45.9919|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'id' of type 'System.String' ...
+2024-05-10 16:43:45.9919|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'id' of type 'System.String'.
+2024-05-10 16:43:45.9919|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing StatusCodeResult, setting HTTP status code 200
+2024-05-10 16:43:45.9919|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action UserService.Controllers.UserController.GetUser (UserService) in 3.2122ms
+2024-05-10 16:43:45.9919|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'UserService.Controllers.UserController.GetUser (UserService)'
+2024-05-10 16:43:45.9919|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GVS524O9G" completed keep alive response.
+2024-05-10 16:43:45.9919|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5145/user/123456789 - 200 0 - 4.4419ms
+2024-05-10 16:43:45.9919|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HN3GVS524O9G", Request id "0HN3GVS524O9G:00000003": started reading request body.
+2024-05-10 16:43:45.9919|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HN3GVS524O9G", Request id "0HN3GVS524O9G:00000003": done reading request body.
+2024-05-10 16:43:56.1126|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5145/user/ - application/json 229
+2024-05-10 16:43:56.1126|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/user/'
+2024-05-10 16:43:56.1126|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2024-05-10 16:43:56.1126|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated.
+2024-05-10 16:43:56.1126|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter
+2024-05-10 16:43:56.1126|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GVS524O9G" completed keep alive response.
+2024-05-10 16:43:56.1126|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5145/user/ - 404 0 - 1.7603ms
+2024-05-10 16:43:56.1126|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5145/user/, Response status code: 404
+2024-05-10 16:43:56.1126|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HN3GVS524O9G", Request id "0HN3GVS524O9G:00000004": started reading request body.
+2024-05-10 16:43:56.1126|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HN3GVS524O9G", Request id "0HN3GVS524O9G:00000004": done reading request body.
+2024-05-10 16:44:02.1649|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5145/user/123456789 - application/json 229
+2024-05-10 16:44:02.1649|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/user/123456789'
+2024-05-10 16:44:02.1649|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'UserService.Controllers.UserController.GetUser (UserService)' with route pattern 'User/{id}' is valid for the request path '/user/123456789'
+2024-05-10 16:44:02.1649|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'UserService.Controllers.UserController.GetUser (UserService)'
+2024-05-10 16:44:02.1649|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated.
+2024-05-10 16:44:02.1649|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-05-10 16:44:02.1649|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'UserService.Controllers.UserController.GetUser (UserService)'
+2024-05-10 16:44:02.1649|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetUser", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetUser(System.String) on controller UserService.Controllers.UserController (UserService).
+2024-05-10 16:44:02.1649|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2024-05-10 16:44:02.1649|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2024-05-10 16:44:02.1649|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-05-10 16:44:02.1649|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2024-05-10 16:44:02.1649|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-05-10 16:44:02.1649|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-10 16:44:02.1649|DEBUG|UserService.Repositories.IUserRepository|XYZ Service responding from 45.236.95.66
+2024-05-10 16:44:02.1649|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-10 16:44:02.1649|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'id' of type 'System.String' ...
+2024-05-10 16:44:02.1649|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'id' of type 'System.String' using the name 'id' in request data ...
+2024-05-10 16:44:02.1649|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'id' of type 'System.String'.
+2024-05-10 16:44:02.1649|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'id' of type 'System.String'.
+2024-05-10 16:44:02.1649|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'id' of type 'System.String' ...
+2024-05-10 16:44:02.1649|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'id' of type 'System.String'.
+2024-05-10 16:44:02.1649|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing StatusCodeResult, setting HTTP status code 200
+2024-05-10 16:44:02.1649|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action UserService.Controllers.UserController.GetUser (UserService) in 2.0473ms
+2024-05-10 16:44:02.1649|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'UserService.Controllers.UserController.GetUser (UserService)'
+2024-05-10 16:44:02.1649|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GVS524O9G" completed keep alive response.
+2024-05-10 16:44:02.1649|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5145/user/123456789 - 200 0 - 2.8282ms
+2024-05-10 16:44:02.1649|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HN3GVS524O9G", Request id "0HN3GVS524O9G:00000005": started reading request body.
+2024-05-10 16:44:02.1649|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HN3GVS524O9G", Request id "0HN3GVS524O9G:00000005": done reading request body.
+2024-05-10 16:45:38.0358|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5145/user/123456789 - application/json 229
+2024-05-10 16:45:38.0358|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/user/123456789'
+2024-05-10 16:45:38.0358|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'UserService.Controllers.UserController.GetUser (UserService)' with route pattern 'User/{id}' is valid for the request path '/user/123456789'
+2024-05-10 16:45:38.0358|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'UserService.Controllers.UserController.GetUser (UserService)'
+2024-05-10 16:45:38.0358|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated.
+2024-05-10 16:45:38.0358|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-05-10 16:45:38.0358|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'UserService.Controllers.UserController.GetUser (UserService)'
+2024-05-10 16:45:38.0358|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetUser", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetUser(System.String) on controller UserService.Controllers.UserController (UserService).
+2024-05-10 16:45:38.0358|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2024-05-10 16:45:38.0358|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2024-05-10 16:45:38.0358|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-05-10 16:45:38.0358|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2024-05-10 16:45:38.0358|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-05-10 16:45:38.0358|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-10 16:45:38.0358|DEBUG|UserService.Repositories.IUserRepository|XYZ Service responding from 45.236.95.66
+2024-05-10 16:45:38.0358|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-10 16:45:38.0358|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'id' of type 'System.String' ...
+2024-05-10 16:45:38.0358|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'id' of type 'System.String' using the name 'id' in request data ...
+2024-05-10 16:45:38.0358|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'id' of type 'System.String'.
+2024-05-10 16:45:38.0358|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'id' of type 'System.String'.
+2024-05-10 16:45:38.0358|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'id' of type 'System.String' ...
+2024-05-10 16:45:38.0358|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'id' of type 'System.String'.
+2024-05-10 16:45:38.0358|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing StatusCodeResult, setting HTTP status code 200
+2024-05-10 16:45:38.0358|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action UserService.Controllers.UserController.GetUser (UserService) in 1.6485ms
+2024-05-10 16:45:38.0358|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'UserService.Controllers.UserController.GetUser (UserService)'
+2024-05-10 16:45:38.0358|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GVS524O9G" completed keep alive response.
+2024-05-10 16:45:38.0358|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5145/user/123456789 - 200 0 - 3.2089ms
+2024-05-10 16:45:38.0358|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HN3GVS524O9G", Request id "0HN3GVS524O9G:00000006": started reading request body.
+2024-05-10 16:45:38.0358|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HN3GVS524O9G", Request id "0HN3GVS524O9G:00000006": done reading request body.
+2024-05-10 16:46:18.1333|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5145/user/create - application/json 229
+2024-05-10 16:46:18.1333|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/user/create'
+2024-05-10 16:46:18.1333|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'UserService.Controllers.UserController.CreateUser (UserService)' with route pattern 'User/create' is valid for the request path '/user/create'
+2024-05-10 16:46:18.1333|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'UserService.Controllers.UserController.CreateUser (UserService)'
+2024-05-10 16:46:18.1333|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated.
+2024-05-10 16:46:18.1333|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-05-10 16:46:18.1333|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'UserService.Controllers.UserController.CreateUser (UserService)'
+2024-05-10 16:46:18.1333|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "CreateUser", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateUser(UserService.Models.UserModel) on controller UserService.Controllers.UserController (UserService).
+2024-05-10 16:46:18.1333|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2024-05-10 16:46:18.1333|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2024-05-10 16:46:18.1333|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-05-10 16:46:18.1333|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2024-05-10 16:46:18.1333|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-05-10 16:46:18.1333|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-10 16:46:18.1333|DEBUG|UserService.Repositories.IUserRepository|XYZ Service responding from 45.236.95.66
+2024-05-10 16:46:18.1333|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-10 16:46:18.1333|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'user' of type 'UserService.Models.UserModel' ...
+2024-05-10 16:46:18.1333|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'user' of type 'UserService.Models.UserModel' using the name '' in request data ...
+2024-05-10 16:46:18.1333|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-05-10 16:46:18.1333|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HN3GVS524O9G", Request id "0HN3GVS524O9G:00000007": started reading request body.
+2024-05-10 16:46:18.1333|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HN3GVS524O9G", Request id "0HN3GVS524O9G:00000007": done reading request body.
+2024-05-10 16:46:18.1333|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'UserService.Models.UserModel'
+2024-05-10 16:46:18.1333|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'user' of type 'UserService.Models.UserModel'.
+2024-05-10 16:46:18.1333|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'user' of type 'UserService.Models.UserModel'.
+2024-05-10 16:46:18.1333|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'user' of type 'UserService.Models.UserModel' ...
+2024-05-10 16:46:18.1333|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'user' of type 'UserService.Models.UserModel'.
+2024-05-10 16:46:18.1333|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter|The request has model state errors, returning an error response.
+2024-05-10 16:46:18.1333|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2024-05-10 16:46:18.1333|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2024-05-10 16:46:18.1333|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2024-05-10 16:46:18.1333|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types 'application/problem+json, application/problem+xml, application/problem+json, application/problem+xml'.
+2024-05-10 16:46:18.1333|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2024-05-10 16:46:18.1333|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-05-10 16:46:18.1333|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action UserService.Controllers.UserController.CreateUser (UserService) in 1.345ms
+2024-05-10 16:46:18.1333|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'UserService.Controllers.UserController.CreateUser (UserService)'
+2024-05-10 16:46:18.1333|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GVS524O9G" completed keep alive response.
+2024-05-10 16:46:18.1333|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5145/user/create - 400 - application/problem+json;+charset=utf-8 3.2508ms
+2024-05-10 16:46:40.3794|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5145/user/create - application/json 228
+2024-05-10 16:46:40.3794|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/user/create'
+2024-05-10 16:46:40.3794|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'UserService.Controllers.UserController.CreateUser (UserService)' with route pattern 'User/create' is valid for the request path '/user/create'
+2024-05-10 16:46:40.3794|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'UserService.Controllers.UserController.CreateUser (UserService)'
+2024-05-10 16:46:40.3794|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated.
+2024-05-10 16:46:40.3794|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-05-10 16:46:40.3794|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'UserService.Controllers.UserController.CreateUser (UserService)'
+2024-05-10 16:46:40.3794|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "CreateUser", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateUser(UserService.Models.UserModel) on controller UserService.Controllers.UserController (UserService).
+2024-05-10 16:46:40.3794|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2024-05-10 16:46:40.3794|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2024-05-10 16:46:40.3794|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-05-10 16:46:40.3794|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2024-05-10 16:46:40.3794|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-05-10 16:46:40.3794|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-10 16:46:40.3794|DEBUG|UserService.Repositories.IUserRepository|XYZ Service responding from 45.236.95.66
+2024-05-10 16:46:40.3794|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-10 16:46:40.3794|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'user' of type 'UserService.Models.UserModel' ...
+2024-05-10 16:46:40.3794|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'user' of type 'UserService.Models.UserModel' using the name '' in request data ...
+2024-05-10 16:46:40.3794|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-05-10 16:46:40.3794|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HN3GVS524O9G", Request id "0HN3GVS524O9G:00000008": started reading request body.
+2024-05-10 16:46:40.3794|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HN3GVS524O9G", Request id "0HN3GVS524O9G:00000008": done reading request body.
+2024-05-10 16:46:40.3794|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'UserService.Models.UserModel'
+2024-05-10 16:46:40.3794|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'user' of type 'UserService.Models.UserModel'.
+2024-05-10 16:46:40.3794|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'user' of type 'UserService.Models.UserModel'.
+2024-05-10 16:46:40.3794|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'user' of type 'UserService.Models.UserModel' ...
+2024-05-10 16:46:40.3794|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'user' of type 'UserService.Models.UserModel'.
+2024-05-10 16:46:40.6094|INFO|UserService.Repositories.IUserRepository|user created: UserService.Models.UserModel
+2024-05-10 16:46:40.6094|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing StatusCodeResult, setting HTTP status code 200
+2024-05-10 16:46:40.6094|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action UserService.Controllers.UserController.CreateUser (UserService) in 228.7134ms
+2024-05-10 16:46:40.6094|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'UserService.Controllers.UserController.CreateUser (UserService)'
+2024-05-10 16:46:40.6094|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GVS524O9G" completed keep alive response.
+2024-05-10 16:46:40.6094|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5145/user/create - 200 0 - 230.2766ms
+2024-05-10 16:47:03.6398|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 PUT http://localhost:5145/user/update - application/json 229
+2024-05-10 16:47:03.6398|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/user/update'
+2024-05-10 16:47:03.6398|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'UserService.Controllers.UserController.UpdateUser (UserService)' with route pattern 'User/update' is valid for the request path '/user/update'
+2024-05-10 16:47:03.6398|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'UserService.Controllers.UserController.UpdateUser (UserService)'
+2024-05-10 16:47:03.6398|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated.
+2024-05-10 16:47:03.6398|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-05-10 16:47:03.6398|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'UserService.Controllers.UserController.UpdateUser (UserService)'
+2024-05-10 16:47:03.6398|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "UpdateUser", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateUser(UserService.Models.UserModel) on controller UserService.Controllers.UserController (UserService).
+2024-05-10 16:47:03.6398|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2024-05-10 16:47:03.6398|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2024-05-10 16:47:03.6398|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-05-10 16:47:03.6398|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2024-05-10 16:47:03.6398|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-05-10 16:47:03.6398|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-10 16:47:03.6398|DEBUG|UserService.Repositories.IUserRepository|XYZ Service responding from 45.236.95.66
+2024-05-10 16:47:03.6398|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-10 16:47:03.6398|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'user' of type 'UserService.Models.UserModel' ...
+2024-05-10 16:47:03.6398|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'user' of type 'UserService.Models.UserModel' using the name '' in request data ...
+2024-05-10 16:47:03.6398|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-05-10 16:47:03.6398|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HN3GVS524O9G", Request id "0HN3GVS524O9G:00000009": started reading request body.
+2024-05-10 16:47:03.6398|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HN3GVS524O9G", Request id "0HN3GVS524O9G:00000009": done reading request body.
+2024-05-10 16:47:03.6398|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'UserService.Models.UserModel'
+2024-05-10 16:47:03.6398|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'user' of type 'UserService.Models.UserModel'.
+2024-05-10 16:47:03.6398|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'user' of type 'UserService.Models.UserModel'.
+2024-05-10 16:47:03.6398|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'user' of type 'UserService.Models.UserModel' ...
+2024-05-10 16:47:03.6398|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'user' of type 'UserService.Models.UserModel'.
+2024-05-10 16:47:03.6551|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing StatusCodeResult, setting HTTP status code 200
+2024-05-10 16:47:03.6551|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action UserService.Controllers.UserController.UpdateUser (UserService) in 14.5915ms
+2024-05-10 16:47:03.6551|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'UserService.Controllers.UserController.UpdateUser (UserService)'
+2024-05-10 16:47:03.6551|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GVS524O9G" completed keep alive response.
+2024-05-10 16:47:03.6551|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 PUT http://localhost:5145/user/update - 200 0 - 15.5096ms
+2024-05-10 16:47:40.8233|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 DELETE http://localhost:5145/user/delete/888888888 - application/json 229
+2024-05-10 16:47:40.8233|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/user/delete/888888888'
+2024-05-10 16:47:40.8233|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'UserService.Controllers.UserController.DeleteUser (UserService)' with route pattern 'User/delete/{id}' is valid for the request path '/user/delete/888888888'
+2024-05-10 16:47:40.8233|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'UserService.Controllers.UserController.DeleteUser (UserService)'
+2024-05-10 16:47:40.8233|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated.
+2024-05-10 16:47:40.8233|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-05-10 16:47:40.8233|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'UserService.Controllers.UserController.DeleteUser (UserService)'
+2024-05-10 16:47:40.8233|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "DeleteUser", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteUser(System.String) on controller UserService.Controllers.UserController (UserService).
+2024-05-10 16:47:40.8233|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2024-05-10 16:47:40.8233|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2024-05-10 16:47:40.8233|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-05-10 16:47:40.8233|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2024-05-10 16:47:40.8233|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-05-10 16:47:40.8233|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-10 16:47:40.8233|DEBUG|UserService.Repositories.IUserRepository|XYZ Service responding from 45.236.95.66
+2024-05-10 16:47:40.8233|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-10 16:47:40.8233|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'id' of type 'System.String' ...
+2024-05-10 16:47:40.8233|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'id' of type 'System.String' using the name 'id' in request data ...
+2024-05-10 16:47:40.8233|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'id' of type 'System.String'.
+2024-05-10 16:47:40.8233|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'id' of type 'System.String'.
+2024-05-10 16:47:40.8233|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'id' of type 'System.String' ...
+2024-05-10 16:47:40.8233|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'id' of type 'System.String'.
+2024-05-10 16:47:40.8233|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing StatusCodeResult, setting HTTP status code 200
+2024-05-10 16:47:40.8233|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action UserService.Controllers.UserController.DeleteUser (UserService) in 4.1388ms
+2024-05-10 16:47:40.8233|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'UserService.Controllers.UserController.DeleteUser (UserService)'
+2024-05-10 16:47:40.8233|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GVS524O9G" completed keep alive response.
+2024-05-10 16:47:40.8233|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 DELETE http://localhost:5145/user/delete/888888888 - 200 0 - 6.5946ms
+2024-05-10 16:47:40.8233|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HN3GVS524O9G", Request id "0HN3GVS524O9G:0000000A": started reading request body.
+2024-05-10 16:47:40.8233|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HN3GVS524O9G", Request id "0HN3GVS524O9G:0000000A": done reading request body.
+2024-05-10 16:48:29.5011|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 PUT http://localhost:5145/user/update - application/json 49
+2024-05-10 16:48:29.5011|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/user/update'
+2024-05-10 16:48:29.5011|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'UserService.Controllers.UserController.UpdateUser (UserService)' with route pattern 'User/update' is valid for the request path '/user/update'
+2024-05-10 16:48:29.5011|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'UserService.Controllers.UserController.UpdateUser (UserService)'
+2024-05-10 16:48:29.5011|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated.
+2024-05-10 16:48:29.5011|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-05-10 16:48:29.5011|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'UserService.Controllers.UserController.UpdateUser (UserService)'
+2024-05-10 16:48:29.5022|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "UpdateUser", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateUser(UserService.Models.UserModel) on controller UserService.Controllers.UserController (UserService).
+2024-05-10 16:48:29.5022|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2024-05-10 16:48:29.5022|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2024-05-10 16:48:29.5022|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-05-10 16:48:29.5022|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2024-05-10 16:48:29.5022|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-05-10 16:48:29.5022|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-10 16:48:29.5022|DEBUG|UserService.Repositories.IUserRepository|XYZ Service responding from 45.236.95.66
+2024-05-10 16:48:29.5022|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-10 16:48:29.5022|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'user' of type 'UserService.Models.UserModel' ...
+2024-05-10 16:48:29.5022|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'user' of type 'UserService.Models.UserModel' using the name '' in request data ...
+2024-05-10 16:48:29.5022|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-05-10 16:48:29.5022|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HN3GVS524O9G", Request id "0HN3GVS524O9G:0000000B": started reading request body.
+2024-05-10 16:48:29.5022|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HN3GVS524O9G", Request id "0HN3GVS524O9G:0000000B": done reading request body.
+2024-05-10 16:48:29.5022|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'UserService.Models.UserModel'
+2024-05-10 16:48:29.5022|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'user' of type 'UserService.Models.UserModel'.
+2024-05-10 16:48:29.5022|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'user' of type 'UserService.Models.UserModel'.
+2024-05-10 16:48:29.5022|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'user' of type 'UserService.Models.UserModel' ...
+2024-05-10 16:48:29.5022|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'user' of type 'UserService.Models.UserModel'.
+2024-05-10 16:48:29.5022|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter|The request has model state errors, returning an error response.
+2024-05-10 16:48:29.5022|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2024-05-10 16:48:29.5022|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2024-05-10 16:48:29.5022|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2024-05-10 16:48:29.5022|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types 'application/problem+json, application/problem+xml, application/problem+json, application/problem+xml'.
+2024-05-10 16:48:29.5022|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2024-05-10 16:48:29.5022|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-05-10 16:48:29.5022|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action UserService.Controllers.UserController.UpdateUser (UserService) in 0.8641ms
+2024-05-10 16:48:29.5022|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'UserService.Controllers.UserController.UpdateUser (UserService)'
+2024-05-10 16:48:29.5022|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GVS524O9G" completed keep alive response.
+2024-05-10 16:48:29.5022|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 PUT http://localhost:5145/user/update - 400 - application/problem+json;+charset=utf-8 2.1285ms
+2024-05-10 16:49:07.3868|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 PUT http://localhost:5145/user/update - application/json 228
+2024-05-10 16:49:07.3868|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/user/update'
+2024-05-10 16:49:07.3868|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'UserService.Controllers.UserController.UpdateUser (UserService)' with route pattern 'User/update' is valid for the request path '/user/update'
+2024-05-10 16:49:07.3868|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'UserService.Controllers.UserController.UpdateUser (UserService)'
+2024-05-10 16:49:07.3868|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated.
+2024-05-10 16:49:07.3868|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-05-10 16:49:07.3868|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'UserService.Controllers.UserController.UpdateUser (UserService)'
+2024-05-10 16:49:07.3868|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "UpdateUser", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateUser(UserService.Models.UserModel) on controller UserService.Controllers.UserController (UserService).
+2024-05-10 16:49:07.3868|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2024-05-10 16:49:07.3868|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2024-05-10 16:49:07.3868|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-05-10 16:49:07.3868|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2024-05-10 16:49:07.3868|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-05-10 16:49:07.3868|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-10 16:49:07.3868|DEBUG|UserService.Repositories.IUserRepository|XYZ Service responding from 45.236.95.66
+2024-05-10 16:49:07.3868|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-10 16:49:07.3868|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'user' of type 'UserService.Models.UserModel' ...
+2024-05-10 16:49:07.3868|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'user' of type 'UserService.Models.UserModel' using the name '' in request data ...
+2024-05-10 16:49:07.3868|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-05-10 16:49:07.3868|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HN3GVS524O9G", Request id "0HN3GVS524O9G:0000000C": started reading request body.
+2024-05-10 16:49:07.3868|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HN3GVS524O9G", Request id "0HN3GVS524O9G:0000000C": done reading request body.
+2024-05-10 16:49:07.3868|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'UserService.Models.UserModel'
+2024-05-10 16:49:07.3868|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'user' of type 'UserService.Models.UserModel'.
+2024-05-10 16:49:07.3868|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'user' of type 'UserService.Models.UserModel'.
+2024-05-10 16:49:07.3868|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'user' of type 'UserService.Models.UserModel' ...
+2024-05-10 16:49:07.3868|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'user' of type 'UserService.Models.UserModel'.
+2024-05-10 16:49:07.3868|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing StatusCodeResult, setting HTTP status code 200
+2024-05-10 16:49:07.3868|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action UserService.Controllers.UserController.UpdateUser (UserService) in 2.9575ms
+2024-05-10 16:49:07.3868|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'UserService.Controllers.UserController.UpdateUser (UserService)'
+2024-05-10 16:49:07.3868|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GVS524O9G" completed keep alive response.
+2024-05-10 16:49:07.3868|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 PUT http://localhost:5145/user/update - 200 0 - 3.9760ms
+2024-05-10 16:51:18.0371|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GVS524O9G" disconnecting.
+2024-05-10 16:51:18.0371|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GVS524O9G" stopped.
+2024-05-10 16:51:18.0371|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3GVS524O9G" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 16:53:31.3612|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2024-05-10 16:53:31.3616|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping
+2024-05-10 16:53:31.3616|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped
+2024-05-10 16:53:37.4043|DEBUG|UserService.Program|init main
+2024-05-10 16:53:37.5574|INFO|UserService|Starting service
+2024-05-10 16:53:37.5732|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2024-05-10 16:53:37.5902|INFO|UserService|Controllers mapped
+2024-05-10 16:53:37.5902|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2024-05-10 16:53:37.5970|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\nicol\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-10 16:53:37.5970|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\nicol\AppData\Local\ASP.NET\DataProtection-Keys\key-62deea1d-8d11-441c-be40-2261222ab494.xml'.
+2024-05-10 16:53:37.5970|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\nicol\AppData\Local\ASP.NET\DataProtection-Keys\key-eaa35d66-8457-471f-9191-ec96edb4d1af.xml'.
+2024-05-10 16:53:37.5970|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {62deea1d-8d11-441c-be40-2261222ab494}.
+2024-05-10 16:53:37.5970|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {eaa35d66-8457-471f-9191-ec96edb4d1af}.
+2024-05-10 16:53:37.5970|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {62deea1d-8d11-441c-be40-2261222ab494} with expiration date 2024-07-21 13:26:32Z as default key.
+2024-05-10 16:53:37.5970|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 16:53:37.5970|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI.
+2024-05-10 16:53:37.5970|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 16:53:37.5970|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2024-05-10 16:53:37.6122|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2024-05-10 16:53:37.6122|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {62deea1d-8d11-441c-be40-2261222ab494} as the default key.
+2024-05-10 16:53:37.6122|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {62deea1d-8d11-441c-be40-2261222ab494} was loaded during application startup.
+2024-05-10 16:53:37.6297|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5145
+2024-05-10 16:53:37.6297|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly UserService
+2024-05-10 16:53:37.6297|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-10 16:53:37.6297|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-10 16:53:37.6297|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService
+2024-05-10 16:53:37.6297|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2024-05-10 16:54:03.9278|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3H044FK1UN" received FIN.
+2024-05-10 16:54:03.9278|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3H044FK1UN" accepted.
+2024-05-10 16:54:03.9278|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3H044FK1UN" started.
+2024-05-10 16:54:03.9278|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3H044FK1UO" accepted.
+2024-05-10 16:54:03.9278|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3H044FK1UO" started.
+2024-05-10 16:54:03.9278|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3H044FK1UN" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 16:54:03.9278|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3H044FK1UN" disconnecting.
+2024-05-10 16:54:03.9278|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3H044FK1UN" stopped.
+2024-05-10 16:54:03.9446|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5145/user/create - application/json 229
+2024-05-10 16:54:03.9446|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2024-05-10 16:54:03.9446|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/user/create'
+2024-05-10 16:54:03.9560|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'UserService.Controllers.UserController.CreateUser (UserService)' with route pattern 'User/create' is valid for the request path '/user/create'
+2024-05-10 16:54:03.9560|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'UserService.Controllers.UserController.CreateUser (UserService)'
+2024-05-10 16:54:03.9560|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated.
+2024-05-10 16:54:03.9560|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-05-10 16:54:03.9718|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect.
+2024-05-10 16:54:03.9718|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'UserService.Controllers.UserController.CreateUser (UserService)'
+2024-05-10 16:54:03.9718|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "CreateUser", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateUser(UserService.Models.UserModel) on controller UserService.Controllers.UserController (UserService).
+2024-05-10 16:54:03.9718|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2024-05-10 16:54:03.9718|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2024-05-10 16:54:03.9718|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-05-10 16:54:03.9718|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2024-05-10 16:54:03.9718|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-05-10 16:54:03.9718|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-10 16:54:04.0614|DEBUG|UserService.Repositories.IUserRepository|XYZ Service responding from 45.236.95.66
+2024-05-10 16:54:04.0614|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-10 16:54:04.0614|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'user' of type 'UserService.Models.UserModel' ...
+2024-05-10 16:54:04.0614|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'user' of type 'UserService.Models.UserModel' using the name '' in request data ...
+2024-05-10 16:54:04.0614|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-05-10 16:54:04.0672|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HN3H044FK1UO", Request id "0HN3H044FK1UO:00000001": started reading request body.
+2024-05-10 16:54:04.0672|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HN3H044FK1UO", Request id "0HN3H044FK1UO:00000001": done reading request body.
+2024-05-10 16:54:04.0672|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'UserService.Models.UserModel'
+2024-05-10 16:54:04.0672|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'user' of type 'UserService.Models.UserModel'.
+2024-05-10 16:54:04.0672|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'user' of type 'UserService.Models.UserModel'.
+2024-05-10 16:54:04.0672|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'user' of type 'UserService.Models.UserModel' ...
+2024-05-10 16:54:04.0672|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'user' of type 'UserService.Models.UserModel'.
+2024-05-10 16:54:04.2379|INFO|UserService.Repositories.IUserRepository|user created: UserService.Models.UserModel
+2024-05-10 16:54:04.2379|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing StatusCodeResult, setting HTTP status code 200
+2024-05-10 16:54:04.2379|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action UserService.Controllers.UserController.CreateUser (UserService) in 258.4025ms
+2024-05-10 16:54:04.2379|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'UserService.Controllers.UserController.CreateUser (UserService)'
+2024-05-10 16:54:04.2379|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3H044FK1UO" completed keep alive response.
+2024-05-10 16:54:04.2379|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5145/user/create - 200 0 - 300.1986ms
+2024-05-10 16:54:37.3515|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 PUT http://localhost:5145/user/update - application/json 229
+2024-05-10 16:54:37.3515|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/user/update'
+2024-05-10 16:54:37.3515|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'UserService.Controllers.UserController.UpdateUser (UserService)' with route pattern 'User/update' is valid for the request path '/user/update'
+2024-05-10 16:54:37.3515|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'UserService.Controllers.UserController.UpdateUser (UserService)'
+2024-05-10 16:54:37.3515|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated.
+2024-05-10 16:54:37.3515|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-05-10 16:54:37.3515|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'UserService.Controllers.UserController.UpdateUser (UserService)'
+2024-05-10 16:54:37.3515|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "UpdateUser", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateUser(UserService.Models.UserModel) on controller UserService.Controllers.UserController (UserService).
+2024-05-10 16:54:37.3515|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2024-05-10 16:54:37.3515|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2024-05-10 16:54:37.3515|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-05-10 16:54:37.3515|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2024-05-10 16:54:37.3515|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-05-10 16:54:37.3515|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-10 16:54:37.3515|DEBUG|UserService.Repositories.IUserRepository|XYZ Service responding from 45.236.95.66
+2024-05-10 16:54:37.3515|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-10 16:54:37.3515|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'user' of type 'UserService.Models.UserModel' ...
+2024-05-10 16:54:37.3515|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'user' of type 'UserService.Models.UserModel' using the name '' in request data ...
+2024-05-10 16:54:37.3515|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-05-10 16:54:37.3515|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HN3H044FK1UO", Request id "0HN3H044FK1UO:00000002": started reading request body.
+2024-05-10 16:54:37.3515|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HN3H044FK1UO", Request id "0HN3H044FK1UO:00000002": done reading request body.
+2024-05-10 16:54:37.3515|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'UserService.Models.UserModel'
+2024-05-10 16:54:37.3515|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'user' of type 'UserService.Models.UserModel'.
+2024-05-10 16:54:37.3515|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'user' of type 'UserService.Models.UserModel'.
+2024-05-10 16:54:37.3515|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'user' of type 'UserService.Models.UserModel' ...
+2024-05-10 16:54:37.3515|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'user' of type 'UserService.Models.UserModel'.
+2024-05-10 16:54:37.3747|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing StatusCodeResult, setting HTTP status code 200
+2024-05-10 16:54:37.3747|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action UserService.Controllers.UserController.UpdateUser (UserService) in 19.0729ms
+2024-05-10 16:54:37.3747|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'UserService.Controllers.UserController.UpdateUser (UserService)'
+2024-05-10 16:54:37.3747|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3H044FK1UO" completed keep alive response.
+2024-05-10 16:54:37.3747|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 PUT http://localhost:5145/user/update - 200 0 - 23.7236ms
+2024-05-10 16:55:15.0090|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5145/user/123456789 - application/json 229
+2024-05-10 16:55:15.0090|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/user/123456789'
+2024-05-10 16:55:15.0090|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'UserService.Controllers.UserController.GetUser (UserService)' with route pattern 'User/{id}' is valid for the request path '/user/123456789'
+2024-05-10 16:55:15.0090|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'UserService.Controllers.UserController.GetUser (UserService)'
+2024-05-10 16:55:15.0090|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated.
+2024-05-10 16:55:15.0090|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-05-10 16:55:15.0090|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'UserService.Controllers.UserController.GetUser (UserService)'
+2024-05-10 16:55:15.0090|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetUser", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetUser(System.String) on controller UserService.Controllers.UserController (UserService).
+2024-05-10 16:55:15.0090|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2024-05-10 16:55:15.0090|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2024-05-10 16:55:15.0090|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-05-10 16:55:15.0090|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2024-05-10 16:55:15.0090|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-05-10 16:55:15.0090|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-10 16:55:15.0090|DEBUG|UserService.Repositories.IUserRepository|XYZ Service responding from 45.236.95.66
+2024-05-10 16:55:15.0090|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-10 16:55:15.0090|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'id' of type 'System.String' ...
+2024-05-10 16:55:15.0090|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'id' of type 'System.String' using the name 'id' in request data ...
+2024-05-10 16:55:15.0090|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'id' of type 'System.String'.
+2024-05-10 16:55:15.0090|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'id' of type 'System.String'.
+2024-05-10 16:55:15.0090|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'id' of type 'System.String' ...
+2024-05-10 16:55:15.0090|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'id' of type 'System.String'.
+2024-05-10 16:55:15.0288|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing StatusCodeResult, setting HTTP status code 200
+2024-05-10 16:55:15.0288|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action UserService.Controllers.UserController.GetUser (UserService) in 15.8199ms
+2024-05-10 16:55:15.0288|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'UserService.Controllers.UserController.GetUser (UserService)'
+2024-05-10 16:55:15.0288|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3H044FK1UO" completed keep alive response.
+2024-05-10 16:55:15.0288|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5145/user/123456789 - 200 0 - 19.9861ms
+2024-05-10 16:55:15.0288|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HN3H044FK1UO", Request id "0HN3H044FK1UO:00000003": started reading request body.
+2024-05-10 16:55:15.0288|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HN3H044FK1UO", Request id "0HN3H044FK1UO:00000003": done reading request body.
+2024-05-10 16:56:04.4566|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2024-05-10 16:56:04.4566|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping
+2024-05-10 16:56:04.4566|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3H044FK1UO" disconnecting.
+2024-05-10 16:56:04.4566|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3H044FK1UO" stopped.
+2024-05-10 16:56:04.4566|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3H044FK1UO" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 16:56:04.4566|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped
+2024-05-10 16:56:07.5504|DEBUG|UserService.Program|init main
+2024-05-10 16:56:07.7061|INFO|UserService|Starting service
+2024-05-10 16:56:07.7221|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2024-05-10 16:56:07.7400|INFO|UserService|Controllers mapped
+2024-05-10 16:56:07.7400|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2024-05-10 16:56:07.7400|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\nicol\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-10 16:56:07.7400|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\nicol\AppData\Local\ASP.NET\DataProtection-Keys\key-62deea1d-8d11-441c-be40-2261222ab494.xml'.
+2024-05-10 16:56:07.7400|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\nicol\AppData\Local\ASP.NET\DataProtection-Keys\key-eaa35d66-8457-471f-9191-ec96edb4d1af.xml'.
+2024-05-10 16:56:07.7542|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {62deea1d-8d11-441c-be40-2261222ab494}.
+2024-05-10 16:56:07.7542|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {eaa35d66-8457-471f-9191-ec96edb4d1af}.
+2024-05-10 16:56:07.7542|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {62deea1d-8d11-441c-be40-2261222ab494} with expiration date 2024-07-21 13:26:32Z as default key.
+2024-05-10 16:56:07.7542|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 16:56:07.7542|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI.
+2024-05-10 16:56:07.7542|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 16:56:07.7542|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2024-05-10 16:56:07.7542|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2024-05-10 16:56:07.7542|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {62deea1d-8d11-441c-be40-2261222ab494} as the default key.
+2024-05-10 16:56:07.7542|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {62deea1d-8d11-441c-be40-2261222ab494} was loaded during application startup.
+2024-05-10 16:56:07.7821|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5145
+2024-05-10 16:56:07.7821|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly UserService
+2024-05-10 16:56:07.7821|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-10 16:56:07.7821|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-10 16:56:07.7821|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService
+2024-05-10 16:56:07.7821|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2024-05-10 16:56:37.9400|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3H05ICCQFF" received FIN.
+2024-05-10 16:56:37.9425|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3H05ICCQFF" accepted.
+2024-05-10 16:56:37.9425|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3H05ICCQFF" started.
+2024-05-10 16:56:37.9425|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3H05ICCQFG" accepted.
+2024-05-10 16:56:37.9425|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3H05ICCQFG" started.
+2024-05-10 16:56:37.9425|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3H05ICCQFF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 16:56:37.9425|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3H05ICCQFF" disconnecting.
+2024-05-10 16:56:37.9425|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3H05ICCQFF" stopped.
+2024-05-10 16:56:37.9569|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5145/user/123456789 - application/json 229
+2024-05-10 16:56:37.9569|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2024-05-10 16:56:37.9569|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/user/123456789'
+2024-05-10 16:56:37.9569|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'UserService.Controllers.UserController.GetUser (UserService)' with route pattern 'User/{id}' is valid for the request path '/user/123456789'
+2024-05-10 16:56:37.9569|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'UserService.Controllers.UserController.GetUser (UserService)'
+2024-05-10 16:56:37.9789|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated.
+2024-05-10 16:56:37.9866|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-05-10 16:56:37.9866|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect.
+2024-05-10 16:56:37.9866|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'UserService.Controllers.UserController.GetUser (UserService)'
+2024-05-10 16:56:37.9866|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetUser", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetUser(System.String) on controller UserService.Controllers.UserController (UserService).
+2024-05-10 16:56:37.9866|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2024-05-10 16:56:37.9866|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2024-05-10 16:56:37.9866|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-05-10 16:56:37.9866|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2024-05-10 16:56:37.9866|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-05-10 16:56:37.9866|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-10 16:56:38.0751|DEBUG|UserService.Repositories.IUserRepository|XYZ Service responding from 45.236.95.66
+2024-05-10 16:56:38.0751|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-10 16:56:38.0751|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'id' of type 'System.String' ...
+2024-05-10 16:56:38.0751|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'id' of type 'System.String' using the name 'id' in request data ...
+2024-05-10 16:56:38.0751|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'id' of type 'System.String'.
+2024-05-10 16:56:38.0751|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'id' of type 'System.String'.
+2024-05-10 16:56:38.0751|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'id' of type 'System.String' ...
+2024-05-10 16:56:38.0751|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'id' of type 'System.String'.
+2024-05-10 16:56:38.1272|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing StatusCodeResult, setting HTTP status code 200
+2024-05-10 16:56:38.1306|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action UserService.Controllers.UserController.GetUser (UserService) in 130.1564ms
+2024-05-10 16:56:38.1306|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'UserService.Controllers.UserController.GetUser (UserService)'
+2024-05-10 16:56:38.1306|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3H05ICCQFG" completed keep alive response.
+2024-05-10 16:56:38.1306|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5145/user/123456789 - 200 0 - 175.2584ms
+2024-05-10 16:56:38.1306|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HN3H05ICCQFG", Request id "0HN3H05ICCQFG:00000001": started reading request body.
+2024-05-10 16:56:38.1306|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HN3H05ICCQFG", Request id "0HN3H05ICCQFG:00000001": done reading request body.
+2024-05-10 16:58:49.4570|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3H05ICCQFG" disconnecting.
+2024-05-10 16:58:49.4570|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3H05ICCQFG" stopped.
+2024-05-10 16:58:49.4570|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3H05ICCQFG" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 17:02:30.8185|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2024-05-10 17:02:30.8185|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping
+2024-05-10 17:02:30.8185|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped
+2024-05-10 17:02:34.7284|DEBUG|UserService.Program|init main
+2024-05-10 17:02:34.8847|INFO|UserService|Starting service
+2024-05-10 17:02:34.9011|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2024-05-10 17:02:34.9187|INFO|UserService|Controllers mapped
+2024-05-10 17:02:34.9187|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2024-05-10 17:02:34.9262|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\nicol\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-10 17:02:34.9262|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\nicol\AppData\Local\ASP.NET\DataProtection-Keys\key-62deea1d-8d11-441c-be40-2261222ab494.xml'.
+2024-05-10 17:02:34.9262|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\nicol\AppData\Local\ASP.NET\DataProtection-Keys\key-eaa35d66-8457-471f-9191-ec96edb4d1af.xml'.
+2024-05-10 17:02:34.9262|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {62deea1d-8d11-441c-be40-2261222ab494}.
+2024-05-10 17:02:34.9262|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {eaa35d66-8457-471f-9191-ec96edb4d1af}.
+2024-05-10 17:02:34.9262|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {62deea1d-8d11-441c-be40-2261222ab494} with expiration date 2024-07-21 13:26:32Z as default key.
+2024-05-10 17:02:34.9262|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 17:02:34.9262|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI.
+2024-05-10 17:02:34.9414|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 17:02:34.9414|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2024-05-10 17:02:34.9414|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2024-05-10 17:02:34.9414|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {62deea1d-8d11-441c-be40-2261222ab494} as the default key.
+2024-05-10 17:02:34.9414|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {62deea1d-8d11-441c-be40-2261222ab494} was loaded during application startup.
+2024-05-10 17:02:34.9605|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5145
+2024-05-10 17:02:34.9605|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly UserService
+2024-05-10 17:02:34.9605|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-10 17:02:34.9605|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-10 17:02:34.9605|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService
+2024-05-10 17:02:34.9605|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2024-05-10 17:02:48.9593|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3H090UMTVP" received FIN.
+2024-05-10 17:02:48.9593|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3H090UMTVP" accepted.
+2024-05-10 17:02:48.9593|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3H090UMTVP" started.
+2024-05-10 17:02:48.9593|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3H090UMTVQ" accepted.
+2024-05-10 17:02:48.9593|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3H090UMTVQ" started.
+2024-05-10 17:02:48.9593|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3H090UMTVP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 17:02:48.9593|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3H090UMTVP" disconnecting.
+2024-05-10 17:02:48.9593|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3H090UMTVP" stopped.
+2024-05-10 17:02:48.9753|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5145/user/123456789 - application/json 229
+2024-05-10 17:02:48.9753|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2024-05-10 17:02:48.9753|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/user/123456789'
+2024-05-10 17:02:48.9868|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'UserService.Controllers.UserController.GetUser (UserService)' with route pattern 'User/{id}' is valid for the request path '/user/123456789'
+2024-05-10 17:02:48.9868|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'UserService.Controllers.UserController.GetUser (UserService)'
+2024-05-10 17:02:48.9868|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated.
+2024-05-10 17:02:49.0049|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-05-10 17:02:49.0049|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect.
+2024-05-10 17:02:49.0049|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'UserService.Controllers.UserController.GetUser (UserService)'
+2024-05-10 17:02:49.0049|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetUser", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetUser(System.String) on controller UserService.Controllers.UserController (UserService).
+2024-05-10 17:02:49.0049|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2024-05-10 17:02:49.0049|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2024-05-10 17:02:49.0049|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-05-10 17:02:49.0049|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2024-05-10 17:02:49.0049|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-05-10 17:02:49.0049|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-10 17:02:49.0936|DEBUG|UserService.Repositories.IUserRepository|XYZ Service responding from 45.236.95.66
+2024-05-10 17:02:49.0936|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller UserService.Controllers.UserController (UserService)
+2024-05-10 17:02:49.0961|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'id' of type 'System.String' ...
+2024-05-10 17:02:49.0961|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'id' of type 'System.String' using the name 'id' in request data ...
+2024-05-10 17:02:49.0961|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'id' of type 'System.String'.
+2024-05-10 17:02:49.0961|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'id' of type 'System.String'.
+2024-05-10 17:02:49.0961|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'id' of type 'System.String' ...
+2024-05-10 17:02:49.0961|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'id' of type 'System.String'.
+2024-05-10 17:02:49.1474|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2024-05-10 17:02:49.1474|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2024-05-10 17:02:49.1474|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-05-10 17:02:49.1474|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result.
+2024-05-10 17:02:49.1474|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-05-10 17:02:49.1474|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'UserService.Models.UserModel'.
+2024-05-10 17:02:49.1474|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action UserService.Controllers.UserController.GetUser (UserService) in 136.4319ms
+2024-05-10 17:02:49.1474|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'UserService.Controllers.UserController.GetUser (UserService)'
+2024-05-10 17:02:49.1474|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3H090UMTVQ" completed keep alive response.
+2024-05-10 17:02:49.1474|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5145/user/123456789 - 200 - application/json;+charset=utf-8 181.7643ms
+2024-05-10 17:02:49.1474|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HN3H090UMTVQ", Request id "0HN3H090UMTVQ:00000001": started reading request body.
+2024-05-10 17:02:49.1474|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HN3H090UMTVQ", Request id "0HN3H090UMTVQ:00000001": done reading request body.
+2024-05-10 17:02:54.6823|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2024-05-10 17:02:54.6823|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping
+2024-05-10 17:02:54.6823|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3H090UMTVQ" disconnecting.
+2024-05-10 17:02:54.6823|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3H090UMTVQ" stopped.
+2024-05-10 17:02:54.6823|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3H090UMTVQ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 17:02:54.6823|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped

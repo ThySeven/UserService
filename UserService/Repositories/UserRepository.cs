@@ -78,15 +78,20 @@ namespace UserService.Repositories
         public UserModel GetById(string id)
         {
             var filter = Builders<UserModel>.Filter.Eq("id", id);
-            return _users.Find(filter).SingleOrDefault();
+            return _users.Find(filter).FirstOrDefault();
         }
 
         public UserModel UpdateUser(UserModel newUserData)
         {
             var filter = Builders<UserModel>.Filter.Eq("id", newUserData.id);
             var update = Builders<UserModel>.Update
-                            .Set(x => x.address, newUserData.address); // Example of updating the address
-                                                                       // Add other properties to update as required
+                .Set(x => x.firstName, newUserData.firstName)
+                .Set(x => x.lastName, newUserData.lastName)
+                .Set(x => x.email, newUserData.email)
+                .Set(x => x.userName, newUserData.userName)
+                .Set(x => x.address, newUserData.address)
+                .Set(x => x.phoneNumber, newUserData.phoneNumber)
+                .Set(x => x.verified, newUserData.verified);
 
             _users.UpdateOne(filter, update);
             return newUserData;
