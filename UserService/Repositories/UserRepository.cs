@@ -111,21 +111,83 @@ namespace UserService.Repositories
             return userDTO;
         }
 
-        public UserModel UpdateUser(UserModel newUserData)
+        public UserModelDTO UpdateUser(UserModelDTO newUserData)
         {
+            var currentUser = GetById(newUserData.id);
+    
+            if(string.IsNullOrEmpty(newUserData.firstName))
+                newUserData.firstName = currentUser.firstName;
+            if(string.IsNullOrEmpty(newUserData.lastName))
+                newUserData.lastName = currentUser.lastName;
+            if(string.IsNullOrEmpty(newUserData.email))
+                newUserData.email = currentUser.email;
+            if(string.IsNullOrEmpty(newUserData.userName))
+                newUserData.userName = currentUser.userName;
+            if(string.IsNullOrEmpty(newUserData.address))
+                newUserData.address = currentUser.address;
+            if(string.IsNullOrEmpty(newUserData.phoneNumber))
+                newUserData.phoneNumber = currentUser.phoneNumber;
+            // Assuming "verified" is a boolean field, so no need for null or empty check
+            // If it's nullable, you may want to handle it accordingly
+            newUserData.verified = newUserData.verified ?? currentUser.verified;
+
             var filter = Builders<UserModel>.Filter.Eq("id", newUserData.id);
             var update = Builders<UserModel>.Update
                 .Set(x => x.firstName, newUserData.firstName)
                 .Set(x => x.lastName, newUserData.lastName)
                 .Set(x => x.email, newUserData.email)
                 .Set(x => x.userName, newUserData.userName)
-                .Set(x => x.password, newUserData.password)
                 .Set(x => x.address, newUserData.address)
-                .Set(x => x.phoneNumber, newUserData.phoneNumber);
+                .Set(x => x.phoneNumber, newUserData.phoneNumber)
+                .Set(x => x.verified, newUserData.verified);
 
             _users.UpdateOne(filter, update);
             return newUserData;
         }
+
+        public void UpdatePassword(LoginModel credentials, string newPassword)
+        {
+            // Retrieve the user from the database based on the provided username
+            var user = _users.Find(u => u.userName == credentials.Username).FirstOrDefault();
+
+            if (user == null)
+            {
+                throw new Exception("User not found.");
+            }
+
+            // Decode the stored salt from base64
+            byte[] salt = Convert.FromBase64String(user.salt);
+
+            // Compute the hash of the old password concatenated with the salt
+            byte[] hashedPasswordWithSalt = new Rfc2898DeriveBytes(credentials.Password, salt, 10000).GetBytes(32);
+
+            // Convert the byte array to a base64-encoded string for comparison
+            string hashedPassword = Convert.ToBase64String(hashedPasswordWithSalt);
+
+            // Check if the provided old password matches the stored hash
+            if (hashedPassword != user.password)
+            {
+                throw new Exception("Invalid old password.");
+            }
+
+            // Generate a new random salt
+            byte[] newSalt = new byte[16];
+            new RNGCryptoServiceProvider().GetBytes(newSalt);
+
+            // Compute the hash of the new password concatenated with the new salt
+            byte[] newHashedPasswordWithSalt = new Rfc2898DeriveBytes(newPassword, newSalt, 10000).GetBytes(32);
+
+            // Convert the byte array to a base64-encoded string for storage
+            string newHashedPassword = Convert.ToBase64String(newHashedPasswordWithSalt);
+
+            // Update the user's password and salt in the database
+            var update = Builders<UserModel>.Update
+                .Set(u => u.password, newHashedPassword)
+                .Set(u => u.salt, Convert.ToBase64String(newSalt));
+
+            _users.UpdateOne(u => u.userName == credentials.Username, update);
+        }
+
 
         public void VerifyUser(string id)
         {

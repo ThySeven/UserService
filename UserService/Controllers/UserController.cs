@@ -38,7 +38,7 @@ namespace UserService.Controllers
         }
 
         [HttpPut("update")]
-        public IActionResult UpdateUser(UserModel user)
+        public IActionResult UpdateUser(UserModelDTO user)
         {
             try
             {
@@ -51,6 +51,22 @@ namespace UserService.Controllers
                 return BadRequest("Bad request");
             }
         }
+        
+        [HttpPut("updatepassword")]
+        public IActionResult UpdatePassword(PasswordUpdataRecord passwordUpdataRecord)
+        {
+            try
+            {
+                _userRepository.UpdatePassword(passwordUpdataRecord.LoginModel, passwordUpdataRecord.newPassword);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogCritical($"Failed to find user with username: {passwordUpdataRecord.LoginModel.Username}: {ex}");
+                return BadRequest("Bad request");
+            }
+        }
+        public record PasswordUpdataRecord(LoginModel LoginModel, string newPassword);
 
         [HttpPost("create")]
         public IActionResult CreateUser(UserModel user)
