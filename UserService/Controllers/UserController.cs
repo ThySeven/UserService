@@ -1,6 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Text.Json;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using UserService.Repositories;
 using UserService.Models;
+
 namespace UserService.Controllers
 {
     [ApiController]
@@ -23,6 +26,7 @@ namespace UserService.Controllers
             _logger.LogDebug(1, $"XYZ Service responding from {_ipaddr}");
         }
 
+        [Authorize]
         [HttpGet("{id}")]
         public IActionResult GetUser(string id)
         {
@@ -37,6 +41,7 @@ namespace UserService.Controllers
             }
         }
 
+        [Authorize]
         [HttpPut("update")]
         public IActionResult UpdateUser(UserModelDTO user)
         {
@@ -47,27 +52,29 @@ namespace UserService.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogCritical($"Failed to find user with id: {user.id}: {ex}");
+                _logger.LogCritical($"Failed to find user with id: {user.Id}: {ex}");
                 return BadRequest("Bad request");
             }
         }
         
+        [Authorize]
         [HttpPut("updatepassword")]
-        public IActionResult UpdatePassword(PasswordUpdataRecord passwordUpdataRecord)
+        public IActionResult UpdatePassword(PasswordUpdateRecord passwordUpdateRecord)
         {
             try
             {
-                _userRepository.UpdatePassword(passwordUpdataRecord.LoginModel, passwordUpdataRecord.newPassword);
+                _userRepository.UpdatePassword(passwordUpdateRecord.LoginModel, passwordUpdateRecord.newPassword);
                 return Ok();
             }
             catch (Exception ex)
             {
-                _logger.LogCritical($"Failed to find user with username: {passwordUpdataRecord.LoginModel.Username}: {ex}");
+                _logger.LogCritical($"Failed to find user with username: {passwordUpdateRecord.LoginModel.Username}: {ex}");
                 return BadRequest("Bad request");
             }
         }
-        public record PasswordUpdataRecord(LoginModel LoginModel, string newPassword);
+        public record PasswordUpdateRecord(LoginModel LoginModel, string newPassword);
 
+        [AllowAnonymous]
         [HttpPost("create")]
         public IActionResult CreateUser(UserModel user)
         {
@@ -84,6 +91,8 @@ namespace UserService.Controllers
                 return BadRequest("Bad request");
             }
         }
+        
+        [Authorize]
         [HttpDelete("delete/{id}")]
         public IActionResult DeleteUser(string id)
         {
@@ -98,19 +107,24 @@ namespace UserService.Controllers
                 return BadRequest("Bad request");
             }
         }
+        
+        [AllowAnonymous]
         [HttpGet("login")]
         public IActionResult Login(LoginModel credentials)
         {
             try
             {
-                return Ok(_userRepository.Login(credentials));
+                var token = GenerateToken.GenerateJwtToken(JsonSerializer.Serialize(_userRepository.Login(credentials)));
+                return Ok(new { token });
             }
             catch(Exception ex) 
             {
                 _logger.LogCritical($"Failed to validate credentials: {ex}");
-                return BadRequest("Bad request");
-            }   
+                return Unauthorized();
+            }
         }
+        
+        [Authorize]
         [HttpGet("verify/{id}")]
         public IActionResult VerifyUser(string id)
         {

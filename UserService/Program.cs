@@ -42,6 +42,9 @@ var jwtIssuer = kv2Secret.Data.Data["issuer"];
 
 string mySecret = Convert.ToString(jwtSecret) ?? "none";
 string myIssuer = Convert.ToString(jwtIssuer) ?? "none";
+
+GenerateToken.FillSecrets(mySecret, myIssuer);
+
 builder.Services
 .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 .AddJwtBearer(options =>

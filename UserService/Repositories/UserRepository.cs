@@ -4,11 +4,15 @@ using Microsoft.Extensions.Hosting;
 using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Security.Claims;
 using System.Security.Cryptography;
 using RabbitMQ.Client;
 using System.Text.Json;
 using System.Text;
+using Microsoft.IdentityModel.Tokens;
+
 namespace UserService.Repositories
 {
     public class UserRepository : IUserRepository
@@ -29,7 +33,7 @@ namespace UserService.Repositories
 
         public void CreateUser(UserModel user)
         {
-            var existingUser = _users.Find(u => u.userName == user.userName).FirstOrDefault();
+            var existingUser = _users.Find(u => u.UserName == user.UserName).FirstOrDefault();
             if (existingUser != null)
             {
                 // User with the same username already exists, handle the error (e.g., throw an exception)
@@ -41,18 +45,18 @@ namespace UserService.Repositories
             new RNGCryptoServiceProvider().GetBytes(salt);
 
             // Compute the hash of the password concatenated with the salt
-            byte[] hashedPasswordWithSalt = new Rfc2898DeriveBytes(user.password, salt, 10000).GetBytes(32);
+            byte[] hashedPasswordWithSalt = new Rfc2898DeriveBytes(user.Password, salt, 10000).GetBytes(32);
 
             // Convert the byte array to a base64-encoded string for storage
             string hashedPassword = Convert.ToBase64String(hashedPasswordWithSalt);
     
             // Store the hashed password and the salt in the UserModel
-            user.password = hashedPassword;
-            user.salt = Convert.ToBase64String(salt);
+            user.Password = hashedPassword;
+            user.Salt = Convert.ToBase64String(salt);
             
             _users.InsertOne(user);
 
-            var mail = new MailModel { ReceiverMail = user.email, Header = "E-mail Verifikation", Content = $"Klik på dette link for at verificere din email <ahref>http://localhost:5145/user/verify/{user.id}</ahref>" };
+            var mail = new MailModel { ReceiverMail = user.Email, Header = "E-mail Verifikation", Content = $"Klik på dette link for at verificere din email <ahref>http://localhost:5145/user/verify/{user.Id}</ahref>" };
 
             try
             {
@@ -113,33 +117,29 @@ namespace UserService.Repositories
 
         public UserModelDTO UpdateUser(UserModelDTO newUserData)
         {
-            var currentUser = GetById(newUserData.id);
+            var currentUser = GetById(newUserData.Id);
     
-            if(string.IsNullOrEmpty(newUserData.firstName))
-                newUserData.firstName = currentUser.firstName;
-            if(string.IsNullOrEmpty(newUserData.lastName))
-                newUserData.lastName = currentUser.lastName;
-            if(string.IsNullOrEmpty(newUserData.email))
-                newUserData.email = currentUser.email;
-            if(string.IsNullOrEmpty(newUserData.userName))
-                newUserData.userName = currentUser.userName;
-            if(string.IsNullOrEmpty(newUserData.address))
-                newUserData.address = currentUser.address;
-            if(string.IsNullOrEmpty(newUserData.phoneNumber))
-                newUserData.phoneNumber = currentUser.phoneNumber;
-            // Assuming "verified" is a boolean field, so no need for null or empty check
-            // If it's nullable, you may want to handle it accordingly
-            newUserData.verified = newUserData.verified ?? currentUser.verified;
+            if(string.IsNullOrEmpty(newUserData.FirstName))
+                newUserData.FirstName = currentUser.FirstName;
+            if(string.IsNullOrEmpty(newUserData.LastName))
+                newUserData.LastName = currentUser.LastName;
+            if(string.IsNullOrEmpty(newUserData.Email))
+                newUserData.Email = currentUser.Email;
+            if(string.IsNullOrEmpty(newUserData.UserName))
+                newUserData.UserName = currentUser.UserName;
+            if(string.IsNullOrEmpty(newUserData.Address))
+                newUserData.Address = currentUser.Address;
+            if(string.IsNullOrEmpty(newUserData.PhoneNumber))
+                newUserData.PhoneNumber = currentUser.PhoneNumber;
 
-            var filter = Builders<UserModel>.Filter.Eq("id", newUserData.id);
+            var filter = Builders<UserModel>.Filter.Eq("id", newUserData.Id);
             var update = Builders<UserModel>.Update
-                .Set(x => x.firstName, newUserData.firstName)
-                .Set(x => x.lastName, newUserData.lastName)
-                .Set(x => x.email, newUserData.email)
-                .Set(x => x.userName, newUserData.userName)
-                .Set(x => x.address, newUserData.address)
-                .Set(x => x.phoneNumber, newUserData.phoneNumber)
-                .Set(x => x.verified, newUserData.verified);
+                .Set(x => x.FirstName, newUserData.FirstName)
+                .Set(x => x.LastName, newUserData.LastName)
+                .Set(x => x.Email, newUserData.Email)
+                .Set(x => x.UserName, newUserData.UserName)
+                .Set(x => x.Address, newUserData.Address)
+                .Set(x => x.PhoneNumber, newUserData.PhoneNumber);
 
             _users.UpdateOne(filter, update);
             return newUserData;
@@ -148,7 +148,7 @@ namespace UserService.Repositories
         public void UpdatePassword(LoginModel credentials, string newPassword)
         {
             // Retrieve the user from the database based on the provided username
-            var user = _users.Find(u => u.userName == credentials.Username).FirstOrDefault();
+            var user = _users.Find(u => u.UserName == credentials.Username).FirstOrDefault();
 
             if (user == null)
             {
@@ -156,7 +156,7 @@ namespace UserService.Repositories
             }
 
             // Decode the stored salt from base64
-            byte[] salt = Convert.FromBase64String(user.salt);
+            byte[] salt = Convert.FromBase64String(user.Salt);
 
             // Compute the hash of the old password concatenated with the salt
             byte[] hashedPasswordWithSalt = new Rfc2898DeriveBytes(credentials.Password, salt, 10000).GetBytes(32);
@@ -165,7 +165,7 @@ namespace UserService.Repositories
             string hashedPassword = Convert.ToBase64String(hashedPasswordWithSalt);
 
             // Check if the provided old password matches the stored hash
-            if (hashedPassword != user.password)
+            if (hashedPassword != user.Password)
             {
                 throw new Exception("Invalid old password.");
             }
@@ -182,23 +182,23 @@ namespace UserService.Repositories
 
             // Update the user's password and salt in the database
             var update = Builders<UserModel>.Update
-                .Set(u => u.password, newHashedPassword)
-                .Set(u => u.salt, Convert.ToBase64String(newSalt));
+                .Set(u => u.Password, newHashedPassword)
+                .Set(u => u.Salt, Convert.ToBase64String(newSalt));
 
-            _users.UpdateOne(u => u.userName == credentials.Username, update);
+            _users.UpdateOne(u => u.UserName == credentials.Username, update);
         }
 
 
         public void VerifyUser(string id)
         {
             var filter = Builders<UserModel>.Filter.Eq("id", id);
-            var update = Builders<UserModel>.Update.Set(u => u.verified, true);
+            var update = Builders<UserModel>.Update.Set(u => u.Verified, true);
             _users.UpdateOne(filter, update);
         }
         public UserModelDTO Login(LoginModel credentials)
         {
             // Retrieve the user from the database based on the provided username
-            var user = _users.Find(u => u.userName == credentials.Username).FirstOrDefault();
+            var user = _users.Find(u => u.UserName == credentials.Username).FirstOrDefault();
 
             // If the user is not found, return null indicating authentication failure
             if (user == null)
@@ -207,7 +207,7 @@ namespace UserService.Repositories
             }
 
             // Decode the stored salt from base64
-            byte[] salt = Convert.FromBase64String(user.salt);
+            byte[] salt = Convert.FromBase64String(user.Salt);
 
             // Compute the hash of the provided password concatenated with the salt
             byte[] hashedPasswordWithSalt = new Rfc2898DeriveBytes(credentials.Password, salt, 10000).GetBytes(32);
@@ -216,7 +216,7 @@ namespace UserService.Repositories
             string hashedPassword = Convert.ToBase64String(hashedPasswordWithSalt);
 
             // Compare the computed hash with the stored hash
-            if (hashedPassword == user.password)
+            if (hashedPassword == user.Password)
             {
                 var userDTO = new UserModelDTO(user);
                 // Passwords match, return the user indicating successful authentication
@@ -225,7 +225,7 @@ namespace UserService.Repositories
             else
             {
                 // Passwords don't match, return null indicating authentication failure
-                return null;
+                throw new Exception("Password incorrect");
             }
         }
     }
