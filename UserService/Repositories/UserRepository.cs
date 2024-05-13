@@ -5,6 +5,7 @@ using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using RabbitMQ.Client;
 using System.Text.Json;
 using System.Text;
@@ -28,6 +29,27 @@ namespace UserService.Repositories
 
         public void CreateUser(UserModel user)
         {
+            var existingUser = _users.Find(u => u.userName == user.userName).FirstOrDefault();
+            if (existingUser != null)
+            {
+                // User with the same username already exists, handle the error (e.g., throw an exception)
+                throw new Exception("Username already exists. Please choose a different username.");
+            }
+            
+            // Generate a random salt
+            byte[] salt = new byte[16];
+            new RNGCryptoServiceProvider().GetBytes(salt);
+
+            // Compute the hash of the password concatenated with the salt
+            byte[] hashedPasswordWithSalt = new Rfc2898DeriveBytes(user.password, salt, 10000).GetBytes(32);
+
+            // Convert the byte array to a base64-encoded string for storage
+            string hashedPassword = Convert.ToBase64String(hashedPasswordWithSalt);
+    
+            // Store the hashed password and the salt in the UserModel
+            user.password = hashedPassword;
+            user.salt = Convert.ToBase64String(salt);
+            
             _users.InsertOne(user);
 
             var mail = new MailModel { ReceiverMail = user.email, Header = "E-mail Verifikation", Content = $"Klik på dette link for at verificere din email <ahref>http://localhost:5145/user/verify/{user.id}</ahref>" };
@@ -43,14 +65,14 @@ namespace UserService.Repositories
                 var serializedEmail = JsonSerializer.Serialize(mail);
 
                 // Publish the serialized email data to RabbitMQ
-                channel.QueueDeclare(queue: "MailQueue",
+                channel.QueueDeclare(queue: Environment.GetEnvironmentVariable("RabbitMQQueueName"),
                                               durable: false,
                                               exclusive: false,
                                               autoDelete: false,
                                               arguments: null);
 
                 channel.BasicPublish(exchange: "",
-                                              routingKey: "MailQueue",
+                                              routingKey: Environment.GetEnvironmentVariable("RabbitMQQueueName"),
                                               basicProperties: null,
                                               body: Encoding.UTF8.GetBytes(serializedEmail));
 
@@ -69,16 +91,24 @@ namespace UserService.Repositories
             _users.DeleteOne(filter);
         }
 
-        public IEnumerable<UserModel> GetAll()
+        // GellAll if needed :)
+        /*public IEnumerable<UserModelDTO> GetAll()
         {
-            return _users.Find(_ => true).ToList();
-        }
-
-
-        public UserModel GetById(string id)
+            var userList = new List<UserModelDTO>();
+            var users = _users.Find(_ => true).ToList();
+            
+            foreach (var user in users)
+            {
+                userList.Add(new UserModelDTO(user));
+            }
+            return userList;
+        }*/
+        
+        public UserModelDTO GetById(string id)
         {
             var filter = Builders<UserModel>.Filter.Eq("id", id);
-            return _users.Find(filter).FirstOrDefault();
+            var userDTO = new UserModelDTO(_users.Find(filter).FirstOrDefault());
+            return userDTO;
         }
 
         public UserModel UpdateUser(UserModel newUserData)
@@ -89,9 +119,9 @@ namespace UserService.Repositories
                 .Set(x => x.lastName, newUserData.lastName)
                 .Set(x => x.email, newUserData.email)
                 .Set(x => x.userName, newUserData.userName)
+                .Set(x => x.password, newUserData.password)
                 .Set(x => x.address, newUserData.address)
-                .Set(x => x.phoneNumber, newUserData.phoneNumber)
-                .Set(x => x.verified, newUserData.verified);
+                .Set(x => x.phoneNumber, newUserData.phoneNumber);
 
             _users.UpdateOne(filter, update);
             return newUserData;
@@ -103,10 +133,38 @@ namespace UserService.Repositories
             var update = Builders<UserModel>.Update.Set(u => u.verified, true);
             _users.UpdateOne(filter, update);
         }
-        //MANGLER!
-        public void ValidateUser(string userName, string password)
+        public UserModelDTO Login(LoginModel credentials)
         {
-            throw new NotImplementedException();
+            // Retrieve the user from the database based on the provided username
+            var user = _users.Find(u => u.userName == credentials.Username).FirstOrDefault();
+
+            // If the user is not found, return null indicating authentication failure
+            if (user == null)
+            {
+                return null;
+            }
+
+            // Decode the stored salt from base64
+            byte[] salt = Convert.FromBase64String(user.salt);
+
+            // Compute the hash of the provided password concatenated with the salt
+            byte[] hashedPasswordWithSalt = new Rfc2898DeriveBytes(credentials.Password, salt, 10000).GetBytes(32);
+
+            // Convert the byte array to a base64-encoded string for comparison
+            string hashedPassword = Convert.ToBase64String(hashedPasswordWithSalt);
+
+            // Compare the computed hash with the stored hash
+            if (hashedPassword == user.password)
+            {
+                var userDTO = new UserModelDTO(user);
+                // Passwords match, return the user indicating successful authentication
+                return userDTO;
+            }
+            else
+            {
+                // Passwords don't match, return null indicating authentication failure
+                return null;
+            }
         }
     }
 }

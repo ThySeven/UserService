@@ -1,170 +1,231 @@
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\bin\Debug\net8.0\NLog.config
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\bin\Debug\net8.0\appsettings.Development.json
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\bin\Debug\net8.0\appsettings.json
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\bin\Debug\net8.0\UserService.exe
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\bin\Debug\net8.0\UserService.deps.json
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\bin\Debug\net8.0\UserService.runtimeconfig.json
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\bin\Debug\net8.0\UserService.dll
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\bin\Debug\net8.0\UserService.pdb
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\bin\Debug\net8.0\Microsoft.OpenApi.dll
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\bin\Debug\net8.0\NLog.dll
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\bin\Debug\net8.0\NLog.Extensions.Logging.dll
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\bin\Debug\net8.0\NLog.Loki.dll
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\bin\Debug\net8.0\NLog.Web.AspNetCore.dll
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\bin\Debug\net8.0\RabbitMQ.Client.dll
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\bin\Debug\net8.0\VaultSharp.dll
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\obj\Debug\net8.0\UserService.csproj.AssemblyReference.cache
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\obj\Debug\net8.0\UserService.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\obj\Debug\net8.0\UserService.AssemblyInfoInputs.cache
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\obj\Debug\net8.0\UserService.AssemblyInfo.cs
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\obj\Debug\net8.0\UserService.csproj.CoreCompileInputs.cache
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\obj\Debug\net8.0\UserService.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\obj\Debug\net8.0\UserService.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\obj\Debug\net8.0\UserService.sourcelink.json
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\obj\Debug\net8.0\staticwebassets.build.json
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\obj\Debug\net8.0\staticwebassets.development.json
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\obj\Debug\net8.0\staticwebassets\msbuild.UserService.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\obj\Debug\net8.0\staticwebassets\msbuild.build.UserService.props
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.UserService.props
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.UserService.props
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\obj\Debug\net8.0\scopedcss\bundle\UserService.styles.css
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\obj\Debug\net8.0\UserService.csproj.CopyComplete
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\obj\Debug\net8.0\UserService.dll
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\obj\Debug\net8.0\refint\UserService.dll
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\obj\Debug\net8.0\UserService.pdb
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\obj\Debug\net8.0\UserService.genruntimeconfig.cache
-C:\Users\JeffS\Dropbox\EAAA\4.Semester\Projekt\UserService\MicroservicesWEBAPITemplate\obj\Debug\net8.0\ref\UserService.dll
-C:\Users\Bruger\source\repos\UserService\UserService\bin\Debug\net8.0\NLog.config
-C:\Users\Bruger\source\repos\UserService\UserService\bin\Debug\net8.0\appsettings.Development.json
-C:\Users\Bruger\source\repos\UserService\UserService\bin\Debug\net8.0\appsettings.json
-C:\Users\Bruger\source\repos\UserService\UserService\bin\Debug\net8.0\UserService.exe
-C:\Users\Bruger\source\repos\UserService\UserService\bin\Debug\net8.0\UserService.deps.json
-C:\Users\Bruger\source\repos\UserService\UserService\bin\Debug\net8.0\UserService.runtimeconfig.json
-C:\Users\Bruger\source\repos\UserService\UserService\bin\Debug\net8.0\UserService.dll
-C:\Users\Bruger\source\repos\UserService\UserService\bin\Debug\net8.0\UserService.pdb
-C:\Users\Bruger\source\repos\UserService\UserService\bin\Debug\net8.0\AWSSDK.Core.dll
-C:\Users\Bruger\source\repos\UserService\UserService\bin\Debug\net8.0\AWSSDK.SecurityToken.dll
-C:\Users\Bruger\source\repos\UserService\UserService\bin\Debug\net8.0\DnsClient.dll
-C:\Users\Bruger\source\repos\UserService\UserService\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-C:\Users\Bruger\source\repos\UserService\UserService\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
-C:\Users\Bruger\source\repos\UserService\UserService\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\Bruger\source\repos\UserService\UserService\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
-C:\Users\Bruger\source\repos\UserService\UserService\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
-C:\Users\Bruger\source\repos\UserService\UserService\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\Bruger\source\repos\UserService\UserService\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
-C:\Users\Bruger\source\repos\UserService\UserService\bin\Debug\net8.0\Microsoft.OpenApi.dll
-C:\Users\Bruger\source\repos\UserService\UserService\bin\Debug\net8.0\MongoDB.Bson.dll
-C:\Users\Bruger\source\repos\UserService\UserService\bin\Debug\net8.0\MongoDB.Driver.dll
-C:\Users\Bruger\source\repos\UserService\UserService\bin\Debug\net8.0\MongoDB.Driver.Core.dll
-C:\Users\Bruger\source\repos\UserService\UserService\bin\Debug\net8.0\MongoDB.Libmongocrypt.dll
-C:\Users\Bruger\source\repos\UserService\UserService\bin\Debug\net8.0\NLog.dll
-C:\Users\Bruger\source\repos\UserService\UserService\bin\Debug\net8.0\NLog.Extensions.Logging.dll
-C:\Users\Bruger\source\repos\UserService\UserService\bin\Debug\net8.0\NLog.Loki.dll
-C:\Users\Bruger\source\repos\UserService\UserService\bin\Debug\net8.0\NLog.Web.AspNetCore.dll
-C:\Users\Bruger\source\repos\UserService\UserService\bin\Debug\net8.0\RabbitMQ.Client.dll
-C:\Users\Bruger\source\repos\UserService\UserService\bin\Debug\net8.0\SharpCompress.dll
-C:\Users\Bruger\source\repos\UserService\UserService\bin\Debug\net8.0\Snappier.dll
-C:\Users\Bruger\source\repos\UserService\UserService\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\Bruger\source\repos\UserService\UserService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\Bruger\source\repos\UserService\UserService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\Bruger\source\repos\UserService\UserService\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\Bruger\source\repos\UserService\UserService\bin\Debug\net8.0\VaultSharp.dll
-C:\Users\Bruger\source\repos\UserService\UserService\bin\Debug\net8.0\ZstdSharp.dll
-C:\Users\Bruger\source\repos\UserService\UserService\bin\Debug\net8.0\runtimes\linux\native\libmongocrypt.so
-C:\Users\Bruger\source\repos\UserService\UserService\bin\Debug\net8.0\runtimes\osx\native\libmongocrypt.dylib
-C:\Users\Bruger\source\repos\UserService\UserService\bin\Debug\net8.0\runtimes\win\native\mongocrypt.dll
-C:\Users\Bruger\source\repos\UserService\UserService\obj\Debug\net8.0\UserService.csproj.AssemblyReference.cache
-C:\Users\Bruger\source\repos\UserService\UserService\obj\Debug\net8.0\UserService.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Bruger\source\repos\UserService\UserService\obj\Debug\net8.0\UserService.AssemblyInfoInputs.cache
-C:\Users\Bruger\source\repos\UserService\UserService\obj\Debug\net8.0\UserService.AssemblyInfo.cs
-C:\Users\Bruger\source\repos\UserService\UserService\obj\Debug\net8.0\UserService.csproj.CoreCompileInputs.cache
-C:\Users\Bruger\source\repos\UserService\UserService\obj\Debug\net8.0\UserService.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Bruger\source\repos\UserService\UserService\obj\Debug\net8.0\UserService.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Bruger\source\repos\UserService\UserService\obj\Debug\net8.0\UserService.sourcelink.json
-C:\Users\Bruger\source\repos\UserService\UserService\obj\Debug\net8.0\staticwebassets.build.json
-C:\Users\Bruger\source\repos\UserService\UserService\obj\Debug\net8.0\staticwebassets.development.json
-C:\Users\Bruger\source\repos\UserService\UserService\obj\Debug\net8.0\staticwebassets\msbuild.UserService.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\Bruger\source\repos\UserService\UserService\obj\Debug\net8.0\staticwebassets\msbuild.build.UserService.props
-C:\Users\Bruger\source\repos\UserService\UserService\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.UserService.props
-C:\Users\Bruger\source\repos\UserService\UserService\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.UserService.props
-C:\Users\Bruger\source\repos\UserService\UserService\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\Bruger\source\repos\UserService\UserService\obj\Debug\net8.0\scopedcss\bundle\UserService.styles.css
-C:\Users\Bruger\source\repos\UserService\UserService\obj\Debug\net8.0\UserServ.57764DC8.Up2Date
-C:\Users\Bruger\source\repos\UserService\UserService\obj\Debug\net8.0\UserService.dll
-C:\Users\Bruger\source\repos\UserService\UserService\obj\Debug\net8.0\refint\UserService.dll
-C:\Users\Bruger\source\repos\UserService\UserService\obj\Debug\net8.0\UserService.pdb
-C:\Users\Bruger\source\repos\UserService\UserService\obj\Debug\net8.0\UserService.genruntimeconfig.cache
-C:\Users\Bruger\source\repos\UserService\UserService\obj\Debug\net8.0\ref\UserService.dll
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\bin\Debug\net8.0\NLog.config
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\bin\Debug\net8.0\appsettings.Development.json
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\bin\Debug\net8.0\appsettings.json
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\bin\Debug\net8.0\UserService.exe
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\bin\Debug\net8.0\UserService.deps.json
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\bin\Debug\net8.0\UserService.runtimeconfig.json
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\bin\Debug\net8.0\UserService.dll
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\bin\Debug\net8.0\UserService.pdb
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\bin\Debug\net8.0\AWSSDK.Core.dll
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\bin\Debug\net8.0\AWSSDK.SecurityToken.dll
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\bin\Debug\net8.0\DnsClient.dll
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\bin\Debug\net8.0\Microsoft.OpenApi.dll
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\bin\Debug\net8.0\MongoDB.Bson.dll
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\bin\Debug\net8.0\MongoDB.Driver.dll
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\bin\Debug\net8.0\MongoDB.Driver.Core.dll
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\bin\Debug\net8.0\MongoDB.Libmongocrypt.dll
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\bin\Debug\net8.0\NLog.dll
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\bin\Debug\net8.0\NLog.Extensions.Logging.dll
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\bin\Debug\net8.0\NLog.Loki.dll
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\bin\Debug\net8.0\NLog.Web.AspNetCore.dll
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\bin\Debug\net8.0\RabbitMQ.Client.dll
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\bin\Debug\net8.0\SharpCompress.dll
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\bin\Debug\net8.0\Snappier.dll
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\bin\Debug\net8.0\VaultSharp.dll
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\bin\Debug\net8.0\ZstdSharp.dll
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\bin\Debug\net8.0\runtimes\linux\native\libmongocrypt.so
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\bin\Debug\net8.0\runtimes\osx\native\libmongocrypt.dylib
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\bin\Debug\net8.0\runtimes\win\native\mongocrypt.dll
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\obj\Debug\net8.0\UserService.csproj.AssemblyReference.cache
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\obj\Debug\net8.0\UserService.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\obj\Debug\net8.0\UserService.AssemblyInfoInputs.cache
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\obj\Debug\net8.0\UserService.AssemblyInfo.cs
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\obj\Debug\net8.0\UserService.csproj.CoreCompileInputs.cache
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\obj\Debug\net8.0\UserService.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\obj\Debug\net8.0\UserService.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\obj\Debug\net8.0\UserService.sourcelink.json
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\obj\Debug\net8.0\staticwebassets.build.json
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\obj\Debug\net8.0\staticwebassets.development.json
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\obj\Debug\net8.0\staticwebassets\msbuild.UserService.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\obj\Debug\net8.0\staticwebassets\msbuild.build.UserService.props
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.UserService.props
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.UserService.props
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\obj\Debug\net8.0\scopedcss\bundle\UserService.styles.css
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\obj\Debug\net8.0\UserServ.57764DC8.Up2Date
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\obj\Debug\net8.0\UserService.dll
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\obj\Debug\net8.0\refint\UserService.dll
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\obj\Debug\net8.0\UserService.pdb
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\obj\Debug\net8.0\UserService.genruntimeconfig.cache
-C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\UserService\UserService\obj\Debug\net8.0\ref\UserService.dll
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/bin/Debug/net8.0/NLog.config
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/bin/Debug/net8.0/appsettings.Development.json
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/bin/Debug/net8.0/appsettings.json
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/bin/Debug/net8.0/UserService.exe
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/bin/Debug/net8.0/UserService.deps.json
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/bin/Debug/net8.0/UserService.runtimeconfig.json
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/bin/Debug/net8.0/UserService.dll
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/bin/Debug/net8.0/UserService.pdb
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.dll
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/bin/Debug/net8.0/Microsoft.OpenApi.dll
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/bin/Debug/net8.0/NLog.dll
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/bin/Debug/net8.0/NLog.Extensions.Logging.dll
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/bin/Debug/net8.0/NLog.Loki.dll
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/bin/Debug/net8.0/NLog.Web.AspNetCore.dll
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/bin/Debug/net8.0/RabbitMQ.Client.dll
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/bin/Debug/net8.0/VaultSharp.dll
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/obj/Debug/net8.0/UserService.csproj.AssemblyReference.cache
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/obj/Debug/net8.0/UserService.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/obj/Debug/net8.0/UserService.AssemblyInfoInputs.cache
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/obj/Debug/net8.0/UserService.AssemblyInfo.cs
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/obj/Debug/net8.0/UserService.csproj.CoreCompileInputs.cache
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/obj/Debug/net8.0/UserService.MvcApplicationPartsAssemblyInfo.cs
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/obj/Debug/net8.0/UserService.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/obj/Debug/net8.0/UserService.sourcelink.json
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/obj/Debug/net8.0/staticwebassets.build.json
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/obj/Debug/net8.0/staticwebassets.development.json
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/obj/Debug/net8.0/staticwebassets/msbuild.UserService.Microsoft.AspNetCore.StaticWebAssets.props
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/obj/Debug/net8.0/staticwebassets/msbuild.build.UserService.props
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.UserService.props
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.UserService.props
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/obj/Debug/net8.0/staticwebassets.pack.json
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/obj/Debug/net8.0/scopedcss/bundle/UserService.styles.css
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/obj/Debug/net8.0/UserService.csproj.CopyComplete
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/obj/Debug/net8.0/UserService.dll
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/obj/Debug/net8.0/refint/UserService.dll
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/obj/Debug/net8.0/UserService.pdb
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/obj/Debug/net8.0/UserService.genruntimeconfig.cache
+C:/Users/JeffS/Dropbox/EAAA/4.Semester/Projekt/UserService/MicroservicesWEBAPITemplate/obj/Debug/net8.0/ref/UserService.dll
+C:/Users/Bruger/source/repos/UserService/UserService/bin/Debug/net8.0/NLog.config
+C:/Users/Bruger/source/repos/UserService/UserService/bin/Debug/net8.0/appsettings.Development.json
+C:/Users/Bruger/source/repos/UserService/UserService/bin/Debug/net8.0/appsettings.json
+C:/Users/Bruger/source/repos/UserService/UserService/bin/Debug/net8.0/UserService.exe
+C:/Users/Bruger/source/repos/UserService/UserService/bin/Debug/net8.0/UserService.deps.json
+C:/Users/Bruger/source/repos/UserService/UserService/bin/Debug/net8.0/UserService.runtimeconfig.json
+C:/Users/Bruger/source/repos/UserService/UserService/bin/Debug/net8.0/UserService.dll
+C:/Users/Bruger/source/repos/UserService/UserService/bin/Debug/net8.0/UserService.pdb
+C:/Users/Bruger/source/repos/UserService/UserService/bin/Debug/net8.0/AWSSDK.Core.dll
+C:/Users/Bruger/source/repos/UserService/UserService/bin/Debug/net8.0/AWSSDK.SecurityToken.dll
+C:/Users/Bruger/source/repos/UserService/UserService/bin/Debug/net8.0/DnsClient.dll
+C:/Users/Bruger/source/repos/UserService/UserService/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:/Users/Bruger/source/repos/UserService/UserService/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll
+C:/Users/Bruger/source/repos/UserService/UserService/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll
+C:/Users/Bruger/source/repos/UserService/UserService/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll
+C:/Users/Bruger/source/repos/UserService/UserService/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.dll
+C:/Users/Bruger/source/repos/UserService/UserService/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:/Users/Bruger/source/repos/UserService/UserService/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
+C:/Users/Bruger/source/repos/UserService/UserService/bin/Debug/net8.0/Microsoft.OpenApi.dll
+C:/Users/Bruger/source/repos/UserService/UserService/bin/Debug/net8.0/MongoDB.Bson.dll
+C:/Users/Bruger/source/repos/UserService/UserService/bin/Debug/net8.0/MongoDB.Driver.dll
+C:/Users/Bruger/source/repos/UserService/UserService/bin/Debug/net8.0/MongoDB.Driver.Core.dll
+C:/Users/Bruger/source/repos/UserService/UserService/bin/Debug/net8.0/MongoDB.Libmongocrypt.dll
+C:/Users/Bruger/source/repos/UserService/UserService/bin/Debug/net8.0/NLog.dll
+C:/Users/Bruger/source/repos/UserService/UserService/bin/Debug/net8.0/NLog.Extensions.Logging.dll
+C:/Users/Bruger/source/repos/UserService/UserService/bin/Debug/net8.0/NLog.Loki.dll
+C:/Users/Bruger/source/repos/UserService/UserService/bin/Debug/net8.0/NLog.Web.AspNetCore.dll
+C:/Users/Bruger/source/repos/UserService/UserService/bin/Debug/net8.0/RabbitMQ.Client.dll
+C:/Users/Bruger/source/repos/UserService/UserService/bin/Debug/net8.0/SharpCompress.dll
+C:/Users/Bruger/source/repos/UserService/UserService/bin/Debug/net8.0/Snappier.dll
+C:/Users/Bruger/source/repos/UserService/UserService/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
+C:/Users/Bruger/source/repos/UserService/UserService/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+C:/Users/Bruger/source/repos/UserService/UserService/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+C:/Users/Bruger/source/repos/UserService/UserService/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
+C:/Users/Bruger/source/repos/UserService/UserService/bin/Debug/net8.0/VaultSharp.dll
+C:/Users/Bruger/source/repos/UserService/UserService/bin/Debug/net8.0/ZstdSharp.dll
+C:/Users/Bruger/source/repos/UserService/UserService/bin/Debug/net8.0/runtimes/linux/native/libmongocrypt.so
+C:/Users/Bruger/source/repos/UserService/UserService/bin/Debug/net8.0/runtimes/osx/native/libmongocrypt.dylib
+C:/Users/Bruger/source/repos/UserService/UserService/bin/Debug/net8.0/runtimes/win/native/mongocrypt.dll
+C:/Users/Bruger/source/repos/UserService/UserService/obj/Debug/net8.0/UserService.csproj.AssemblyReference.cache
+C:/Users/Bruger/source/repos/UserService/UserService/obj/Debug/net8.0/UserService.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Bruger/source/repos/UserService/UserService/obj/Debug/net8.0/UserService.AssemblyInfoInputs.cache
+C:/Users/Bruger/source/repos/UserService/UserService/obj/Debug/net8.0/UserService.AssemblyInfo.cs
+C:/Users/Bruger/source/repos/UserService/UserService/obj/Debug/net8.0/UserService.csproj.CoreCompileInputs.cache
+C:/Users/Bruger/source/repos/UserService/UserService/obj/Debug/net8.0/UserService.MvcApplicationPartsAssemblyInfo.cs
+C:/Users/Bruger/source/repos/UserService/UserService/obj/Debug/net8.0/UserService.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/Bruger/source/repos/UserService/UserService/obj/Debug/net8.0/UserService.sourcelink.json
+C:/Users/Bruger/source/repos/UserService/UserService/obj/Debug/net8.0/staticwebassets.build.json
+C:/Users/Bruger/source/repos/UserService/UserService/obj/Debug/net8.0/staticwebassets.development.json
+C:/Users/Bruger/source/repos/UserService/UserService/obj/Debug/net8.0/staticwebassets/msbuild.UserService.Microsoft.AspNetCore.StaticWebAssets.props
+C:/Users/Bruger/source/repos/UserService/UserService/obj/Debug/net8.0/staticwebassets/msbuild.build.UserService.props
+C:/Users/Bruger/source/repos/UserService/UserService/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.UserService.props
+C:/Users/Bruger/source/repos/UserService/UserService/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.UserService.props
+C:/Users/Bruger/source/repos/UserService/UserService/obj/Debug/net8.0/staticwebassets.pack.json
+C:/Users/Bruger/source/repos/UserService/UserService/obj/Debug/net8.0/scopedcss/bundle/UserService.styles.css
+C:/Users/Bruger/source/repos/UserService/UserService/obj/Debug/net8.0/UserServ.57764DC8.Up2Date
+C:/Users/Bruger/source/repos/UserService/UserService/obj/Debug/net8.0/UserService.dll
+C:/Users/Bruger/source/repos/UserService/UserService/obj/Debug/net8.0/refint/UserService.dll
+C:/Users/Bruger/source/repos/UserService/UserService/obj/Debug/net8.0/UserService.pdb
+C:/Users/Bruger/source/repos/UserService/UserService/obj/Debug/net8.0/UserService.genruntimeconfig.cache
+C:/Users/Bruger/source/repos/UserService/UserService/obj/Debug/net8.0/ref/UserService.dll
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/bin/Debug/net8.0/NLog.config
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/bin/Debug/net8.0/appsettings.Development.json
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/bin/Debug/net8.0/appsettings.json
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/bin/Debug/net8.0/UserService.exe
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/bin/Debug/net8.0/UserService.deps.json
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/bin/Debug/net8.0/UserService.runtimeconfig.json
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/bin/Debug/net8.0/UserService.dll
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/bin/Debug/net8.0/UserService.pdb
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/bin/Debug/net8.0/AWSSDK.Core.dll
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/bin/Debug/net8.0/AWSSDK.SecurityToken.dll
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/bin/Debug/net8.0/DnsClient.dll
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.dll
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/bin/Debug/net8.0/Microsoft.OpenApi.dll
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/bin/Debug/net8.0/MongoDB.Bson.dll
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/bin/Debug/net8.0/MongoDB.Driver.dll
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/bin/Debug/net8.0/MongoDB.Driver.Core.dll
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/bin/Debug/net8.0/MongoDB.Libmongocrypt.dll
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/bin/Debug/net8.0/NLog.dll
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/bin/Debug/net8.0/NLog.Extensions.Logging.dll
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/bin/Debug/net8.0/NLog.Loki.dll
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/bin/Debug/net8.0/NLog.Web.AspNetCore.dll
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/bin/Debug/net8.0/RabbitMQ.Client.dll
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/bin/Debug/net8.0/SharpCompress.dll
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/bin/Debug/net8.0/Snappier.dll
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/bin/Debug/net8.0/VaultSharp.dll
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/bin/Debug/net8.0/ZstdSharp.dll
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/bin/Debug/net8.0/runtimes/linux/native/libmongocrypt.so
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/bin/Debug/net8.0/runtimes/osx/native/libmongocrypt.dylib
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/bin/Debug/net8.0/runtimes/win/native/mongocrypt.dll
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/obj/Debug/net8.0/UserService.csproj.AssemblyReference.cache
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/obj/Debug/net8.0/UserService.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/obj/Debug/net8.0/UserService.AssemblyInfoInputs.cache
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/obj/Debug/net8.0/UserService.AssemblyInfo.cs
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/obj/Debug/net8.0/UserService.csproj.CoreCompileInputs.cache
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/obj/Debug/net8.0/UserService.MvcApplicationPartsAssemblyInfo.cs
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/obj/Debug/net8.0/UserService.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/obj/Debug/net8.0/UserService.sourcelink.json
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/obj/Debug/net8.0/staticwebassets.build.json
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/obj/Debug/net8.0/staticwebassets.development.json
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/obj/Debug/net8.0/staticwebassets/msbuild.UserService.Microsoft.AspNetCore.StaticWebAssets.props
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/obj/Debug/net8.0/staticwebassets/msbuild.build.UserService.props
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.UserService.props
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.UserService.props
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/obj/Debug/net8.0/staticwebassets.pack.json
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/obj/Debug/net8.0/scopedcss/bundle/UserService.styles.css
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/obj/Debug/net8.0/UserServ.57764DC8.Up2Date
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/obj/Debug/net8.0/UserService.dll
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/obj/Debug/net8.0/refint/UserService.dll
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/obj/Debug/net8.0/UserService.pdb
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/obj/Debug/net8.0/UserService.genruntimeconfig.cache
+C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/obj/Debug/net8.0/ref/UserService.dll
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/bin/Debug/net8.0/NLog.config
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/bin/Debug/net8.0/appsettings.Development.json
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/bin/Debug/net8.0/appsettings.json
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/bin/Debug/net8.0/UserService
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/bin/Debug/net8.0/UserService.deps.json
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/bin/Debug/net8.0/UserService.runtimeconfig.json
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/bin/Debug/net8.0/UserService.dll
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/bin/Debug/net8.0/UserService.pdb
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/bin/Debug/net8.0/AWSSDK.Core.dll
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/bin/Debug/net8.0/AWSSDK.SecurityToken.dll
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/bin/Debug/net8.0/DnsClient.dll
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.dll
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/bin/Debug/net8.0/Microsoft.OpenApi.dll
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/bin/Debug/net8.0/MongoDB.Bson.dll
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/bin/Debug/net8.0/MongoDB.Driver.dll
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/bin/Debug/net8.0/MongoDB.Driver.Core.dll
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/bin/Debug/net8.0/MongoDB.Libmongocrypt.dll
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/bin/Debug/net8.0/NLog.dll
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/bin/Debug/net8.0/NLog.Extensions.Logging.dll
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/bin/Debug/net8.0/NLog.Loki.dll
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/bin/Debug/net8.0/NLog.Web.AspNetCore.dll
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/bin/Debug/net8.0/RabbitMQ.Client.dll
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/bin/Debug/net8.0/SharpCompress.dll
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/bin/Debug/net8.0/Snappier.dll
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/bin/Debug/net8.0/VaultSharp.dll
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/bin/Debug/net8.0/ZstdSharp.dll
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/bin/Debug/net8.0/runtimes/linux/native/libmongocrypt.so
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/bin/Debug/net8.0/runtimes/osx/native/libmongocrypt.dylib
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/bin/Debug/net8.0/runtimes/win/native/mongocrypt.dll
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/obj/Debug/net8.0/UserService.csproj.AssemblyReference.cache
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/obj/Debug/net8.0/UserService.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/obj/Debug/net8.0/UserService.AssemblyInfoInputs.cache
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/obj/Debug/net8.0/UserService.AssemblyInfo.cs
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/obj/Debug/net8.0/UserService.csproj.CoreCompileInputs.cache
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/obj/Debug/net8.0/UserService.MvcApplicationPartsAssemblyInfo.cs
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/obj/Debug/net8.0/UserService.MvcApplicationPartsAssemblyInfo.cache
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/obj/Debug/net8.0/UserService.sourcelink.json
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/obj/Debug/net8.0/staticwebassets.build.json
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/obj/Debug/net8.0/staticwebassets.development.json
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/obj/Debug/net8.0/staticwebassets/msbuild.UserService.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/obj/Debug/net8.0/staticwebassets/msbuild.build.UserService.props
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.UserService.props
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.UserService.props
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/obj/Debug/net8.0/staticwebassets.pack.json
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/obj/Debug/net8.0/scopedcss/bundle/UserService.styles.css
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/obj/Debug/net8.0/UserService.csproj.CopyComplete
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/obj/Debug/net8.0/UserService.dll
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/obj/Debug/net8.0/refint/UserService.dll
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/obj/Debug/net8.0/UserService.pdb
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/obj/Debug/net8.0/UserService.genruntimeconfig.cache
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/obj/Debug/net8.0/ref/UserService.dll
