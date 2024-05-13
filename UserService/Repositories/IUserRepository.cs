@@ -4,9 +4,9 @@ namespace UserService.Repositories
 {
     public interface IUserRepository
     {
-        IEnumerable<UserModel> GetAll();
+        //IEnumerable<UserModelDTO> GetAll();
 
-        UserModel GetById(string id);
+        UserModelDTO GetById(string id);
 
         void CreateUser(UserModel user);
 
@@ -16,6 +16,6 @@ namespace UserService.Repositories
 
         UserModel UpdateUser(UserModel newUserData);
 
-        void ValidateUser(string userName, string password);
+        UserModelDTO Login(LoginModel credentials);
     }
 }
