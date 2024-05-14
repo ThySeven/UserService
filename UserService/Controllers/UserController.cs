@@ -58,7 +58,7 @@ namespace UserService.Controllers
             {
                 string token = Request.Headers.Authorization.ToString().Replace("Bearer ", "");
 
-                if (TokenHandler.DecodeToken(token).Username == user.Username)
+                if (TokenHandler.DecodeToken(token).Username == _userRepository.GetById(user.Id).Username)
                 {
                     _userRepository.UpdateUser(user);
                     _logger.LogInformation($"Information updates for user: {user.Username}");
