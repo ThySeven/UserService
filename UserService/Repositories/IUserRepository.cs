@@ -14,7 +14,9 @@ namespace UserService.Repositories
 
         void VerifyUser(string id);
 
-        UserModel UpdateUser(UserModel newUserData);
+        UserModelDTO UpdateUser(UserModelDTO newUserData);
+        
+        void UpdatePassword(LoginModel credentials, string newPassword);
 
         UserModelDTO Login(LoginModel credentials);
     }

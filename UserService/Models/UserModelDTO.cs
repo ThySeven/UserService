@@ -4,22 +4,27 @@ public class UserModelDTO
 {
     public UserModelDTO(UserModel userModel)
     {
-        id = userModel.id;
-        firstName = userModel.firstName;
-        lastName = userModel.lastName;
-        email = userModel.email;
-        userName = userModel.userName;
-        address = userModel.address;
-        phoneNumber = userModel.phoneNumber;
-        verified = userModel.verified;
+        Id = userModel.Id;
+        FirstName = userModel.FirstName;
+        LastName = userModel.LastName;
+        Email = userModel.Email;
+        Username = userModel.Username;
+        Address = userModel.Address;
+        PhoneNumber = userModel.PhoneNumber;
+        Type = UserModel.UserType.User;
+    }
+
+    public UserModelDTO()
+    {
+        
     }
     
-    public string id {  get; set; }
-    public string firstName { get; set; }
-    public string lastName { get; set; }
-    public string email { get; set; }
-    public string userName { get; set; }
-    public string address { get; set; }
-    public string phoneNumber { get; set; }
-    public bool verified { get; set; } = false;
+    public string Id {  get; set; }
+    public string? FirstName { get; set; }
+    public string? LastName { get; set; }
+    public string? Email { get; set; }
+    public string? Username { get; set; }
+    public string? Address { get; set; }
+    public string? PhoneNumber { get; set; }
+    public UserModel.UserType Type = UserModel.UserType.User;
 }
