@@ -132,7 +132,7 @@ namespace UserService.Repositories
             if(string.IsNullOrEmpty(newUserData.PhoneNumber))
                 newUserData.PhoneNumber = currentUser.PhoneNumber;
 
-            var filter = Builders<UserModel>.Filter.Eq("id", newUserData.Id);
+            var filter = Builders<UserModel>.Filter.Eq("Id", newUserData.Id);
             var update = Builders<UserModel>.Update
                 .Set(x => x.FirstName, newUserData.FirstName)
                 .Set(x => x.LastName, newUserData.LastName)
