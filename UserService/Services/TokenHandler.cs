@@ -65,4 +65,11 @@ public class TokenHandler
 
         return loginModel;
     }
+
+    public static string GenerateNewJwtToken(UserModelDTO user)
+    {
+        string newToken = TokenHandler.GenerateJwtToken(JsonSerializer.Serialize(user));
+
+        return newToken;
+    }
 }

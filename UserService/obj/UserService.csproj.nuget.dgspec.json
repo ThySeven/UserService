@@ -1,26 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/UserService.csproj": {}
+    "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\UserService\\UserService\\UserService.csproj": {}
   },
   "projects": {
-    "/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/UserService.csproj": {
+    "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\UserService\\UserService\\UserService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/UserService.csproj",
+        "projectUniqueName": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\UserService\\UserService\\UserService.csproj",
         "projectName": "UserService",
-        "projectPath": "/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/UserService.csproj",
-        "packagesPath": "/Users/nicolajorluff/.nuget/packages/",
-        "outputPath": "/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/obj/",
+        "projectPath": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\UserService\\UserService\\UserService.csproj",
+        "packagesPath": "C:\\Users\\nicol\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\UserService\\UserService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/nicolajorluff/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\nicol\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -33,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -95,7 +101,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

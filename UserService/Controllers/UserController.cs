@@ -46,7 +46,7 @@ namespace UserService.Controllers
             catch (Exception ex)
             {
                 _logger.LogCritical($"Failed to find user with id: {id}: {ex}");
-                return BadRequest("Bad request");
+                return BadRequest($"Failed to find user with id: {id}: {ex}");
             }
         }
 
@@ -61,8 +61,9 @@ namespace UserService.Controllers
                 if (TokenHandler.DecodeToken(token).Username == _userRepository.GetById(user.Id).Username)
                 {
                     _userRepository.UpdateUser(user);
-                    _logger.LogInformation($"Information updates for user: {user.Username}");
-                    return Ok();
+                    string newToken = TokenHandler.GenerateNewJwtToken(user);
+                    _logger.LogInformation($"Information updated for user: {user.Username}");
+                    return Ok($"Information updated for user: {user.Username} \n\n {new { token = newToken }}");
                 }
                 
                 return Unauthorized();
@@ -70,7 +71,7 @@ namespace UserService.Controllers
             catch (Exception ex)
             {
                 _logger.LogCritical($"Failed to find user with id: {user.Id}: {ex}");
-                return BadRequest("Bad request");
+                return BadRequest($"Failed to find user with id: {user.Id}: {ex}");
             }
         }
         
@@ -86,15 +87,15 @@ namespace UserService.Controllers
                 {
                     _userRepository.UpdatePassword(passwordUpdateRecord.LoginModel, passwordUpdateRecord.newPassword);
                     _logger.LogInformation($"Password updated for user: {passwordUpdateRecord.LoginModel.Username}");
-                    return Ok();
+                    return Ok($"Password updated for user: {passwordUpdateRecord.LoginModel.Username}");
                 }
                 
                 return Unauthorized();
             }
             catch (Exception ex)
             {
-                _logger.LogCritical($"Failed to find user with username: {passwordUpdateRecord.LoginModel.Username}: {ex}");
-                return BadRequest("Bad request");
+                _logger.LogCritical($"Failed to update password for user with username: {passwordUpdateRecord.LoginModel.Username}: {ex}");
+                return BadRequest($"Failed to update password for user with username: {passwordUpdateRecord.LoginModel.Username}: {ex}");
             }
         }
         public record PasswordUpdateRecord(LoginModel LoginModel, string newPassword);
@@ -107,13 +108,13 @@ namespace UserService.Controllers
             {
                 _userRepository.CreateUser(user);
                 _logger.LogInformation($"User created: {user.Username}");
-                return Ok();
+                return Ok($"User created: {user.Username}");
             }
 
             catch (Exception ex) 
             {
                 _logger.LogCritical($"Failed to create user: {user.Username}: {ex}");
-                return BadRequest("Bad request");
+                return BadRequest($"Failed to create user: {user.Username}: {ex}");
             }
         }
         
@@ -128,7 +129,7 @@ namespace UserService.Controllers
                 if (TokenHandler.DecodeToken(token).Username == _userRepository.GetById(id).Username)
                 {
                     _userRepository.DeleteUser(id);
-                    return Ok();
+                    return Ok($"User deleted with id: {id}");
                 }
                 
                 return Unauthorized();
@@ -136,7 +137,7 @@ namespace UserService.Controllers
             catch(Exception ex)
             {
                 _logger.LogCritical($"Failed to delete user with id: {id}: {ex}");
-                return BadRequest("Bad request");
+                return BadRequest($"Failed to delete user with id: {id}: {ex}");
             }
         }
         
@@ -152,7 +153,7 @@ namespace UserService.Controllers
             catch(Exception ex) 
             {
                 _logger.LogCritical($"Failed to validate credentials: {ex}");
-                return Unauthorized();
+                return BadRequest($"Failed to validate credentials: {ex}");
             }
         }
         
@@ -169,7 +170,7 @@ namespace UserService.Controllers
             catch (Exception ex)
             {
                 _logger.LogCritical($"Failed to validate user with id: {id}: {ex}");
-                return BadRequest("Bad request");
+                return BadRequest($"Failed to validate user with id: {id}: {ex}");
             }
         }
     }
