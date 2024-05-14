@@ -61,7 +61,7 @@ namespace UserService.Controllers
                 if (TokenHandler.DecodeToken(token).Username == _userRepository.GetById(user.Id).Username)
                 {
                     _userRepository.UpdateUser(user);
-                    string newToken = TokenHandler.GenerateNewJwtToken(user);
+                    string newToken = TokenHandler.GenerateJwtToken(user);
                     _logger.LogInformation($"Information updated for user: {user.Username}");
                     return Ok($"Information updated for user: {user.Username} \n\n {new { token = newToken }}");
                 }
@@ -147,7 +147,7 @@ namespace UserService.Controllers
         {
             try
             {
-                string token = TokenHandler.GenerateJwtToken(JsonSerializer.Serialize(_userRepository.Login(credentials)));
+                string token = TokenHandler.GenerateJwtToken(_userRepository.Login(credentials));
                 return Ok($"{new { token }}");
             }
             catch(Exception ex) 

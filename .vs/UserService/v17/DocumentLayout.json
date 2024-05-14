@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\UserService\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3F2FE4DC-D04E-439E-A121-2BC6BB274896}|UserService\\UserService.csproj|c:\\users\\nicol\\onedrive\\dokumenter\\code\\projekt-4sem\\userservice\\userservice\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F2FE4DC-D04E-439E-A121-2BC6BB274896}|UserService\\UserService.csproj|solutionrelative:userservice\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3F2FE4DC-D04E-439E-A121-2BC6BB274896}|UserService\\UserService.csproj|c:\\users\\nicol\\onedrive\\dokumenter\\code\\projekt-4sem\\userservice\\userservice\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F2FE4DC-D04E-439E-A121-2BC6BB274896}|UserService\\UserService.csproj|solutionrelative:userservice\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F2FE4DC-D04E-439E-A121-2BC6BB274896}|UserService\\UserService.csproj|c:\\users\\nicol\\onedrive\\dokumenter\\code\\projekt-4sem\\userservice\\userservice\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F2FE4DC-D04E-439E-A121-2BC6BB274896}|UserService\\UserService.csproj|solutionrelative:userservice\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3F2FE4DC-D04E-439E-A121-2BC6BB274896}|UserService\\UserService.csproj|c:\\users\\nicol\\onedrive\\dokumenter\\code\\projekt-4sem\\userservice\\userservice\\services\\tokenhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -52,13 +52,14 @@
               "RelativeDocumentMoniker": "UserService\\Services\\TokenHandler.cs",
               "ToolTip": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\UserService\\UserService\\Services\\TokenHandler.cs",
               "RelativeToolTip": "UserService\\Services\\TokenHandler.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAkwEoAAAABAAAA",
+              "ViewState": "AQIAABcAAAAAAAAAAAAgwEMAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T14:39:07.965Z"
+              "WhenOpened": "2024-05-14T14:39:07.965Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\UserService\\UserService\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "UserService\\Repositories\\UserRepository.cs",
@@ -71,15 +72,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\UserService\\UserService\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "UserService\\Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\UserService\\UserService\\Controllers\\UserController.cs",
               "RelativeToolTip": "UserService\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAGEAAAAAAAAAAAAkwH8AAAAQAAAA",
+              "ViewState": "AQIAABkAAAAAAAAAAAAQwD0AAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T09:28:39.172Z"
+              "WhenOpened": "2024-05-08T09:28:39.172Z",
+              "EditorCaption": ""
             }
           ]
         },
