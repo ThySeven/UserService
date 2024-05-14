@@ -8,9 +8,10 @@ public class UserModelDTO
         FirstName = userModel.FirstName;
         LastName = userModel.LastName;
         Email = userModel.Email;
-        UserName = userModel.UserName;
+        Username = userModel.Username;
         Address = userModel.Address;
         PhoneNumber = userModel.PhoneNumber;
+        Type = UserModel.UserType.User;
     }
 
     public UserModelDTO()
@@ -22,7 +23,8 @@ public class UserModelDTO
     public string? FirstName { get; set; }
     public string? LastName { get; set; }
     public string? Email { get; set; }
-    public string? UserName { get; set; }
+    public string? Username { get; set; }
     public string? Address { get; set; }
     public string? PhoneNumber { get; set; }
+    public UserModel.UserType Type = UserModel.UserType.User;
 }

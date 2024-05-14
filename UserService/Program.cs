@@ -8,6 +8,7 @@ using VaultSharp.V1.AuthMethods;
 using VaultSharp.V1.AuthMethods.Token;
 using VaultSharp.V1.Commons;
 using UserService.Repositories;
+using TokenHandler = UserService.Repositories.TokenHandler;
 
 var logger = NLog.LogManager.Setup().LoadConfigurationFromAppSettings()
 .GetCurrentClassLogger();
@@ -43,7 +44,7 @@ var jwtIssuer = kv2Secret.Data.Data["issuer"];
 string mySecret = Convert.ToString(jwtSecret) ?? "none";
 string myIssuer = Convert.ToString(jwtIssuer) ?? "none";
 
-GenerateToken.FillSecrets(mySecret, myIssuer);
+TokenHandler.FillSecrets(mySecret, myIssuer);
 
 builder.Services
 .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)

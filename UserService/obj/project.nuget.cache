@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0+tScldDFFuJjzT3+5zJDw7u3lKY0QvZ+AcdNihcrB9zOInqlBStg7p5CrbTuBs0EH2aW5o1/yNhOdA3+DIZjA==",
+  "dgSpecHash": "AHpfqSLAgnYs8VN1ZJI0s6uQVY0QSY/WjjEcjFkbaF5XHjG3H4P0AR7vCFKit+/PP6oHtZ21LCrYm1uu/W1rUg==",
   "success": true,
   "projectFilePath": "/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/UserService.csproj",
   "expectedPackageFiles": [
@@ -29,6 +29,7 @@
     "/Users/nicolajorluff/.nuget/packages/mongodb.driver/2.25.0/mongodb.driver.2.25.0.nupkg.sha512",
     "/Users/nicolajorluff/.nuget/packages/mongodb.driver.core/2.25.0/mongodb.driver.core.2.25.0.nupkg.sha512",
     "/Users/nicolajorluff/.nuget/packages/mongodb.libmongocrypt/1.8.2/mongodb.libmongocrypt.1.8.2.nupkg.sha512",
+    "/Users/nicolajorluff/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
     "/Users/nicolajorluff/.nuget/packages/nlog/5.3.2/nlog.5.3.2.nupkg.sha512",
     "/Users/nicolajorluff/.nuget/packages/nlog.extensions.logging/5.3.10/nlog.extensions.logging.5.3.10.nupkg.sha512",
     "/Users/nicolajorluff/.nuget/packages/nlog.targets.loki/2.2.0/nlog.targets.loki.2.2.0.nupkg.sha512",

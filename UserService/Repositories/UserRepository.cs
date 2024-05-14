@@ -33,7 +33,7 @@ namespace UserService.Repositories
 
         public void CreateUser(UserModel user)
         {
-            var existingUser = _users.Find(u => u.UserName == user.UserName).FirstOrDefault();
+            var existingUser = _users.Find(u => u.Username == user.Username).FirstOrDefault();
             if (existingUser != null)
             {
                 // User with the same username already exists, handle the error (e.g., throw an exception)
@@ -125,8 +125,8 @@ namespace UserService.Repositories
                 newUserData.LastName = currentUser.LastName;
             if(string.IsNullOrEmpty(newUserData.Email))
                 newUserData.Email = currentUser.Email;
-            if(string.IsNullOrEmpty(newUserData.UserName))
-                newUserData.UserName = currentUser.UserName;
+            if(string.IsNullOrEmpty(newUserData.Username))
+                newUserData.Username = currentUser.Username;
             if(string.IsNullOrEmpty(newUserData.Address))
                 newUserData.Address = currentUser.Address;
             if(string.IsNullOrEmpty(newUserData.PhoneNumber))
@@ -137,7 +137,7 @@ namespace UserService.Repositories
                 .Set(x => x.FirstName, newUserData.FirstName)
                 .Set(x => x.LastName, newUserData.LastName)
                 .Set(x => x.Email, newUserData.Email)
-                .Set(x => x.UserName, newUserData.UserName)
+                .Set(x => x.Username, newUserData.Username)
                 .Set(x => x.Address, newUserData.Address)
                 .Set(x => x.PhoneNumber, newUserData.PhoneNumber);
 
@@ -148,7 +148,7 @@ namespace UserService.Repositories
         public void UpdatePassword(LoginModel credentials, string newPassword)
         {
             // Retrieve the user from the database based on the provided username
-            var user = _users.Find(u => u.UserName == credentials.Username).FirstOrDefault();
+            var user = _users.Find(u => u.Username == credentials.Username).FirstOrDefault();
 
             if (user == null)
             {
@@ -185,20 +185,20 @@ namespace UserService.Repositories
                 .Set(u => u.Password, newHashedPassword)
                 .Set(u => u.Salt, Convert.ToBase64String(newSalt));
 
-            _users.UpdateOne(u => u.UserName == credentials.Username, update);
+            _users.UpdateOne(u => u.Username == credentials.Username, update);
         }
 
 
         public void VerifyUser(string id)
         {
-            var filter = Builders<UserModel>.Filter.Eq("id", id);
+            var filter = Builders<UserModel>.Filter.Eq("Id", id);
             var update = Builders<UserModel>.Update.Set(u => u.Verified, true);
             _users.UpdateOne(filter, update);
         }
         public UserModelDTO Login(LoginModel credentials)
         {
             // Retrieve the user from the database based on the provided username
-            var user = _users.Find(u => u.UserName == credentials.Username).FirstOrDefault();
+            var user = _users.Find(u => u.Username == credentials.Username).FirstOrDefault();
 
             // If the user is not found, return null indicating authentication failure
             if (user == null)

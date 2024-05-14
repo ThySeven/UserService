@@ -59,6 +59,10 @@
               "target": "Package",
               "version": "[5.3.10, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
             "RabbitMQ.Client": {
               "target": "Package",
               "version": "[6.8.1, )"

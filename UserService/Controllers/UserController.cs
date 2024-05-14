@@ -32,7 +32,14 @@ namespace UserService.Controllers
         {
             try
             {
-                return Ok(_userRepository.GetById(id));
+                string token = Request.Headers.Authorization.ToString().Replace("Bearer ", "");
+
+                if (TokenHandler.DecodeToken(token).Username == _userRepository.GetById(id).Username)
+                {
+                    return Ok(_userRepository.GetById(id));
+                }
+                
+                return Unauthorized();
             }
             catch (Exception ex)
             {
@@ -47,8 +54,16 @@ namespace UserService.Controllers
         {
             try
             {
-                _userRepository.UpdateUser(user);
-                return Ok();
+                string token = Request.Headers.Authorization.ToString().Replace("Bearer ", "");
+
+                if (TokenHandler.DecodeToken(token).Username == user.Username)
+                {
+                    _userRepository.UpdateUser(user);
+                    _logger.LogInformation($"Information updates for user: {user.Username}");
+                    return Ok();
+                }
+                
+                return Unauthorized();
             }
             catch (Exception ex)
             {
@@ -63,8 +78,16 @@ namespace UserService.Controllers
         {
             try
             {
-                _userRepository.UpdatePassword(passwordUpdateRecord.LoginModel, passwordUpdateRecord.newPassword);
-                return Ok();
+                string token = Request.Headers.Authorization.ToString().Replace("Bearer ", "");
+
+                if (passwordUpdateRecord.LoginModel.Username == TokenHandler.DecodeToken(token).Username)
+                {
+                    _userRepository.UpdatePassword(passwordUpdateRecord.LoginModel, passwordUpdateRecord.newPassword);
+                    _logger.LogInformation($"Password updated for user: {passwordUpdateRecord.LoginModel.Username}");
+                    return Ok();
+                }
+                
+                return Unauthorized();
             }
             catch (Exception ex)
             {
@@ -81,13 +104,13 @@ namespace UserService.Controllers
             try
             {
                 _userRepository.CreateUser(user);
-                _logger.LogInformation($"user created: {user}");
+                _logger.LogInformation($"User created: {user.Username}");
                 return Ok();
             }
 
             catch (Exception ex) 
             {
-                _logger.LogCritical($"Failed to create user {user}: {ex}");
+                _logger.LogCritical($"Failed to create user: {user.Username}: {ex}");
                 return BadRequest("Bad request");
             }
         }
@@ -98,12 +121,19 @@ namespace UserService.Controllers
         {
             try
             {
-                _userRepository.DeleteUser(id);
-                return Ok();
+                string token = Request.Headers.Authorization.ToString().Replace("Bearer ", "");
+                
+                if (TokenHandler.DecodeToken(token).Username == _userRepository.GetById(id).Username)
+                {
+                    _userRepository.DeleteUser(id);
+                    return Ok();
+                }
+                
+                return Unauthorized();
             }
             catch(Exception ex)
             {
-                _logger.LogCritical($"Failed to delete user {id}: {ex}");
+                _logger.LogCritical($"Failed to delete user with id: {id}: {ex}");
                 return BadRequest("Bad request");
             }
         }
@@ -114,8 +144,8 @@ namespace UserService.Controllers
         {
             try
             {
-                var token = GenerateToken.GenerateJwtToken(JsonSerializer.Serialize(_userRepository.Login(credentials)));
-                return Ok(new { token });
+                string token = TokenHandler.GenerateJwtToken(JsonSerializer.Serialize(_userRepository.Login(credentials)));
+                return Ok($"{new { token }}");
             }
             catch(Exception ex) 
             {
@@ -124,13 +154,14 @@ namespace UserService.Controllers
             }
         }
         
-        [Authorize]
+        [AllowAnonymous]
         [HttpGet("verify/{id}")]
         public IActionResult VerifyUser(string id)
         {
             try
             {
                 _userRepository.VerifyUser(id);
+                _logger.LogInformation($"User with id: {id}, has been verified");
                 return Ok("Skal redirect til login side");
             }
             catch (Exception ex)

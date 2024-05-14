@@ -229,3 +229,4 @@ C:/Users/nicol/OneDrive/Dokumenter/Code/Projekt-4Sem/UserService/UserService/obj
 /Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/obj/Debug/net8.0/UserService.pdb
 /Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/obj/Debug/net8.0/UserService.genruntimeconfig.cache
 /Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/obj/Debug/net8.0/ref/UserService.dll
+/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/UserService/UserService/bin/Debug/net8.0/Newtonsoft.Json.dll
