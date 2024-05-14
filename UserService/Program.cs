@@ -1,14 +1,15 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Tokens;
 using NLog;
 using NLog.Web;
 using System.Text;
+using Microsoft.IdentityModel.Tokens;
 using VaultSharp;
 using VaultSharp.V1.AuthMethods;
 using VaultSharp.V1.AuthMethods.Token;
 using VaultSharp.V1.Commons;
 using UserService.Repositories;
-using TokenHandler = UserService.Repositories.TokenHandler;
+using UserService.Services;
+using TokenHandler = UserService.Services.TokenHandler;
 
 var logger = NLog.LogManager.Setup().LoadConfigurationFromAppSettings()
 .GetCurrentClassLogger();
@@ -40,9 +41,12 @@ Secret<SecretData> kv2Secret = await vaultClient.V1.Secrets.KeyValue.V2
 .ReadSecretAsync(path: "jwt", mountPoint: "secret");
 var jwtSecret = kv2Secret.Data.Data["secret"];
 var jwtIssuer = kv2Secret.Data.Data["issuer"];
-
+var vaultjwtInternalApiKey = kv2Secret.Data.Data["internalApiKey"];
+ 
 string mySecret = Convert.ToString(jwtSecret) ?? "none";
 string myIssuer = Convert.ToString(jwtIssuer) ?? "none";
+string vaultInternalApiKey = Convert.ToString(vaultjwtInternalApiKey) ?? "none";
+WebManager.GetInstance.HttpClient.DefaultRequestHeaders.Add("X-Internal-ApiKey", vaultInternalApiKey);
 
 TokenHandler.FillSecrets(mySecret, myIssuer);
 
@@ -60,6 +64,47 @@ builder.Services
         ValidAudience = "http://localhost",
         IssuerSigningKey =
     new SymmetricSecurityKey(Encoding.UTF8.GetBytes(mySecret))
+    };
+    
+    options.Events = new JwtBearerEvents
+    {
+        OnMessageReceived = context =>
+        {
+            // Check for the internal API key header
+            if (context.Request.Headers.TryGetValue("X-Internal-ApiKey", out var extractedApiKey))
+            {
+                var internalApiKey = vaultInternalApiKey; // or fetch from configuration
+                if (internalApiKey.Equals(extractedApiKey))
+                {
+                    // Set a flag to indicate this is an internal request
+                    context.HttpContext.Items["InternalRequest"] = true;
+ 
+                    // Skip JWT token validation for internal requests
+                    context.NoResult();
+                    context.Response.Headers.Add("X-Auth-Skipped", "true");
+                }
+            }
+            return Task.CompletedTask;
+        },
+        OnTokenValidated = context =>
+        {
+            // If it's an internal request, mark it as successful
+            if (context.HttpContext.Items.ContainsKey("InternalRequest"))
+            {
+                context.Success();
+                return Task.CompletedTask;
+            }
+            return Task.CompletedTask;
+        },
+        OnChallenge = context =>
+        {
+            // If it's an internal request, don't return a 401 error
+            if (context.HttpContext.Items.ContainsKey("InternalRequest"))
+            {
+                context.HandleResponse(); // This suppresses the default 401
+            }
+            return Task.CompletedTask;
+        }
     };
 });
 // Add services to the container.

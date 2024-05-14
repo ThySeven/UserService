@@ -90,7 +90,7 @@ namespace UserService.Repositories
 
         public void DeleteUser(string id)
         {
-            var filter = Builders<UserModel>.Filter.Eq("id", id);
+            var filter = Builders<UserModel>.Filter.Eq("Id", id);
 
             _users.DeleteOne(filter);
         }
@@ -110,7 +110,7 @@ namespace UserService.Repositories
         
         public UserModelDTO GetById(string id)
         {
-            var filter = Builders<UserModel>.Filter.Eq("id", id);
+            var filter = Builders<UserModel>.Filter.Eq("Id", id);
             var userDTO = new UserModelDTO(_users.Find(filter).FirstOrDefault());
             return userDTO;
         }

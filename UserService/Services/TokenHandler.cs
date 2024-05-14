@@ -9,7 +9,7 @@ using MongoDB.Bson.IO;
 using Newtonsoft.Json.Linq;
 using UserService.Models;
 
-namespace UserService.Repositories;
+namespace UserService.Services;
 
 public class TokenHandler
 {
