@@ -18,6 +18,8 @@ logger.Debug("init main");
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Logging.ClearProviders();
+builder.Host.UseNLog();
 
 var EndPoint = Environment.GetEnvironmentVariable("VAULT_IP");
 var httpClientHandler = new HttpClientHandler();
@@ -66,45 +68,47 @@ builder.Services
         IssuerSigningKey =
     new SymmetricSecurityKey(Encoding.UTF8.GetBytes(mySecret))
     };
-    
+
     options.Events = new JwtBearerEvents
     {
         OnMessageReceived = context =>
         {
-            AuctionCoreLogger.Logger.Info($"Recieved API Call from {context.Request.Headers.Origin}");
-            // Check for the internal API key header
+            AuctionCoreLogger.Logger.Info($"Received API Call from {context.Request.Headers.Origin}");
+
             if (context.Request.Headers.TryGetValue("X-Internal-ApiKey", out var extractedApiKey))
             {
                 var internalApiKey = vaultInternalApiKey; // or fetch from configuration
                 if (internalApiKey.Equals(extractedApiKey))
                 {
                     AuctionCoreLogger.Logger.Info($"JWTBypass {context.Request.Headers.Origin}");
-                    // Set a flag to indicate this is an internal request
                     context.HttpContext.Items["InternalRequest"] = true;
- 
-                    // Skip JWT token validation for internal requests
-                    context.NoResult();
+
+                    // Indicating to bypass the token validation
+                    context.Token = null;
+
+                    // Inform that authentication was skipped
                     context.Response.Headers.Add("X-Auth-Skipped", "true");
                 }
             }
+
             return Task.CompletedTask;
         },
         OnTokenValidated = context =>
         {
-            // If it's an internal request, mark it as successful
+            // This will execute for non-bypass (i.e., validated) requests
             if (context.HttpContext.Items.ContainsKey("InternalRequest"))
             {
+                // Even though it's validated, we mark it successful for internal requests
                 context.Success();
-                return Task.CompletedTask;
             }
             return Task.CompletedTask;
         },
         OnChallenge = context =>
         {
-            // If it's an internal request, don't return a 401 error
             if (context.HttpContext.Items.ContainsKey("InternalRequest"))
             {
-                context.HandleResponse(); // This suppresses the default 401
+                // Suppress the challenge (401 response) for internal requests
+                context.HandleResponse();
             }
             return Task.CompletedTask;
         }
@@ -119,8 +123,6 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<IUserRepository, UserRepository>();
 
-builder.Logging.ClearProviders();
-builder.Host.UseNLog();
 
 var app = builder.Build();
 
