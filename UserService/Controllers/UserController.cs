@@ -31,7 +31,7 @@ namespace UserService.Controllers
             _logger.LogDebug(1, $"XYZ Service responding from {_ipaddr}");
         }
 
-        [Authorize]
+        [Authorize(Policy = "InternalRequestPolicy")]
         [HttpGet("{id}")]
         public IActionResult GetUser(string id)
         {

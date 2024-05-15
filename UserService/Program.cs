@@ -11,6 +11,7 @@ using UserService.Repositories;
 using UserService.Services;
 using TokenHandler = UserService.Services.TokenHandler;
 using NLog.Fluent;
+using System.Security.Claims;
 
 var logger = NLog.LogManager.Setup().LoadConfigurationFromAppSettings()
 .GetCurrentClassLogger();
@@ -83,10 +84,9 @@ builder.Services
                     AuctionCoreLogger.Logger.Info($"JWTBypass {context.Request.Headers.Origin}");
                     context.HttpContext.Items["InternalRequest"] = true;
 
-                    // Indicating to bypass the token validation
+                    // Skip JWT token processing
                     context.Token = null;
 
-                    // Inform that authentication was skipped
                     context.Response.Headers.Add("X-Auth-Skipped", "true");
                 }
             }
@@ -95,10 +95,8 @@ builder.Services
         },
         OnTokenValidated = context =>
         {
-            // This will execute for non-bypass (i.e., validated) requests
             if (context.HttpContext.Items.ContainsKey("InternalRequest"))
             {
-                // Even though it's validated, we mark it successful for internal requests
                 context.Success();
             }
             return Task.CompletedTask;
@@ -107,8 +105,7 @@ builder.Services
         {
             if (context.HttpContext.Items.ContainsKey("InternalRequest"))
             {
-                // Suppress the challenge (401 response) for internal requests
-                context.HandleResponse();
+                context.HandleResponse(); // This suppresses the default 401
             }
             return Task.CompletedTask;
         }
@@ -116,6 +113,16 @@ builder.Services
 });
 // Add services to the container.
 
+builder.Services.AddAuthorization(options =>
+{
+    // Policy that checks for the internal request item
+    options.AddPolicy("InternalRequestPolicy", policy =>
+    {
+    policy.RequireAssertion(context =>
+        context.User.Identity.IsAuthenticated ||
+        (context.Resource as HttpContext)?.Items?.ContainsKey("InternalRequest") == true);
+});
+});
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -125,6 +132,21 @@ builder.Services.AddSingleton<IUserRepository, UserRepository>();
 
 
 var app = builder.Build();
+
+app.Use(async (context, next) =>
+{
+    if (context.Items.ContainsKey("InternalRequest"))
+    {
+        var identity = new ClaimsIdentity(new[]
+        {
+            new Claim(ClaimTypes.Name, "InternalUser")
+        }, "InternalAuthScheme");
+
+        context.User = new ClaimsPrincipal(identity);
+    }
+
+    await next();
+});
 
 app.Logger.LogInformation("Starting service");
 // Configure the HTTP request pipeline.
