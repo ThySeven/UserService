@@ -37,10 +37,13 @@ namespace UserService.Controllers
         {
             try
             {
+                if (Request.Headers["X-Internal-ApiKey"] == WebManager.GetInstance.HttpClient.DefaultRequestHeaders.First(x => x.Key == "X-Internal-ApiKey").Value)
+                {
+                    return Ok(_userRepository.GetById(id));
+                }
                 string token = Request.Headers.Authorization.ToString().Replace("Bearer ", "");
 
-                if (TokenHandler.DecodeToken(token).Username == _userRepository.GetById(id).Username
-                    || Request.Headers["X-Internal-ApiKey"] == WebManager.GetInstance.HttpClient.DefaultRequestHeaders.First(x => x.Key == "X-Internal-ApiKey").Value)
+                if (TokenHandler.DecodeToken(token).Username == _userRepository.GetById(id).Username)
                 {
                     return Ok(_userRepository.GetById(id));
                 }
