@@ -10,6 +10,7 @@ using VaultSharp.V1.Commons;
 using UserService.Repositories;
 using UserService.Services;
 using TokenHandler = UserService.Services.TokenHandler;
+using NLog.Fluent;
 
 var logger = NLog.LogManager.Setup().LoadConfigurationFromAppSettings()
 .GetCurrentClassLogger();
@@ -70,12 +71,14 @@ builder.Services
     {
         OnMessageReceived = context =>
         {
+            AuctionCoreLogger.Logger.Info($"Recieved API Call from {context.Request.Headers.Origin}");
             // Check for the internal API key header
             if (context.Request.Headers.TryGetValue("X-Internal-ApiKey", out var extractedApiKey))
             {
                 var internalApiKey = vaultInternalApiKey; // or fetch from configuration
                 if (internalApiKey.Equals(extractedApiKey))
                 {
+                    AuctionCoreLogger.Logger.Info($"JWTBypass {context.Request.Headers.Origin}");
                     // Set a flag to indicate this is an internal request
                     context.HttpContext.Items["InternalRequest"] = true;
  
@@ -130,7 +133,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
