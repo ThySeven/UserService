@@ -12,6 +12,7 @@ using RabbitMQ.Client;
 using System.Text.Json;
 using System.Text;
 using Microsoft.IdentityModel.Tokens;
+using UserService.Services;
 
 namespace UserService.Repositories
 {
@@ -201,8 +202,13 @@ namespace UserService.Repositories
             var user = _users.Find(u => u.Username == credentials.Username).FirstOrDefault();
 
             // If the user is not found, return null indicating authentication failure
-            if (user == null)
+            if (user == null || !user.Verified)
             {
+                if (!user.Verified)
+                {
+                    AuctionCoreLogger.Logger.Warn($"User loggin attempt: {user.Username}, is not verified");
+                }
+                
                 return null;
             }
 
