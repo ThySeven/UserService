@@ -154,7 +154,14 @@ namespace UserService.Controllers
         {
             try
             {
-                string token = TokenHandler.GenerateJwtToken(_userRepository.Login(credentials));
+                var user = _userRepository.Login(credentials);
+                string token = TokenHandler.GenerateJwtToken(user);
+
+                if (user == null)
+                {
+                    return BadRequest("User is not verified");
+                }
+                
                 return Ok($"{new { token }}");
             }
             catch(Exception ex) 
