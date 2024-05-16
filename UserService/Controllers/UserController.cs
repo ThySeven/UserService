@@ -1,6 +1,10 @@
-﻿using System.Text.Json;
+﻿using System;
+using System.Linq;
+using System.Text.Json;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 using UserService.Repositories;
 using UserService.Models;
 using UserService.Services;
@@ -27,20 +31,25 @@ namespace UserService.Controllers
             _logger.LogDebug(1, $"XYZ Service responding from {_ipaddr}");
         }
 
-        [Authorize]
+        [Authorize(Policy = "InternalRequestPolicy")]
         [HttpGet("{id}")]
         public IActionResult GetUser(string id)
         {
             try
             {
-                string token = Request.Headers.Authorization.ToString().Replace("Bearer ", "");
-
-                if (TokenHandler.DecodeToken(token).Username == _userRepository.GetById(id).Username
-                    || Request.Headers["X-Internal-ApiKey"] == WebManager.GetInstance.HttpClient.DefaultRequestHeaders.First(x => x.Key == "X-Internal-ApiKey").Value)
+                if (Request.Headers["X-Internal-ApiKey"] == WebManager.GetInstance.HttpClient.DefaultRequestHeaders.First(x => x.Key == "X-Internal-ApiKey").Value)
                 {
+                    AuctionCoreLogger.Logger.Info($"ApiBypass used by {Request.Headers.Origin}");
                     return Ok(_userRepository.GetById(id));
                 }
-                
+                string token = Request.Headers.Authorization.ToString().Replace("Bearer ", "");
+
+                if (TokenHandler.DecodeToken(token).Username == _userRepository.GetById(id).Username)
+                {
+                    AuctionCoreLogger.Logger.Info($"GetUser authorized {TokenHandler.DecodeToken(token).Username} {Request.Headers.Origin}");
+                    return Ok(_userRepository.GetById(id));
+                }
+                AuctionCoreLogger.Logger.Info($"GetUser unauthorized {Request.Headers.Origin}");
                 return Unauthorized();
             }
             catch (Exception ex)
@@ -147,7 +156,14 @@ namespace UserService.Controllers
         {
             try
             {
-                string token = TokenHandler.GenerateJwtToken(_userRepository.Login(credentials));
+                var user = _userRepository.Login(credentials);
+                string token = TokenHandler.GenerateJwtToken(user);
+
+                if (user == null)
+                {
+                    return BadRequest("User is not verified");
+                }
+                
                 return Ok($"{new { token }}");
             }
             catch(Exception ex) 
