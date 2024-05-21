@@ -189,5 +189,29 @@ namespace UserService.Controllers
                 return BadRequest($"Failed to validate user with id: {id}: {ex}");
             }
         }
+
+
+        [HttpGet("/api/legal/users/{userId}")]
+        [Authorize]
+        public IActionResult GetUserByIdInteropablility(Guid userId)
+        {
+            var user = _userRepository.GetById(userId.ToString());
+            if (user == null)
+            {
+                return NotFound(new { error = "User not found" });
+            }
+            return Ok(user);
+        }
+
+        [HttpPost("/api/legal/login")]
+        public IActionResult LoginInteropablility([FromBody] LoginModel model)
+        {
+            var token = _userRepository.Login(model);
+            if (token == null)
+            {
+                return Unauthorized(new { error = "Unauthorized" });
+            }
+            return Ok(new { token });
+        }
     }
 }
