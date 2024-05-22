@@ -193,7 +193,7 @@ namespace UserService.Controllers
 
 
         [HttpGet("/api/legal/users/{userId}")]
-        [Authorize]
+        [Authorize(Policy = "InternalRequestPolicy")]
         public IActionResult GetUserByIdInteropablility(Guid userId)
         {
             try
@@ -245,7 +245,7 @@ namespace UserService.Controllers
             catch (Exception ex)
             {
                 _logger.LogCritical($"Failed to validate credentials: {ex}");
-                return BadRequest($"Unauthorized");
+                return Unauthorized($"Unauthorized");
             }
         }
     }

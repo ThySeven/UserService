@@ -81,7 +81,7 @@ builder.Services
                 var internalApiKey = vaultInternalApiKey; // or fetch from configuration
                 if (internalApiKey.Equals(extractedApiKey))
                 {
-                    AuctionCoreLogger.Logger.Info($"JWTBypass {context.Request.Headers.Origin}");
+                   // AuctionCoreLogger.Logger.Info($"JWTBypass {context.Request.Headers.Origin}");
                     context.HttpContext.Items["InternalRequest"] = true;
 
                     // Skip JWT token processing
