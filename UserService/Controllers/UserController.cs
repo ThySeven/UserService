@@ -8,6 +8,7 @@ using Microsoft.Extensions.Logging;
 using UserService.Repositories;
 using UserService.Models;
 using UserService.Services;
+using Amazon.SecurityToken.Model;
 
 namespace UserService.Controllers
 {
@@ -204,14 +205,25 @@ namespace UserService.Controllers
         }
 
         [HttpPost("/api/legal/login")]
-        public IActionResult LoginInteropablility([FromBody] LoginModel model)
+        public IActionResult LoginInteropablility([FromBody] LoginModel credentials)
         {
-            var token = _userRepository.Login(model);
-            if (token == null)
+            try
             {
-                return Unauthorized(new { error = "Unauthorized" });
+                var user = _userRepository.Login(credentials);
+                string token = TokenHandler.GenerateJwtToken(user);
+
+                if (user == null)
+                {
+                    return BadRequest("User is not verified");
+                }
+
+                return Ok($"{new { token }}");
             }
-            return Ok(new { token });
+            catch (Exception ex)
+            {
+                _logger.LogCritical($"Failed to validate credentials: {ex}");
+                return BadRequest($"Failed to validate credentials: {ex}");
+            }
         }
     }
 }
