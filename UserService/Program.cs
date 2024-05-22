@@ -74,7 +74,7 @@ builder.Services
     {
         OnMessageReceived = context =>
         {
-            AuctionCoreLogger.Logger.Info($"Received API Call from {context.Request.Headers.Origin}");
+            //AuctionCoreLogger.Logger.Info($"Received API Call from {context.Request.Headers.Origin}");
 
             if (context.Request.Headers.TryGetValue("X-Internal-ApiKey", out var extractedApiKey))
             {
