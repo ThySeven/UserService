@@ -8,6 +8,7 @@ using Microsoft.Extensions.Logging;
 using UserService.Repositories;
 using UserService.Models;
 using UserService.Services;
+using Amazon.SecurityToken.Model;
 
 namespace UserService.Controllers
 {
@@ -187,6 +188,64 @@ namespace UserService.Controllers
             {
                 _logger.LogCritical($"Failed to validate user with id: {id}: {ex}");
                 return BadRequest($"Failed to validate user with id: {id}: {ex}");
+            }
+        }
+
+
+        [HttpGet("/api/legal/users/{userId}")]
+        [Authorize(Policy = "InternalRequestPolicy")]
+        public IActionResult GetUserByIdInteropablility(Guid userId)
+        {
+            try
+            {
+                if (Request.Headers["X-Internal-ApiKey"] == WebManager.GetInstance.HttpClient.DefaultRequestHeaders.First(x => x.Key == "X-Internal-ApiKey").Value)
+                {
+                    AuctionCoreLogger.Logger.Info($"ApiBypass used by {Request.Headers.Origin}");
+                    return Ok(_userRepository.GetById(userId.ToString()));
+                }
+                string token = Request.Headers.Authorization.ToString().Replace("Bearer ", "");
+
+                if (TokenHandler.DecodeToken(token).Username == _userRepository.GetById(userId.ToString()).Username)
+                {
+                    AuctionCoreLogger.Logger.Info($"GetUser authorized {TokenHandler.DecodeToken(token).Username} {Request.Headers.Origin}");
+                    var user = _userRepository.GetById(userId.ToString());
+                    if (user == null)
+                    {
+                        return NotFound(new { error = "User not found" });
+                    }
+                    return Ok(user);
+                }
+                AuctionCoreLogger.Logger.Info($"GetUser unauthorized {Request.Headers.Origin}");
+                return Unauthorized();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogCritical($"Failed to find user with id: {userId}: {ex}");
+                return Unauthorized($"Unauthorized");
+            }
+
+            
+        }
+
+        [HttpPost("/api/legal/login")]
+        public IActionResult LoginInteropablility([FromBody] LoginModel credentials)
+        {
+            try
+            {
+                var user = _userRepository.Login(credentials);
+                string token = TokenHandler.GenerateJwtToken(user);
+
+                if (user == null)
+                {
+                    return Unauthorized("Unauthorized");
+                }
+
+                return Ok($"{new { token }}");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogCritical($"Failed to validate credentials: {ex}");
+                return Unauthorized($"Unauthorized");
             }
         }
     }

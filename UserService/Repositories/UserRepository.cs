@@ -54,7 +54,7 @@ namespace UserService.Repositories
             // Store the hashed password and the salt in the UserModel
             user.Password = hashedPassword;
             user.Salt = Convert.ToBase64String(salt);
-            
+            user.RegistrationDate = DateTime.Now;
             _users.InsertOne(user);
 
             var mail = new MailModel { ReceiverMail = user.Email, Header = "E-mail Verifikation", Content = $"Klik på dette link for at verificere din email <ahref>http://localhost:5145/user/verify/{user.Id}</ahref>" };
