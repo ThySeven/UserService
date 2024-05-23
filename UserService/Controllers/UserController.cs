@@ -152,7 +152,7 @@ namespace UserService.Controllers
         }
         
         [AllowAnonymous]
-        [HttpGet("login")]
+        [HttpPost("login")]
         public IActionResult Login(LoginModel credentials)
         {
             try
