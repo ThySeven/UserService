@@ -40,7 +40,7 @@ namespace UserService.Repositories
                 // User with the same username already exists, handle the error (e.g., throw an exception)
                 throw new Exception("Username already exists. Please choose a different username.");
             }
-            
+            user.Id = Guid.NewGuid().ToString();
             // Generate a random salt
             byte[] salt = new byte[16];
             new RNGCryptoServiceProvider().GetBytes(salt);
