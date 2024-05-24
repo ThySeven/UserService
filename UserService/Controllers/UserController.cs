@@ -116,9 +116,9 @@ namespace UserService.Controllers
         {
             try
             {
-                _userRepository.CreateUser(user);
+                UserModelDTO createdUser = _userRepository.CreateUser(user);
                 _logger.LogInformation($"User created: {user.Username}");
-                return Ok(user);
+                return Ok(createdUser);
             }
 
             catch (Exception ex) 
