@@ -124,7 +124,7 @@ namespace UserService.Controllers
             catch (Exception ex) 
             {
                 _logger.LogCritical($"Failed to create user: {user.Username}: {ex}");
-                return BadRequest($"Failed to create user: {user.Username}: {ex}");
+                return BadRequest($"Failed to create user: {user.Username}: {ex.Message}");
             }
         }
         
@@ -147,7 +147,7 @@ namespace UserService.Controllers
             catch(Exception ex)
             {
                 _logger.LogCritical($"Failed to delete user with id: {id}: {ex}");
-                return BadRequest($"Failed to delete user with id: {id}: {ex}");
+                return BadRequest($"Failed to delete user with id: {id}: {ex.Message}");
             }
         }
         
@@ -170,7 +170,7 @@ namespace UserService.Controllers
             catch(Exception ex) 
             {
                 _logger.LogCritical($"Failed to validate credentials: {ex}");
-                return BadRequest($"Failed to validate credentials: {ex}");
+                return BadRequest($"Failed to validate credentials: {ex.Message}");
             }
         }
         
@@ -187,7 +187,7 @@ namespace UserService.Controllers
             catch (Exception ex)
             {
                 _logger.LogCritical($"Failed to validate user with id: {id}: {ex}");
-                return BadRequest($"Failed to validate user with id: {id}: {ex}");
+                return BadRequest($"Failed to validate user with id: {id}: {ex.Message}");
             }
         }
 
