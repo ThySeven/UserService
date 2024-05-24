@@ -164,8 +164,8 @@ namespace UserService.Controllers
                 {
                     return BadRequest("User is not verified");
                 }
-                
-                return Ok($"{new { token }}");
+                user.AuthToken = token;
+                return Ok(user);
             }
             catch(Exception ex) 
             {

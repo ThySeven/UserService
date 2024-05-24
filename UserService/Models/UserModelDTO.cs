@@ -27,6 +27,7 @@ public class UserModelDTO
     public string? Username { get; set; }
     public string? Address { get; set; }
     public string? PhoneNumber { get; set; }
+    public string? AuthToken { get; set; }
     public DateTime? RegistrationDate { get; set; }
     public UserModel.UserType Type = UserModel.UserType.User;
 }
