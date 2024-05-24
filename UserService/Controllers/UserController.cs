@@ -70,10 +70,11 @@ namespace UserService.Controllers
 
                 if (TokenHandler.DecodeToken(token).Username == _userRepository.GetById(user.Id).Username)
                 {
-                    _userRepository.UpdateUser(user);
+                    UserModelDTO newUser = _userRepository.UpdateUser(user);
                     string newToken = TokenHandler.GenerateJwtToken(user);
+                    newUser.AuthToken = newToken;
                     _logger.LogInformation($"Information updated for user: {user.Username}");
-                    return Ok($"Information updated for user: {user.Username} \n\n {new { token = newToken }}");
+                    return Ok(newUser);
                 }
                 
                 return Unauthorized();
