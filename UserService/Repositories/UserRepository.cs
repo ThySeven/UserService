@@ -56,7 +56,7 @@ namespace UserService.Repositories
             user.Salt = Convert.ToBase64String(salt);
             user.RegistrationDate = DateTime.Now;
             _users.InsertOne(user);
-
+            AuctionCoreLogger.Logger.Info($"User {user.Id} has been created");
             var mail = new MailModel { ReceiverMail = user.Email, Header = "E-mail Verifikation", Content = $"Klik på dette link for at verificere din email <ahref>{Environment.GetEnvironmentVariable("PUBLIC_IP")}/user/verify/{user.Id}</ahref>" };
 
             try
@@ -96,6 +96,7 @@ namespace UserService.Repositories
             var filter = Builders<UserModel>.Filter.Eq("Id", id);
 
             _users.DeleteOne(filter);
+            AuctionCoreLogger.Logger.Info($"User {id} has been deleted");
         }
 
         // GellAll if needed :)
@@ -121,19 +122,41 @@ namespace UserService.Repositories
         public UserModelDTO UpdateUser(UserModelDTO newUserData)
         {
             var currentUser = GetById(newUserData.Id);
-    
-            if(string.IsNullOrEmpty(newUserData.FirstName))
+
+
+
+            var changes = new List<string>();
+
+            if (string.IsNullOrEmpty(newUserData.FirstName))
                 newUserData.FirstName = currentUser.FirstName;
-            if(string.IsNullOrEmpty(newUserData.LastName))
+            else if (newUserData.FirstName != currentUser.FirstName)
+                changes.Add($"FirstName changed from {currentUser.FirstName} to {newUserData.FirstName}");
+
+            if (string.IsNullOrEmpty(newUserData.LastName))
                 newUserData.LastName = currentUser.LastName;
-            if(string.IsNullOrEmpty(newUserData.Email))
+            else if (newUserData.LastName != currentUser.LastName)
+                changes.Add($"LastName changed from {currentUser.LastName} to {newUserData.LastName}");
+
+            if (string.IsNullOrEmpty(newUserData.Email))
                 newUserData.Email = currentUser.Email;
-            if(string.IsNullOrEmpty(newUserData.Username))
+            else if (newUserData.Email != currentUser.Email)
+                changes.Add($"Email changed from {currentUser.Email} to {newUserData.Email}");
+
+            if (string.IsNullOrEmpty(newUserData.Username))
                 newUserData.Username = currentUser.Username;
-            if(string.IsNullOrEmpty(newUserData.Address))
+            else if (newUserData.Username != currentUser.Username)
+                changes.Add($"Username changed from {currentUser.Username} to {newUserData.Username}");
+
+            if (string.IsNullOrEmpty(newUserData.Address))
                 newUserData.Address = currentUser.Address;
-            if(string.IsNullOrEmpty(newUserData.PhoneNumber))
+            else if (newUserData.Address != currentUser.Address)
+                changes.Add($"Address changed from {currentUser.Address} to {newUserData.Address}");
+
+            if (string.IsNullOrEmpty(newUserData.PhoneNumber))
                 newUserData.PhoneNumber = currentUser.PhoneNumber;
+            else if (newUserData.PhoneNumber != currentUser.PhoneNumber)
+                changes.Add($"PhoneNumber changed from {currentUser.PhoneNumber} to {newUserData.PhoneNumber}");
+
 
             var filter = Builders<UserModel>.Filter.Eq("Id", newUserData.Id);
             var update = Builders<UserModel>.Update
@@ -145,6 +168,11 @@ namespace UserService.Repositories
                 .Set(x => x.PhoneNumber, newUserData.PhoneNumber);
 
             _users.UpdateOne(filter, update);
+            if (changes.Any())
+                AuctionCoreLogger.Logger.Info($"User {newUserData.Id} has been updated. Changes: {string.Join(", ", changes)}");
+            else
+                AuctionCoreLogger.Logger.Info($"User {newUserData.Id} has been updated. No changes were made.");
+
             return newUserData;
         }
 
@@ -189,6 +217,7 @@ namespace UserService.Repositories
                 .Set(u => u.Salt, Convert.ToBase64String(newSalt));
 
             _users.UpdateOne(u => u.Username == credentials.Username, update);
+            AuctionCoreLogger.Logger.Info($"User {user.Id} has changed their password");
         }
 
 
