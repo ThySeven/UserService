@@ -170,7 +170,7 @@ namespace UserService.Controllers
             }
             catch (NullReferenceException ex)
             {
-                return NotFound($"Invalid Credentials");
+                return BadRequest($"Invalid Credentials");
             }
             catch (Exception ex) 
             {
