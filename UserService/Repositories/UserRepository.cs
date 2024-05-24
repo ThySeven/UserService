@@ -32,7 +32,7 @@ namespace UserService.Repositories
             _users = db.GetCollection<UserModel>("Users");
         }
 
-        public void CreateUser(UserModel user)
+        public UserModelDTO CreateUser(UserModel user)
         {
             var existingUser = _users.Find(u => u.Username == user.Username).FirstOrDefault();
             if (existingUser != null)
@@ -87,6 +87,8 @@ namespace UserService.Repositories
             {
                 Console.WriteLine($"Error sending email to RabbitMQ: {ex.Message}");
             }
+
+            return new UserModelDTO(user);
         }
 
         public void DeleteUser(string id)

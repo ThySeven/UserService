@@ -118,7 +118,7 @@ namespace UserService.Controllers
             {
                 _userRepository.CreateUser(user);
                 _logger.LogInformation($"User created: {user.Username}");
-                return Ok($"User created: {user.Username}");
+                return Ok(user);
             }
 
             catch (Exception ex) 
