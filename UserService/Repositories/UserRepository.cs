@@ -57,7 +57,7 @@ namespace UserService.Repositories
             user.RegistrationDate = DateTime.Now;
             _users.InsertOne(user);
 
-            var mail = new MailModel { ReceiverMail = user.Email, Header = "E-mail Verifikation", Content = $"Klik på dette link for at verificere din email <ahref>http://localhost:5145/user/verify/{user.Id}</ahref>" };
+            var mail = new MailModel { ReceiverMail = user.Email, Header = "E-mail Verifikation", Content = $"Klik på dette link for at verificere din email <ahref>{Environment.GetEnvironmentVariable("PUBLIC_IP")}/user/verify/{user.Id}</ahref>" };
 
             try
             {
