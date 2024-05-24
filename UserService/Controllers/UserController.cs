@@ -168,7 +168,11 @@ namespace UserService.Controllers
                 user.AuthToken = token;
                 return Ok(user);
             }
-            catch(Exception ex) 
+            catch (NullReferenceException ex)
+            {
+                return NotFound($"Invalid Credentials");
+            }
+            catch (Exception ex) 
             {
                 _logger.LogCritical($"Failed to validate credentials: {ex}");
                 return BadRequest($"Failed to validate credentials: {ex.Message}");
