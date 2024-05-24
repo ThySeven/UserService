@@ -1,3 +1,5 @@
+using Microsoft.IdentityModel.JsonWebTokens;
+
 namespace UserService.Services;
 
 public class WebManager
