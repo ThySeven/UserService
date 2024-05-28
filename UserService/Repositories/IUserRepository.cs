@@ -8,7 +8,7 @@ namespace UserService.Repositories
 
         UserModelDTO GetById(string id);
 
-        void CreateUser(UserModel user);
+        UserModelDTO CreateUser(UserModel user);
 
         void DeleteUser(string id);
 

@@ -70,10 +70,11 @@ namespace UserService.Controllers
 
                 if (TokenHandler.DecodeToken(token).Username == _userRepository.GetById(user.Id).Username)
                 {
-                    _userRepository.UpdateUser(user);
+                    UserModelDTO newUser = _userRepository.UpdateUser(user);
                     string newToken = TokenHandler.GenerateJwtToken(user);
+                    newUser.AuthToken = newToken;
                     _logger.LogInformation($"Information updated for user: {user.Username}");
-                    return Ok($"Information updated for user: {user.Username} \n\n {new { token = newToken }}");
+                    return Ok(newUser);
                 }
                 
                 return Unauthorized();
@@ -116,15 +117,15 @@ namespace UserService.Controllers
         {
             try
             {
-                _userRepository.CreateUser(user);
+                UserModelDTO createdUser = _userRepository.CreateUser(user);
                 _logger.LogInformation($"User created: {user.Username}");
-                return Ok($"User created: {user.Username}");
+                return Ok(createdUser);
             }
 
             catch (Exception ex) 
             {
                 _logger.LogCritical($"Failed to create user: {user.Username}: {ex}");
-                return BadRequest($"Failed to create user: {user.Username}: {ex}");
+                return BadRequest($"Failed to create user: {user.Username}: {ex.Message}");
             }
         }
         
@@ -147,7 +148,7 @@ namespace UserService.Controllers
             catch(Exception ex)
             {
                 _logger.LogCritical($"Failed to delete user with id: {id}: {ex}");
-                return BadRequest($"Failed to delete user with id: {id}: {ex}");
+                return BadRequest($"Failed to delete user with id: {id}: {ex.Message}");
             }
         }
         
@@ -164,13 +165,17 @@ namespace UserService.Controllers
                 {
                     return BadRequest("User is not verified");
                 }
-                
-                return Ok($"{new { token }}");
+                user.AuthToken = token;
+                return Ok(user);
             }
-            catch(Exception ex) 
+            catch (NullReferenceException ex)
+            {
+                return BadRequest($"Invalid Credentials");
+            }
+            catch (Exception ex) 
             {
                 _logger.LogCritical($"Failed to validate credentials: {ex}");
-                return BadRequest($"Failed to validate credentials: {ex}");
+                return BadRequest($"Failed to validate credentials: {ex.Message}");
             }
         }
         
@@ -187,7 +192,7 @@ namespace UserService.Controllers
             catch (Exception ex)
             {
                 _logger.LogCritical($"Failed to validate user with id: {id}: {ex}");
-                return BadRequest($"Failed to validate user with id: {id}: {ex}");
+                return BadRequest($"Failed to validate user with id: {id}: {ex.Message}");
             }
         }
 
