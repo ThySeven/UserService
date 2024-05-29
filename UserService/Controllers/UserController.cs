@@ -242,15 +242,19 @@ namespace UserService.Controllers
 
                 if (user == null)
                 {
-                    return Unauthorized("Unauthorized");
+                    return BadRequest("User is not verified");
                 }
-
-                return Ok($"{new { token }}");
+                user.AuthToken = token;
+                return Ok(user);
+            }
+            catch (NullReferenceException ex)
+            {
+                return BadRequest($"Invalid Credentials");
             }
             catch (Exception ex)
             {
                 _logger.LogCritical($"Failed to validate credentials: {ex}");
-                return Unauthorized($"Unauthorized");
+                return BadRequest($"Failed to validate credentials: {ex.Message}");
             }
         }
     }
