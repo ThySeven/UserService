@@ -22,7 +22,7 @@ namespace UserService.Models
 
     public static class UserConverter
     {
-        public static UserModelInteropablility ToInteropablility(UserModel userModel)
+        public static UserModelInteropablility ToInteropablility(UserModelDTO userModel)
         {
             if (userModel == null)
             {

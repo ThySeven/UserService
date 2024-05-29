@@ -218,7 +218,8 @@ namespace UserService.Controllers
                     {
                         return NotFound(new { error = "User not found" });
                     }
-                    return Ok(user);
+                    UserModelInteropablility returnUser = UserConverter.ToInteropablility(user);
+                    return Ok(returnUser);
                 }
                 AuctionCoreLogger.Logger.Info($"GetUser unauthorized {Request.Headers.Origin}");
                 return Unauthorized();
